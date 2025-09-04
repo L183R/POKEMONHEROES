@@ -9,17 +9,16 @@
         <meta name="keywords"
               content="pokemon, pokémon, browsergame, online game, adopt, adoptables, adoption, eggs, forum, battle, feed, monster">
         <meta property="og:title" content="PokéHeroes"/>
-                            <meta name="viewport"
-                  content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+                        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
         <link rel="stylesheet" type="text/css" href="//staticpokeheroes.com/css/basic.css?v2">
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
         <script src="//staticpokeheroes.com/js/sitewide_functions.js?v30"></script>
-                                <title>Hangman - PokéHeroes</title>
+                    <script src="//staticpokeheroes.com/js/sitewide_functions_user_new.js?v38"></script>                        <title>Hangman - PokéHeroes</title>
     </head>
 
     <body>
-
+<script>var currentFeature = "GC_Hangman";</script>
 <body>
     <style>
         body {
@@ -28,18 +27,74 @@
             background-color: #2c3b5f;
                 }
     </style>
+<div id="friend_bar">
+    <a class="closeButton" onclick="palPadAction();">Close</a>
+    <div class="inner">
+    </div>
+    <div id="palpad_search" style="display: none">
+        <div style="display: flex">
+            <input style="flex: 1000" type="text" placeholder="Search for user or group...">
+            <div class="action_btn" style="min-width: 20px" onclick="closePalpadSearch();"><b>X</b></div>
+        </div>
+    </div>
+    <div id="palpad_action_bar">
+        <div style="display: flex">
+            <div class="action_btn" onclick="openPalpadSearch();">
+                <img src="//staticpokeheroes.com/img/icons/search_dark.svg" style="height: 100%">
+            </div>
+                            <div class="action_btn" onclick="openCreatePrivateChatGroupPopup();">
+                    <img src="//staticpokeheroes.com/img/icons/group_dark.svg" style="height: 100%">
+                </div>
+                        <div class="action_btn" onclick="window.open('game_settings#communicationsettings', '_blank').focus();">
+                <img src="//staticpokeheroes.com/img/icons/settings_dark.svg" style="height: 100%">
+            </div>
+        </div>
+    </div>
+</div>
 
+<div id="private_chat">
+    <div class="chat_head">
+        <img src="//staticpokeheroes.com/img/misc/delete_icon.png" style="float: right; cursor: pointer"
+            onclick="closePrivateChat();">
+        <img src="//staticpokeheroes.com/img/misc/report_icon.png"
+            style="float: right; margin-right: 8px; cursor: pointer" onclick="reportPrivateChat();">
+        <span style="cursor: pointer"></span>
+    </div>
+    <div class="chat_inner slim_scroll">
+    </div>
+    <div style="padding: 4px">
+        <textarea placeholder="Message..." maxlength=1000></textarea>
+    </div>
+    <div class="pal_error" style="display: none; padding: 4px; margin-top: -4px; background: #829fbc"></div>
+</div>
+
+<script>auto_friendbar_lock = true;</script>
     <div id="userbar">
-        <div style="margin-top: 8px">
-	<a class="userbar" href="login">Log In</a>
+        
+
+<div style="margin-top: 8px">
+	<a class="userbar" href="userprofile?name=L183R">L183R</a> 
+	(<span class="hint" title="Trainerpoints: 1,053/1,219">Level: 20</span>)
+	<span class="smallMarginLeft" style="cursor: pointer" onclick="location.href = 'emerabank';">
+		<img src="//staticpokeheroes.com/img/items/pokedollar.png" style="image-rendering: pixelated"> <span id="userbar_pd">215</span>
+		<img src="//staticpokeheroes.com/img/items/nugget.png" class="smallMarginLeft" style="image-rendering: pixelated"> <span id="userbar_nugget">0</span>
+	</span>
 </div>
 <div style="flex: 1"></div>
 <div style="margin-top: 8px">
-	<img src="//staticpokeheroes.com/img/sitewide/weather_castform/ground.gif" 
-			title="Strong earthquakes - WARNING: There will be powerful earthquakes from time to time. Better stay at home! (All Ground Pokémon gain 50% more EXP.)"
-			style="margin-right: 20px; margin-top: -6px; float: left"
-			alt="Ground Weather Castform">	Don't have an account yet? <a class="userbar" href="registration">Register now!</a>
-</div>	    </div>
+<img src="//staticpokeheroes.com/img/items/pal-pad.png" id="pal_pad" onclick="palPadAction();" class="smallMarginRight" style="cursor: pointer; float: left; opacity: 0.5; image-rendering: pixelated">        <a href="notifications" id="notif_icon" class="smallMarginRight" style="float: left; text-decoration: none">
+            <div style="z-index: 2; color: white; text-decoration: none; position: absolute; font-size: 18px; margin-left: 6px; margin-top: 2px; width: 20px; text-align: right" class="notif_counter">
+            </div>
+            <img src="//staticpokeheroes.com/img/sitewide/notification/notif_icon.png" class="notif_counter_icon"  style="image-rendering: pixelated">
+        </a>
+        <script>setNotificationCounter(2);</script>
+
+	<a href='pm_inbox'  class='smallMarginRight'><img src='//staticpokeheroes.com/img/userprofile/pm_icon.png' title='New Private Message'  style='image-rendering: pixelated'></a><a href='shaymin?code=SHAY1825'><img src='//staticpokeheroes.com/img/sitewide/event/shaymin.png' style='float: left; margin-right: 20px; image-rendering: pixelated'></a><img src='//staticpokeheroes.com/img/sitewide/weather_castform/poison.gif' 
+			title='Smog - A large cloud of smog moves from the big city here. (All Poison Pokémon gain 50% more EXP.)' 
+			style='margin-right: 20px; margin-top: -6px; float: left; cursor: pointer; image-rendering: pixelated'
+			alt='Poison Weather Castform'
+			onclick='location.href = "weather"'>	<a class="userbar" href="logout?conf=6c31383372" onclick="return confirm('Do you want to log out?');"><img src="//staticpokeheroes.com/img/sitewide/logout.png?v2" style="image-rendering: pixelated"></a>
+</div>    </div>
 
     <div id="header">
         <div class="banner rounded">
@@ -48,25 +103,13 @@
             </a>
         </div>
         <div id="topnav_wrapper">
-            <div class='navelement'><a href='index' class='nav_button mainLink small_rounded'>Home</a>
-			<div class='subnav small_rounded' style='left: 0'>
-				<div class='wrapper nav_Home'><div class='inner'><a class='subnav' href='/'><img src='//staticpokeheroes.com/img/sitewide/navigation/icons/news.png' alt='PokéHeroes News Icon'> <span>PokéHeroes News</span></a><a class='subnav' href='about_pokeheroes'><img src='//staticpokeheroes.com/img/sitewide/navigation/icons/about.png' alt='PokéHeroes About Icon'> <span>About PokéHeroes</span></a><a class='subnav' href='ph_features'><img src='//staticpokeheroes.com/img/sitewide/navigation/icons/features.png' alt='PokéHeroes Features Icon'> <span>Features</span></a><a class='subnav' href='game_screenshots'><img src='//staticpokeheroes.com/img/sitewide/navigation/icons/screenshots.png' alt='PokéHeroes Screenshots Icon'> <span>Screenshots</span></a></div>
-			</div></div></div>			<div class="navelement">
-				<a href="login" class="nav_button small_rounded">
-					Log In
-				</a>
-			</div>
-			<div class="navelement">
-				<a href="registration" class="nav_button small_rounded">
-					Registration
-				</a>	
-			</div>
-<div class='navelement'><a href='forum' class='nav_button mainLink small_rounded'>Community</a>
-			<div class='subnav small_rounded' style='right: 0'>
-				<div class='wrapper nav_Community'><div class='inner'><a class='subnav' href='forum'><img src='//staticpokeheroes.com/img/sitewide/navigation/icons/forum.png' alt='PokéHeroes Forum Icon'> <span>Forum</span></a><a class='subnav' href='lovemeter'><img src='//staticpokeheroes.com/img/sitewide/navigation/icons/lovemeter.png' alt='PokéHeroes Lovemeter Icon'> <span>Lovemeter</span></a><a class='subnav' href='medal_rally'><img src='//staticpokeheroes.com/img/sitewide/navigation/icons/medal.png' alt='PokéHeroes Medal Icon'> <span>Medal Rally</span></a><a class='subnav' href='userlist'><img src='//staticpokeheroes.com/img/sitewide/navigation/icons/users.png' alt='PokéHeroes Users Icon'> <span>Userlist</span></a><a class='subnav' href='ranklist'><img src='//staticpokeheroes.com/img/sitewide/navigation/icons/ranklist.png' alt='PokéHeroes Ranklist Icon'> <span>Ranklist</span></a><a class='subnav' href='//wiki.pokeheroes.com'><img src='//staticpokeheroes.com/img/sitewide/navigation/icons/wiki.png' alt='PokéHeroes Wiki Icon'> <span>PokéHeroes Wiki</span></a><a class='subnav' href='rules'><img src='//staticpokeheroes.com/img/sitewide/navigation/icons/rules.png' alt='PokéHeroes Rules Icon'> <span>Rules</span></a></div>
-			</div></div></div>        </div>
+                    </div>
     </div>
 
+    <script>displayMainNav([{"Title":"Home","Link":"\/","Sub":[{"Title":"Pok\u00e9Heroes News","Link":"\/","Icon":"news","lock":false},{"Title":"Your Party","Link":"party","Icon":"party","lock":false},{"Title":"Battle Team","Link":"battle_team","Icon":"battleteam","lock":false},{"Title":"VS. Seeker","Link":"battle_user","Icon":"vsseeker","lock":false},{"Title":"Notifications","Link":"notifications","Icon":"notification","lock":false},{"Title":"Storage Boxes","Link":"storage_box","Icon":"storage","lock":false},{"Title":"Item Bag","Link":"bag","Icon":"bag","lock":false},{"Title":"Pok\u00e9dex","Link":"pokedex","Icon":"pokedex","lock":false},{"Title":"Badges","Link":"badges","Icon":"badges","lock":false},{"Title":"Puzzle Collection","Link":"puzzle","Icon":"puzzle","lock":false},{"Title":"Pok\u00e9radar","Link":"pokeradar","Icon":"pokeradar","lock":true},{"Title":"Shadow Radar","Link":"shadowradar","Icon":"sradar","lock":true},{"Title":"Paldea Research","Link":"paldearesearch","Icon":"paldea","lock":true},{"Title":"Event Distribution","Link":"event_distribution","Icon":"event","lock":false},{"Title":"Speed Click Saturday","Link":"scs","Icon":"scs","lock":false}]},{"Title":"Town","Link":"town","Sub":[{"Title":"Prof. Rowan&#039;s Lab","Link":"lab","Icon":"lab","lock":false},{"Title":"Emera Mall","Link":"mall#mall","Icon":"mall","lock":false},{"Title":"Daycare","Link":"daycare","Icon":"daycare","lock":false},{"Title":"Route 53","Link":"route53","Icon":"route","lock":false},{"Title":"Tall Grass","Link":"tall_grass","Icon":"tallgrass","lock":false},{"Title":"Safari Zone","Link":"safari_zone","Icon":"safari","lock":false},{"Title":"Emera Square","Link":"square","Icon":"square","lock":false},{"Title":"Emera Beach","Link":"beach","Icon":"beach","lock":false},{"Title":"Berrygarden","Link":"berrygarden","Icon":"garden","lock":false},{"Title":"Global Trade Station","Link":"gts","Icon":"gts","lock":false},{"Title":"Auction House","Link":"auction_house","Icon":"auction","lock":false},{"Title":"Game Center","Link":"game_center","Icon":"gamecenter","lock":false},{"Title":"Gem Collector","Link":"gem_collector","Icon":"gemcollector","lock":false},{"Title":"Rumble Areas","Link":"rumble","Icon":"rumble","lock":false},{"Title":"Royal Tunnel","Link":"royal_tunnel","Icon":"royal","lock":false},{"Title":"Ancient Cave","Link":"ancient_cave","Icon":"ancientcave","lock":false}]},{"Title":"Settings","Link":"settings","Sub":[{"Title":"Account","Link":"account_settings","Icon":"username","lock":false},{"Title":"Gameplay","Link":"game_settings","Icon":"misc","lock":false},{"Title":"Profile Page","Link":"profile_layout","Icon":"profilelayout","lock":false},{"Title":"Site Appearance","Link":"style_settings","Icon":"style","lock":false}]},{"Title":"Community","Link":"forum","Sub":[{"Title":"Union Room","Link":"union_room","Icon":"union","lock":false},{"Title":"Forum","Link":"forum","Icon":"forum","lock":false},{"Title":"Private Messages","Link":"pm_inbox","Icon":"pm","lock":false},{"Title":"Lovemeter","Link":"lovemeter","Icon":"lovemeter","lock":false},{"Title":"Medal Rally","Link":"medal_rally","Icon":"medal","lock":false},{"Title":"Userlist","Link":"userlist","Icon":"users","lock":false},{"Title":"Ranklist","Link":"ranklist","Icon":"ranklist","lock":false},{"Title":"Pok\u00e9Heroes Wiki","Link":"\/\/wiki.pokeheroes.com","Icon":"wiki","lock":false},{"Title":"Support Center","Link":"\/\/panel.pokeheroes.com\/support.php","Icon":"support","lock":false},{"Title":"Friendlist","Link":"friendlist","Icon":"friendlist","lock":false},{"Title":"Newbie Mentoring","Link":"mentor","Icon":"mentor","lock":true},{"Title":"Share Widgets","Link":"share","Icon":"share","lock":false},{"Title":"Rules","Link":"rules","Icon":"rules","lock":false}]}], '226d579b774ceed21c8339c0f5b43a15');</script><script>
+    setPokedollarBalance(215);
+    setNuggetBalance(0);
+</script>
 
 <div id="main" class="rounded">
     <div style="margin-bottom: 60px; color: transparent; position: absolute"><a name="main"></a>.</div>
@@ -82,30 +125,60 @@
 </script>    </div>
     <div id="textbar">
 
-<meta http-equiv='refresh' content='0; URL=login.php'>				</div>
+				<h1 class="headline1">
+					Hangman
+				</h1>
+				<h2 class="headline1">	
+					G_ _ ss &nbsp; th_ &nbsp; w_rd
+				</h2>
+				<style>
+					.letterGuess {
+						background: #8192b0;
+						color: #010c20;
+						text-decoration: none;
+						font-size: 12pt;
+						padding: 8px;
+						line-height: 40px;
+					}
+				</style>
+										<a name="game"> </a>
+						<h3 class="headline1">
+							Instructions
+						</h3>
+						<p class="normaltext">
+							The Hangman game randomly selects a Pokémon-/PokéHeroes-related word for you and you have to guess it step by step. Decide wisely and click on a letter to choose it.
+							You can only make five wrong guesses per round.<br>
+							After winning a round, you receive an amount of Game Chips which is based on your solved hangmen in a row stat and on the difficulty of the word.</p>
+						<br>
+			<div id="redfield">You lost the last hangman game!<br>You can try again 
+								<span class="active_countdown" data-countto="1757021456" data-dateformat="1" data-lcfirst="true" data-negative="false">in 24 seconds</span>.</div><script>window.setTimeout(function() { location.href='?'; }, 25000);</script><br><br><p align=right><font size=1px>The hangman database contains 1915 different words.<br><a href='?suggest'>Suggest more</a>.</font></p><div style='text-align: right; font-size: 8pt; margin-top: 24px'>You have solved 893 hangmen so far.</div>				<div id="special_fixbox">
+					You have <b><span class="gameChipsLeft">94,700</span> Game Chips</b> at the moment.
+				</div>
+				</div>
 			</div>
 			<div id="footer">
 				<div class="inner">
 					<div style="margin-right: 8px">		
 						Pokémon names and sprites © 1995-2025 Nintendo, The Pokémon Company and Gamefreak<br>
 						This Website is © by Riako, 2013-2025<br>
-						<a href="contact" style="margin-right: 8px">Contact us</a>						<a href="rules" style="margin-right: 8px">Site Rules</a>
+						<a href="//panel.pokeheroes.com/support.php" target="_blank" style="margin-right: 8px">Support Center</a>						<a href="rules" style="margin-right: 8px">Site Rules</a>
 						<a href="privacypolicy">Privacy Policy</a>
 					</div>
 					
 					<div>
-						<span id="current_time">04/Sep/2025 02:21:19</span><br>
-												We have <b>299,444 registered users</b>.<br>
-						Currently online: <a href='online' style='text-decoration: none'>131 users</a> (+ 3341 guests)<br>
-						<i>(Online within last 24 hours: 1,468 members)</i><br>
-						Page generated in 1.4 milliseconds					</div>
+						<span id="current_time">04/Sep/2025 21:30:32</span><br>
+												We have <b>299,541 registered users</b>.<br>
+						Currently online: <a href='online' style='text-decoration: none'>150 users</a> (+ 2544 guests)<br>
+						<i>(Online within last 24 hours: 1,512 members)</i><br>
+						Page generated in 5.4 milliseconds					</div>
 				</div>					
 			</div>
 		</div>
 	</div>
+			<div id="mini_notif_wrapper"></div>
 		<script>
-		var curr_unix = 1756952479;
-		var USERID = -877273612;
+		var curr_unix = 1757021432;
+		var USERID = 913234381;
 		var global_timeout = false;
 	</script>
 </body>

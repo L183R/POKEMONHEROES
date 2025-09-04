@@ -1,1 +1,38 @@
 [Flip A] idx=00 -> id=777
+[Flip B] idx=01 -> id=768
+❌ NO MATCH: (0:777) vs (1:768) | resueltas=0/16
+[Flip A] idx=02 -> id=676
+[Flip B] idx=03 -> id=404
+❌ NO MATCH: (2:676) vs (3:404) | resueltas=0/16
+[Flip A] idx=04 -> id=498
+[Flip B] idx=05 -> id=387
+❌ NO MATCH: (4:498) vs (5:387) | resueltas=0/16
+[Flip A] idx=06 -> id=223
+[Flip B] idx=07 -> id=676
+❌ NO MATCH: (6:223) vs (7:676) | resueltas=0/16
+[Flip A*] idx=02 -> id=676 (estricto)
+[Flip B*] idx=07 -> id=676 (estricto)
+✅ MATCH id=676 | par=(2,7) | resueltas=2/16
+[Flip A] idx=08 -> id=498
+[Flip B] idx=04 -> id=498
+✅ MATCH id=498 | par=(8,4) | resueltas=4/16
+[Flip A] idx=09 -> id=404
+[Flip B] idx=03 -> id=404
+✅ MATCH id=404 | par=(9,3) | resueltas=6/16
+[Flip A] idx=10 -> id=223
+[Flip B] idx=06 -> id=223
+✅ MATCH id=223 | par=(10,6) | resueltas=8/16
+[Flip A] idx=11 -> id=777
+[Flip B] idx=00 -> id=777
+✅ MATCH id=777 | par=(11,0) | resueltas=10/16
+[Flip A] idx=12 -> id=149
+[Flip B] idx=13 -> id=149
+✅ MATCH id=149 | par=(12,13) | resueltas=12/16
+[Flip A] idx=14 -> id=387
+[Flip B] idx=05 -> id=387
+✅ MATCH id=387 | par=(14,5) | resueltas=14/16
+[Flip A] idx=15 -> id=768
+[Flip B] idx=01 -> id=768
+✅ MATCH id=768 | par=(15,1) | resueltas=16/16
+Listo. Pares resueltos: 16/16
+Log guardado en: concentration_log_1757017236.txt

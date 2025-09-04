@@ -1,0 +1,82 @@
+[skip] idx=00 sin ID estable. Lo intento luego.
+[Flip A] idx=01 -> id=233
+[Flip B] idx=02 -> id=601
+❌ NO MATCH: (1:233) vs (2:601) | resueltas=0/36
+[Flip A] idx=03 -> id=459
+[Flip B] idx=04 -> id=315
+❌ NO MATCH: (3:459) vs (4:315) | resueltas=0/36
+[Flip A] idx=05 -> id=871
+[Flip B] idx=06 -> id=354
+❌ NO MATCH: (5:871) vs (6:354) | resueltas=0/36
+[Flip A] idx=07 -> id=857
+[skip] idx=08 sin ID estable. Lo intento luego.
+[Flip A] idx=09 -> id=625
+[Flip B] idx=10 -> id=933
+❌ NO MATCH: (9:625) vs (10:933) | resueltas=0/36
+[Flip A] idx=11 -> id=477
+[Flip B] idx=12 -> id=625
+❌ NO MATCH: (11:477) vs (12:625) | resueltas=0/36
+[Flip A*] idx=09 -> id=625 (estricto)
+[Flip B*] idx=12 -> id=625 (estricto)
+✅ MATCH id=625 | par=(9,12) | resueltas=2/36
+[Flip A] idx=13 -> id=233
+[Flip B] idx=01 -> id=233
+✅ MATCH id=233 | par=(13,1) | resueltas=4/36
+[Flip A] idx=14 -> id=426
+[Flip B] idx=15 -> id=779
+❌ NO MATCH: (14:426) vs (15:779) | resueltas=4/36
+[Flip A] idx=16 -> id=354
+[Flip B] idx=06 -> id=354
+✅ MATCH id=354 | par=(16,6) | resueltas=6/36
+[skip] idx=17 sin ID estable. Lo intento luego.
+[Flip A] idx=18 -> id=601
+[Flip B] idx=02 -> id=601
+✅ MATCH id=601 | par=(18,2) | resueltas=8/36
+[Flip A] idx=19 -> id=261
+[Flip B] idx=20 -> id=426
+❌ NO MATCH: (19:261) vs (20:426) | resueltas=8/36
+[Flip A*] idx=14 -> id=426 (estricto)
+[Flip B*] idx=20 -> id=426 (estricto)
+✅ MATCH id=426 | par=(14,20) | resueltas=10/36
+[Flip A] idx=21 -> id=876
+[Flip B] idx=22 -> id=871
+❌ NO MATCH: (21:876) vs (22:871) | resueltas=10/36
+[Flip A*] idx=05 -> id=871 (estricto)
+[Flip B*] idx=22 -> id=871 (estricto)
+✅ MATCH id=871 | par=(5,22) | resueltas=12/36
+[Flip A] idx=23 -> id=779
+[Flip B] idx=15 -> id=779
+✅ MATCH id=779 | par=(23,15) | resueltas=14/36
+[Flip A] idx=24 -> id=477
+[Flip B] idx=11 -> id=477
+✅ MATCH id=477 | par=(24,11) | resueltas=16/36
+[skip] idx=25 sin ID estable. Lo intento luego.
+[Flip A] idx=26 -> id=857
+[Flip B] idx=07 -> id=857
+✅ MATCH id=857 | par=(26,7) | resueltas=18/36
+[Flip A] idx=27 -> id=312
+[Flip B] idx=28 -> id=315
+❌ NO MATCH: (27:312) vs (28:315) | resueltas=18/36
+[Flip A*] idx=04 -> id=315 (estricto)
+[Flip B*] idx=28 -> id=315 (estricto)
+✅ MATCH id=315 | par=(4,28) | resueltas=20/36
+[Flip A] idx=29 -> id=459
+[Flip B] idx=03 -> id=459
+✅ MATCH id=459 | par=(29,3) | resueltas=22/36
+[skip] idx=30 sin ID estable. Lo intento luego.
+[Flip A] idx=31 -> id=312
+[Flip B] idx=27 -> id=312
+✅ MATCH id=312 | par=(31,27) | resueltas=24/36
+[Flip A] idx=32 -> id=933
+[Flip B] idx=10 -> id=933
+✅ MATCH id=933 | par=(32,10) | resueltas=26/36
+[Flip A] idx=33 -> id=876
+[Flip B] idx=21 -> id=876
+✅ MATCH id=876 | par=(33,21) | resueltas=28/36
+[Flip A] idx=34 -> id=261
+[Flip B] idx=19 -> id=261
+✅ MATCH id=261 | par=(34,19) | resueltas=30/36
+[skip] idx=35 sin ID estable. Lo intento luego.
+[skip] idx=00 sin ID estable. Lo intento luego.
+[skip] idx=00 sin ID estable. Lo intento luego.
+[skip] idx=00 sin ID estable. Lo intento luego.

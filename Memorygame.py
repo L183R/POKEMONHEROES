@@ -14,15 +14,15 @@ from urllib3.util.retry import Retry
 COOKIES_STRING = ""              # Pegá el header Cookie completo (p.ej. "PHPSESSID=...; otra=...")
 COOKIES_FILE   = "cookies.txt"   # Si COOKIES_STRING está vacío, se usa este archivo si existe
 
-SIZE                 = 16        # Cambiá a 30 si tu mesa es de 30
-DELAY                = 3      # Pausa base tras cada flip ok
-SLEEP_AFTER_A_BEFORE_B = 3    # Pausa extra entre A y B del mismo turno
-PAIR_PAUSE           = 5      # Pausa tras MATCH (animación)
-MISMATCH_PAUSE       = 5      # Pausa tras NO MATCH
+SIZE                 = 36        # Cambiá a 30 si tu mesa es de 30
+DELAY                = 2      # Pausa base tras cada flip ok
+SLEEP_AFTER_A_BEFORE_B = 2    # Pausa extra entre A y B del mismo turno
+PAIR_PAUSE           = 4      # Pausa tras MATCH (animación)
+MISMATCH_PAUSE       = 4      # Pausa tras NO MATCH
 
 # Reintentos “exploratorios”
-MAX_RETRIES_EXP      = 6
-RETRY_SLEEP_EXP      = 3
+MAX_RETRIES_EXP      = 4
+RETRY_SLEEP_EXP      = 2
 DEADLINE_EXP_SEC     = 18.0
 
 # Reintentos “estrictos” (cerrar par conocido)
@@ -31,8 +31,8 @@ RETRY_SLEEP_PAIR     = 23
 DEADLINE_PAIR_SEC    = 14.0
 
 # Red
-NET_RETRIES_TOTAL    = 4
-NET_BACKOFF_FACTOR   = 2
+NET_RETRIES_TOTAL    = 8
+NET_BACKOFF_FACTOR   = 4
 STATUS_FORCELIST     = [429, 500, 502, 503, 504]
 
 WAIT_SECONDS = 100            # si ya lo agregaste, dejalo
@@ -41,7 +41,7 @@ COOLDOWN_AFTER_SKIP = 15.0    # segundos que “duerme” un índice problemáti
 # ============================================
 
 BASE        = "https://pokeheroes.com"
-URL_PAGE    = f"{BASE}/gc_concentration?d=0"
+URL_PAGE    = f"{BASE}/gc_concentration?d=2"
 URL_FLIP    = f"{BASE}/includes/ajax/game_center/concentration_flip.php"
 REFERER_XHR = "https://pokeheroes.com/gc_concentration?d=0"   # <-- CORREGIDO
 ORIGIN      = "https://pokeheroes.com"
