@@ -1,0 +1,27 @@
+[Flip A] idx=00 -> id=913
+[Flip B] idx=01 -> id=008
+❌ NO MATCH: (0:913) vs (1:008) | resueltas=0/30
+[Flip A] idx=02 -> id=292
+[Flip B] idx=03 -> id=003
+❌ NO MATCH: (2:292) vs (3:003) | resueltas=0/30
+[Flip A] idx=04 -> id=292
+[Flip B] idx=02 -> id=008
+❌ NO MATCH: (4:292) vs (2:008) | resueltas=0/30
+[Flip A] idx=05 -> id=730
+[Flip B] idx=06 -> id=008
+❌ NO MATCH: (5:730) vs (6:008) | resueltas=0/30
+[Flip A] idx=07 -> id=063
+[Flip B] idx=08 -> id=009
+❌ NO MATCH: (7:063) vs (8:009) | resueltas=0/30
+[Flip A] idx=09 -> id=913
+[Flip B] idx=00 -> id=004
+❌ NO MATCH: (9:913) vs (0:004) | resueltas=0/30
+[Flip A] idx=10 -> id=780
+[Flip B] idx=11 -> id=005
+❌ NO MATCH: (10:780) vs (11:005) | resueltas=0/30
+[Flip A] idx=12 -> id=785
+[Flip B] idx=13 -> id=009
+❌ NO MATCH: (12:785) vs (13:009) | resueltas=0/30
+[Flip A] idx=14 -> id=911
+[Flip B] idx=15 -> id=009
+❌ NO MATCH: (14:911) vs (15:009) | resueltas=0/30

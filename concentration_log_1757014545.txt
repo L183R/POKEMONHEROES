@@ -1,0 +1,33 @@
+[Flip A] idx=00 -> id=499
+[Flip B] idx=01 -> id=875
+❌ NO MATCH: (0:499) vs (1:875) | resueltas=0/16
+[Flip A] idx=02 -> id=897
+[skip] idx=03 sin ID estable. Lo intento luego.
+[Flip A] idx=04 -> id=410
+[skip] idx=05 sin ID estable. Lo intento luego.
+[Flip A] idx=06 -> id=349
+[Flip B] idx=07 -> id=700
+❌ NO MATCH: (6:349) vs (7:700) | resueltas=0/16
+[Flip A] idx=08 -> id=875
+[Flip B] idx=01 -> id=875
+✅ MATCH id=875 | par=(8,1) | resueltas=2/16
+[Flip A] idx=09 -> id=499
+[Flip B] idx=00 -> id=499
+✅ MATCH id=499 | par=(9,0) | resueltas=4/16
+[Flip A] idx=10 -> id=349
+[Flip B] idx=06 -> id=349
+✅ MATCH id=349 | par=(10,6) | resueltas=6/16
+[Flip A] idx=11 -> id=700
+[Flip B] idx=07 -> id=700
+✅ MATCH id=700 | par=(11,7) | resueltas=8/16
+[Flip A] idx=12 -> id=998
+[Flip B] idx=13 -> id=998
+✅ MATCH id=998 | par=(12,13) | resueltas=10/16
+[Flip A] idx=14 -> id=410
+[Flip B] idx=04 -> id=410
+✅ MATCH id=410 | par=(14,4) | resueltas=12/16
+[Flip A] idx=15 -> id=897
+[Flip B] idx=02 -> id=897
+✅ MATCH id=897 | par=(15,2) | resueltas=14/16
+[skip] idx=03 sin ID estable. Lo intento luego.
+[skip] idx=03 sin ID estable. Lo intento luego.

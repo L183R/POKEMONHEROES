@@ -1,0 +1,2 @@
+[Flip A] idx=00 -> id=315
+[skip] idx=01 sin ID estable. Lo intento luego.

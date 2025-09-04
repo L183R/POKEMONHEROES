@@ -1,0 +1,37 @@
+[Flip A] idx=00 -> id=175
+[Flip B] idx=01 -> id=377
+❌ NO MATCH: (0:175) vs (1:377) | resueltas=0/26
+[Flip A] idx=02 -> id=626
+[Flip B] idx=03 -> id=802
+❌ NO MATCH: (2:626) vs (3:802) | resueltas=0/26
+[Flip A] idx=04 -> id=994
+[Flip B] idx=05 -> id=967
+❌ NO MATCH: (4:994) vs (5:967) | resueltas=0/26
+[Flip A] idx=06 -> id=690
+[Flip B] idx=07 -> id=967
+❌ NO MATCH: (6:690) vs (7:967) | resueltas=0/26
+[Flip A*] idx=05 -> id=967 (estricto)
+[Flip B*] idx=07 -> id=967 (estricto)
+✅ MATCH id=967 | par=(5,7) | resueltas=2/26
+[Flip A] idx=08 -> id=313
+[Flip B] idx=09 -> id=722
+❌ NO MATCH: (8:313) vs (9:722) | resueltas=2/26
+[Flip A] idx=10 -> id=377
+[Flip B] idx=01 -> id=377
+✅ MATCH id=377 | par=(10,1) | resueltas=4/26
+[skip] idx=11 sin ID estable. Lo intento luego.
+[Flip A] idx=12 -> id=313
+[Flip B] idx=08 -> id=313
+✅ MATCH id=313 | par=(12,8) | resueltas=6/26
+[Flip A] idx=13 -> id=722
+[Flip B] idx=09 -> id=722
+✅ MATCH id=722 | par=(13,9) | resueltas=8/26
+[Flip A] idx=14 -> id=428
+[Flip B] idx=15 -> id=858
+❌ NO MATCH: (14:428) vs (15:858) | resueltas=8/26
+[Flip A] idx=16 -> id=690
+[Flip B] idx=06 -> id=690
+✅ MATCH id=690 | par=(16,6) | resueltas=10/26
+[Flip A] idx=17 -> id=175
+[Flip B] idx=00 -> id=175
+✅ MATCH id=175 | par=(17,0) | resueltas=12/26

@@ -1,0 +1,4 @@
+[Flip A] idx=00 -> id=682
+[Flip B] idx=01 -> id=289
+❌ NO MATCH: (0:682) vs (1:289) | resueltas=0/16
+[Flip A] idx=02 -> id=737
