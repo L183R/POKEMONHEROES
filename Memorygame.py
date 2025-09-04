@@ -218,7 +218,7 @@ def solve(size: int, cookies: dict, warmup: bool = True) -> None:
     id_to_idxs: dict[str, set[int]] = {}  # "XYZ" -> {idx, ...}
     solved = set()                        # índices resueltos
     pending_pairs: list[tuple[int, int, str]] = []  # (i, j, id) pendientes de cerrar
-    skipped: set[int] = set()
+    skipped_until: dict[int, float] = {}  # idx -> timestamp para reintentar
 
     log_path = Path(f"concentration_log_{int(time.time())}.txt")
     with log_path.open("w", encoding="utf-8") as outf:
@@ -238,17 +238,29 @@ def solve(size: int, cookies: dict, warmup: bool = True) -> None:
                 if pair not in pending_pairs:
                     pending_pairs.append(pair)
 
+        def mark_skipped(idx: int):
+            skipped_until[idx] = monotonic() + COOLDOWN_AFTER_SKIP
+
+        def is_skipped(idx: int) -> bool:
+            until = skipped_until.get(idx)
+            if until is None:
+                return False
+            if monotonic() >= until:
+                skipped_until.pop(idx, None)
+                return False
+            return True
+
         def find_next_pair():
             while pending_pairs:
                 i, j, cid = pending_pairs[0]
                 if i in solved or j in solved:
                     pending_pairs.pop(0)
                     continue
-                if i in skipped or j in skipped:
+                if is_skipped(i) or is_skipped(j):
                     # buscá otro par disponible
                     for k in range(1, len(pending_pairs)):
                         ii, jj, cc = pending_pairs[k]
-                        if ii not in solved and jj not in solved and ii not in skipped and jj not in skipped:
+                        if ii not in solved and jj not in solved and not is_skipped(ii) and not is_skipped(jj):
                             pending_pairs.pop(k)
                             pending_pairs.insert(0, (ii, jj, cc))
                             return pending_pairs[0]
@@ -258,16 +270,15 @@ def solve(size: int, cookies: dict, warmup: bool = True) -> None:
 
         def pick_unknown(exclude):
             for k in range(size):
-                if k in solved or k in exclude or k in skipped:
+                if k in solved or k in exclude or is_skipped(k):
                     continue
                 if k not in known_id_by_idx:
                     return k
             for k in range(size):
-                if k not in solved and k not in exclude and k not in skipped:
+                if k not in solved and k not in exclude and not is_skipped(k):
                     return k
-            for k in list(skipped):
-                if k not in solved and k not in exclude:
-                    skipped.discard(k)
+            for k in list(skipped_until):
+                if not is_skipped(k) and k not in solved and k not in exclude:
                     return k
             return None
 
@@ -279,7 +290,7 @@ def solve(size: int, cookies: dict, warmup: bool = True) -> None:
 
                 cid_a = flip_strict_pair(s, cookies, a, expected_id=cid_goal)
                 if cid_a != cid_goal:
-                    skipped.add(a)
+                    mark_skipped(a)
                     log(f"[pair-skip] idx={a:02d} no estabiliza id={cid_goal}. Lo intento luego.")
                     time.sleep(0.8)
                     continue
@@ -290,7 +301,7 @@ def solve(size: int, cookies: dict, warmup: bool = True) -> None:
 
                 cid_b = flip_strict_pair(s, cookies, b, expected_id=cid_goal)
                 if cid_b != cid_goal:
-                    skipped.add(b)
+                    mark_skipped(b)
                     log(f"[pair-skip] idx={b:02d} no estabiliza id={cid_goal}. Lo intento luego.")
                     time.sleep(0.8)
                     continue
@@ -316,7 +327,7 @@ def solve(size: int, cookies: dict, warmup: bool = True) -> None:
             cid_a = flip_explore(s, cookies, a, prev_known=prev_a)
 
             if cid_a is None:
-                skipped.add(a)
+                mark_skipped(a)
                 log(f"[skip] idx={a:02d} sin ID estable. Lo intento luego.")
                 time.sleep(0.8)
                 continue
@@ -324,7 +335,7 @@ def solve(size: int, cookies: dict, warmup: bool = True) -> None:
             register(a, cid_a)
             log(f"[Flip A] idx={a:02d} -> id={cid_a}")
 
-            mates = [i for i in id_to_idxs.get(cid_a, set()) if i != a and i not in solved and i not in skipped]
+            mates = [i for i in id_to_idxs.get(cid_a, set()) if i != a and i not in solved and not is_skipped(i)]
             if mates:
                 b = mates[0]
             else:
@@ -341,7 +352,7 @@ def solve(size: int, cookies: dict, warmup: bool = True) -> None:
                 cid_b = flip_explore(s, cookies, b, prev_known=prev_b)
 
             if cid_b is None:
-                skipped.add(b)
+                mark_skipped(b)
                 log(f"[skip] idx={b:02d} sin ID estable. Lo intento luego.")
                 time.sleep(0.8)
                 continue
