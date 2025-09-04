@@ -1,1 +1,169 @@
-git checkout main
+ (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
+diff --git a/hangman.py b/hangman.py
+index bf4a3027c51bc70424d8ba03f631412aab98e2be..e8f0ed9ad9e995ff353a1cb67a5bfa8c20b97d65 100644
+--- a/hangman.py
++++ b/hangman.py
+@@ -307,87 +307,87 @@ def timed_input(prompt: str, timeout: int) -> str:
+         else:
+             print()
+             return ""
+ 
+ def auto_guess_loop(sess, cookies, wordlist, soup, raw_word, used, wrong):
+     """
+     Con candidatas: intentar letras más frecuentes (excluyendo usadas).
+     """
+     tries = 0
+     while AUTO_GUESS_WHEN_CANDIDATES and tries < AUTO_GUESS_MAX_PER_ROUND:
+         candidates = [w for w in wordlist if matches_pattern(w, raw_word, wrong_letters=wrong)]
+         if not candidates:
+             break
+         ranking = rank_letters(candidates, used_letters=used)
+         if not ranking:
+             break
+         next_letter = ranking[0][0]
+         print(f"\n🤖 Auto: probando {next_letter} (top entre {len(candidates)} candidatas)")
+         html = request_page(sess, cookies, next_letter)
+         soup = BeautifulSoup(html, "html.parser")
+         raw_word = find_word(soup, html)
+         print_state(raw_word, soup)
+         used, wrong = extract_used_and_wrong_letters(soup, raw_word)
+         if raw_word and "_" not in raw_word:
+             word_upper = raw_word.upper().strip()
+-            bank = load_wordlist(WORDLIST_PATH)
+-            if word_upper not in [w.upper() for w in bank]:
++            if word_upper not in [w.upper() for w in wordlist]:
+                 with WORDLIST_PATH.open("a", encoding="utf-8") as f:
+                     f.write(word_upper + "\n")
++                wordlist.append(word_upper)
+                 print(f"\n✅ Palabra agregada al banco: {word_upper}")
+         _, _, lives = grab_metrics(soup)
+         if round_finished(raw_word, lives):
+             break
+         tries += 1
+         time.sleep(AUTO_GUESS_SLEEP_SEC)
+     return raw_word, soup
+ 
+-def fallback_guess_loop(sess, cookies, soup, raw_word, used, wrong):
++def fallback_guess_loop(sess, cookies, wordlist, soup, raw_word, used, wrong):
+     """
+     Sin candidatas: probar letras por frecuencia en inglés (excluye usadas).
+     """
+     pool = [ch for ch in FALLBACK_FREQ_ORDER if ch not in used]
+     if not pool:
+         print("\n(No hay letras disponibles para fallback)")
+         return raw_word, soup
+ 
+     tries = 0
+     for next_letter in pool:
+         if tries >= FALLBACK_MAX_PER_ROUND:
+             break
+         print(f"\n🤖 Fallback: probando {next_letter} (sin candidatas)")
+         html = request_page(sess, cookies, next_letter)
+         soup = BeautifulSoup(html, "html.parser")
+         raw_word = find_word(soup, html)
+         print_state(raw_word, soup)
+         used, wrong = extract_used_and_wrong_letters(soup, raw_word)
+         if raw_word and "_" not in raw_word:
+             word_upper = raw_word.upper().strip()
+-            bank = load_wordlist(WORDLIST_PATH)
+-            if word_upper not in [w.upper() for w in bank]:
++            if word_upper not in [w.upper() for w in wordlist]:
+                 with WORDLIST_PATH.open("a", encoding="utf-8") as f:
+                     f.write(word_upper + "\n")
++                wordlist.append(word_upper)
+                 print(f"\n✅ Palabra agregada al banco: {word_upper}")
+         _, _, lives = grab_metrics(soup)
+         if round_finished(raw_word, lives):
+             break
+         tries += 1
+         time.sleep(FALLBACK_SLEEP_SEC)
+     return raw_word, soup
+ 
+ def main():
+     cookies = cookies_from_string(COOKIE_STRING)
+     wordlist = load_wordlist(WORDLIST_PATH)
+ 
+     with requests.Session() as sess:
+         # GET inicial
+         try:
+             _ = request_page(sess, cookies, None)
+         except Exception as e:
+             print(f"Error inicial: {e}")
+             return
+ 
+         while True:
+             try:
+                 entrada = timed_input(
+                     f"\nLetra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en {INPUT_TIMEOUT_SEC}s): ",
+                     INPUT_TIMEOUT_SEC
+diff --git a/hangman.py b/hangman.py
+index bf4a3027c51bc70424d8ba03f631412aab98e2be..e8f0ed9ad9e995ff353a1cb67a5bfa8c20b97d65 100644
+--- a/hangman.py
++++ b/hangman.py
+@@ -452,62 +452,60 @@ def main():
+                             print("\nLetras por frecuencia: (sin sugerencias; todas intentadas)")
+                         if AUTO_GUESS_WHEN_CANDIDATES:
+                             raw_word, soup = auto_guess_loop(sess, cookies, wordlist, soup, raw_word, used, wrong)
+                     else:
+                         print("\nCandidatas (shape) (0): (ninguna en el banco para ese patrón)")
+ 
+                 # Flujo normal: candidatas por patrón actual
+                 candidates = [w for w in wordlist if matches_pattern(w, raw_word, wrong_letters=wrong)]
+                 if candidates:
+                     print(f"\nCandidatas ({len(candidates)}):")
+                     for w in candidates:
+                         print(f"- {w}")
+                     ranked = rank_letters(candidates, used_letters=used)
+                     if ranked:
+                         top_line = " ".join(f"{ltr}:{cnt}" for ltr, cnt in ranked[:15])
+                         print("\nLetras por frecuencia (excluyendo intentadas):")
+                         print(top_line)
+                     else:
+                         print("\nLetras por frecuencia: (sin sugerencias; todas intentadas)")
+                     if AUTO_GUESS_WHEN_CANDIDATES:
+                         raw_word, soup = auto_guess_loop(sess, cookies, wordlist, soup, raw_word, used, wrong)
+                 else:
+                     print("\nCandidatas (0): (ninguna con ese patrón en el banco)")
+                     # Fallback: probar letras por frecuencia global si no hay candidatas
+                     if FALLBACK_GUESS_WHEN_NO_CANDIDATES:
+-                        raw_word, soup = fallback_guess_loop(sess, cookies, soup, raw_word, used, wrong)
++                        raw_word, soup = fallback_guess_loop(sess, cookies, wordlist, soup, raw_word, used, wrong)
+ 
+                 # Guardar si quedó completa
+                 if raw_word and "_" not in raw_word:
+                     word_upper = raw_word.upper().strip()
+                     if word_upper not in [w.upper() for w in wordlist]:
+                         with WORDLIST_PATH.open("a", encoding="utf-8") as f:
+                             f.write(word_upper + "\n")
+                         wordlist.append(word_upper)
+                         print(f"\n✅ Palabra agregada al banco: {word_upper}")
+-                    else:
+-                        print(f"\nℹ️ Palabra ya estaba en el banco: {word_upper}")
+ 
+             # Fin de ronda → refrescar
+             _, _, lives = grab_metrics(soup)
+             if round_finished(raw_word, lives):
+                 print("\n🔄 Ronda terminada. Refrescando para nueva palabra...")
+                 try:
+                     html2 = refresh_round(sess, cookies)
+                 except Exception as e:
+                     print(f"Error al refrescar: {e}")
+                     continue
+                 soup2 = BeautifulSoup(html2, "html.parser")
+                 new_raw = find_word(soup2, html2)
+                 print("\n— Nueva ronda —")
+                 print_state(new_raw, soup2)
+                 used2, wrong2 = extract_used_and_wrong_letters(soup2, new_raw)
+                 print("Letras fallidas:", " ".join(sorted(wrong2)) if wrong2 else "-")
+ 
+                 # En nueva ronda: candidatas por shape y auto-adivinar
+                 if new_raw and is_new_round_pattern(new_raw):
+                     new_candidates = [w for w in wordlist if matches_pattern(w, new_raw, wrong_letters=wrong2)]
+                     if new_candidates:
+                         print(f"\nCandidatas (shape) ({len(new_candidates)}):")
+                         for w in new_candidates:
+                             print(f"- {w}")
+                         ranked2 = rank_letters(new_candidates, used_letters=used2)
+ 
+EOF
+)

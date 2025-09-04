@@ -372,10 +372,10 @@ def auto_guess_loop(sess, cookies, wordlist, soup, raw_word, used, wrong):
         used, wrong = extract_used_and_wrong_letters(soup, raw_word)
         if raw_word and "_" not in raw_word:
             word_upper = raw_word.upper().strip()
-            bank = load_wordlist(WORDLIST_PATH)
-            if word_upper not in [w.upper() for w in bank]:
+            if word_upper not in [w.upper() for w in wordlist]:
                 with WORDLIST_PATH.open("a", encoding="utf-8") as f:
                     f.write(word_upper + "\n")
+                wordlist.append(word_upper)
                 print(f"\n✅ Palabra agregada al banco: {word_upper}")
         _, _, lives = grab_metrics(soup)
         if round_finished(raw_word, lives):
@@ -384,7 +384,7 @@ def auto_guess_loop(sess, cookies, wordlist, soup, raw_word, used, wrong):
         time.sleep(AUTO_GUESS_SLEEP_SEC)
     return raw_word, soup
 
-def fallback_guess_loop(sess, cookies, soup, raw_word, used, wrong):
+def fallback_guess_loop(sess, cookies, wordlist, soup, raw_word, used, wrong):
     """
     Sin candidatas: probar letras por frecuencia en inglés (excluye usadas).
     """
@@ -405,10 +405,10 @@ def fallback_guess_loop(sess, cookies, soup, raw_word, used, wrong):
         used, wrong = extract_used_and_wrong_letters(soup, raw_word)
         if raw_word and "_" not in raw_word:
             word_upper = raw_word.upper().strip()
-            bank = load_wordlist(WORDLIST_PATH)
-            if word_upper not in [w.upper() for w in bank]:
+            if word_upper not in [w.upper() for w in wordlist]:
                 with WORDLIST_PATH.open("a", encoding="utf-8") as f:
                     f.write(word_upper + "\n")
+                wordlist.append(word_upper)
                 print(f"\n✅ Palabra agregada al banco: {word_upper}")
         _, _, lives = grab_metrics(soup)
         if round_finished(raw_word, lives):
@@ -517,7 +517,7 @@ def main():
                     print("\nCandidatas (0): (ninguna con ese patrón en el banco)")
                     # Fallback: probar letras por frecuencia global si no hay candidatas
                     if FALLBACK_GUESS_WHEN_NO_CANDIDATES:
-                        raw_word, soup = fallback_guess_loop(sess, cookies, soup, raw_word, used, wrong)
+                        raw_word, soup = fallback_guess_loop(sess, cookies, wordlist, soup, raw_word, used, wrong)
 
                 # Guardar si quedó completa
                 if raw_word and "_" not in raw_word:
@@ -527,8 +527,6 @@ def main():
                             f.write(word_upper + "\n")
                         wordlist.append(word_upper)
                         print(f"\n✅ Palabra agregada al banco: {word_upper}")
-                    else:
-                        print(f"\nℹ️ Palabra ya estaba en el banco: {word_upper}")
 
             # Fin de ronda → refrescar
             _, _, lives = grab_metrics(soup)
