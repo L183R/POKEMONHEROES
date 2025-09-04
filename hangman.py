@@ -10,11 +10,14 @@ from bs4 import BeautifulSoup
 from html import unescape
 from pathlib import Path
 from collections import Counter
+import builtins
+import atexit
 
 # ========= CONFIG =========
 URL = "https://pokeheroes.com/gc_hangman"
 COOKIE_STRING = "PHPSESSID=pdnh5fl1jvn139c0l0rglmug7s; _gcl_au=1.1.1884119554.1756846145.1072503122.1756846377.1756846377; username=L183R; password=6299ad21b8644aa31efb9e2ed4d660160c5480d44dac3f9a090179086e8db991b39e11d5f4b959a13df5f863aebaba997753ef0392427a3c519b48f425b1f6e8; username=L183R; password=6299ad21b8644aa31efb9e2ed4d660160c5480d44dac3f9a090179086e8db991b39e11d5f4b959a13df5f863aebaba997753ef0392427a3c519b48f425b1f6e8; friendbar_hide=hide"  # ← poné tu PHPSESSID válido
 WORDLIST_PATH = Path("hangman_words.txt")
+LOG_PATH = Path("log.txt")
 
 # Autorefresco cuando NO se encuentra la palabra
 AUTO_REFRESH_ON_FALLBACK = True
@@ -41,6 +44,29 @@ INPUT_TIMEOUT_SEC = 5
 
 if os.name == "nt":
     import msvcrt  # Windows
+
+# === Logging setup ===
+_original_print = builtins.print
+_logged_messages: list[str] = []
+
+def log_print(*args, sep=" ", end="\n", **kwargs):
+    msg = sep.join(str(a) for a in args) + end
+    _logged_messages.append(msg.rstrip("\n"))
+    with LOG_PATH.open("a", encoding="utf-8") as f:
+        f.write(msg)
+
+builtins.print = log_print
+
+def _print_last_message():
+    if _logged_messages:
+        _original_print(_logged_messages[-1])
+
+atexit.register(_print_last_message)
+# ======================
+
+def log_round_result(raw_word: str | None) -> None:
+    success = bool(raw_word and "_" not in raw_word)
+    log_print(f"RESULT: {raw_word or '-'} - {'SUCCESS' if success else 'FAIL'}")
 
 def cookies_from_string(s: str) -> dict:
     d = {}
@@ -490,6 +516,7 @@ def main():
             # Fin de ronda → refrescar
             _, _, lives = grab_metrics(soup)
             if round_finished(raw_word, lives):
+                log_round_result(raw_word)
                 print("\n🔄 Ronda terminada. Refrescando para nueva palabra...")
                 try:
                     html2 = refresh_round(sess, cookies)
