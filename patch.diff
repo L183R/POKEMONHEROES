@@ -1,64 +1,67 @@
  (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
 diff --git a/hangman.py b/hangman.py
-index bf4a3027c51bc70424d8ba03f631412aab98e2be..f2211abed58caa60837830d16dd1d4146a0f5029 100644
+index bf4a3027c51bc70424d8ba03f631412aab98e2be..6b818941681e057a58332d663cc78c1089fcdf7c 100644
 --- a/hangman.py
 +++ b/hangman.py
-@@ -328,50 +328,55 @@ def auto_guess_loop(sess, cookies, wordlist, soup, raw_word, used, wrong):
-         print_state(raw_word, soup)
-         used, wrong = extract_used_and_wrong_letters(soup, raw_word)
-         if raw_word and "_" not in raw_word:
-             word_upper = raw_word.upper().strip()
-             bank = load_wordlist(WORDLIST_PATH)
-             if word_upper not in [w.upper() for w in bank]:
-                 with WORDLIST_PATH.open("a", encoding="utf-8") as f:
-                     f.write(word_upper + "\n")
-                 print(f"\n✅ Palabra agregada al banco: {word_upper}")
-         _, _, lives = grab_metrics(soup)
-         if round_finished(raw_word, lives):
-             break
-         tries += 1
-         time.sleep(AUTO_GUESS_SLEEP_SEC)
-     return raw_word, soup
+@@ -48,52 +48,56 @@ def cookies_from_string(s: str) -> dict:
+         if "=" in part and not part.lower().startswith("expires"):
+             k, v = part.split("=", 1)
+             d[k.strip()] = v.strip()
+     return d
  
- def fallback_guess_loop(sess, cookies, soup, raw_word, used, wrong):
+ def normalize_text(txt: str) -> str:
+     txt = unescape(txt).replace("\xa0", " ")
+     return re.sub(r"[ \t\r\f\v]+", " ", txt)
+ 
+ def load_wordlist(path: Path) -> list[str]:
+     if not path.exists():
+         return []
+     return [line.strip() for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]
+ 
+ def spaced(s: str) -> str:
+     return " ".join(list(s))
+ 
+ def matches_pattern(candidate: str, raw_game_word: str, wrong_letters: set[str] | None = None) -> bool:
      """
-     Sin candidatas: probar letras por frecuencia en inglés (excluye usadas).
+     - misma longitud/espacios que el patrón
+     - respeta letras reveladas
+     - '_' acepta letra (no espacio)
+     - NO repite una letra revelada en posiciones ocultas
+     - excluye letras fallidas
      """
-     pool = [ch for ch in FALLBACK_FREQ_ORDER if ch not in used]
-     if not pool:
-         print("\n(No hay letras disponibles para fallback)")
-         return raw_word, soup
+-    cand = candidate.upper()
+-    patt = raw_game_word.upper()
++    # Algunas fuentes del juego insertan espacios entre caracteres (p.ej. "_ _ _ _").
++    # Para comparar correctamente contra el banco de palabras, ignoramos esos
++    # espacios artificiales. Conservamos las letras tal cual para respetar
++    # patrones con caracteres revelados y las posiciones reales.
++    cand = candidate.upper().replace(" ", "")
++    patt = raw_game_word.upper().replace(" ", "")
+     if len(cand) != len(patt):
+         return False
  
-+    # Si la ronda ya terminó (sin vidas o palabra completa), no intentes fallback
-+    _, _, lives = grab_metrics(soup)
-+    if round_finished(raw_word, lives):
-+        return raw_word, soup
-+
-     tries = 0
-     for next_letter in pool:
-         if tries >= FALLBACK_MAX_PER_ROUND:
-             break
-         print(f"\n🤖 Fallback: probando {next_letter} (sin candidatas)")
-         html = request_page(sess, cookies, next_letter)
-         soup = BeautifulSoup(html, "html.parser")
-         raw_word = find_word(soup, html)
-         print_state(raw_word, soup)
-         used, wrong = extract_used_and_wrong_letters(soup, raw_word)
-         if raw_word and "_" not in raw_word:
-             word_upper = raw_word.upper().strip()
-             bank = load_wordlist(WORDLIST_PATH)
-             if word_upper not in [w.upper() for w in bank]:
-                 with WORDLIST_PATH.open("a", encoding="utf-8") as f:
-                     f.write(word_upper + "\n")
-                 print(f"\n✅ Palabra agregada al banco: {word_upper}")
-         _, _, lives = grab_metrics(soup)
-         if round_finished(raw_word, lives):
-             break
-         tries += 1
-         time.sleep(FALLBACK_SLEEP_SEC)
-     return raw_word, soup
+     revealed_positions: dict[str, set[int]] = {}
+     for i, (pc, cc) in enumerate(zip(patt, cand)):
+         if pc == " ":
+             if cc != " ":
+                 return False
+         elif pc == "_":
+             if cc == " ":
+                 return False
+         elif pc.isalpha():
+             if cc != pc:
+                 return False
+             revealed_positions.setdefault(pc, set()).add(i)
+         else:
+             if cc != pc:
+                 return False
  
- def main():
+     for letter, pos_set in revealed_positions.items():
+         for i, cc in enumerate(cand):
+             if i not in pos_set and cc == letter:
+                 return False
+ 
+     if wrong_letters:
  
 EOF
 )
