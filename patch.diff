@@ -1,12 +1,9 @@
  (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
 diff --git a/hangman.py b/hangman.py
-index bf4a3027c51bc70424d8ba03f631412aab98e2be..ba0a70126259b1c81060c419b3fb1f69b84ae533 100644
+index bf4a3027c51bc70424d8ba03f631412aab98e2be..5d5ecc0ba92f0ef313cd158a3542cfd4544be86f 100644
 --- a/hangman.py
 +++ b/hangman.py
-@@ -29,52 +29,54 @@ AUTO_GUESS_WHEN_CANDIDATES = True
- AUTO_GUESS_MAX_PER_ROUND = 26
- AUTO_GUESS_SLEEP_SEC = 0.6
- 
+@@ -32,50 +32,69 @@ AUTO_GUESS_SLEEP_SEC = 0.6
  # Fallback cuando NO hay candidatas: orden de frecuencia en inglés
  FALLBACK_GUESS_WHEN_NO_CANDIDATES = True
  FALLBACK_FREQ_ORDER = "ETAOINSHRDLUCMFYWGPBVKXQJZ"
@@ -29,13 +26,28 @@ index bf4a3027c51bc70424d8ba03f631412aab98e2be..ba0a70126259b1c81060c419b3fb1f69
      return d
  
  def normalize_text(txt: str) -> str:
--    txt = unescape(txt).replace("\xa0", " ")
--    return re.sub(r"[ \t\r\f\v]+", " ", txt)
-+    txt = unescape(txt)
-+    txt = re.sub(r"\xa0{2,}", " ", txt)
-+    txt = txt.replace("\xa0", "")
-+    return re.sub(r"[ \t\r\f\v]+", " ", txt).strip()
+     txt = unescape(txt).replace("\xa0", " ")
+     return re.sub(r"[ \t\r\f\v]+", " ", txt)
  
++
++def parse_game_word(raw: str) -> str:
++    raw = unescape(raw).replace("\xa0", " ").upper()
++    raw = re.sub(r"[^A-Z_ ]+", "", raw)
++    out: list[str] = []
++    i = 0
++    while i < len(raw):
++        if raw[i] == " ":
++            j = i
++            while j < len(raw) and raw[j] == " ":
++                j += 1
++            if j - i > 1:
++                out.append(" ")
++            i = j
++        else:
++            out.append(raw[i])
++            i += 1
++    return "".join(out)
++
  def load_wordlist(path: Path) -> list[str]:
      if not path.exists():
          return []
@@ -60,6 +72,95 @@ index bf4a3027c51bc70424d8ba03f631412aab98e2be..ba0a70126259b1c81060c419b3fb1f69
      revealed_positions: dict[str, set[int]] = {}
      for i, (pc, cc) in enumerate(zip(patt, cand)):
          if pc == " ":
+             if cc != " ":
+diff --git a/hangman.py b/hangman.py
+index bf4a3027c51bc70424d8ba03f631412aab98e2be..5d5ecc0ba92f0ef313cd158a3542cfd4544be86f 100644
+--- a/hangman.py
++++ b/hangman.py
+@@ -85,76 +104,76 @@ def matches_pattern(candidate: str, raw_game_word: str, wrong_letters: set[str]
+                 return False
+         elif pc.isalpha():
+             if cc != pc:
+                 return False
+             revealed_positions.setdefault(pc, set()).add(i)
+         else:
+             if cc != pc:
+                 return False
+ 
+     for letter, pos_set in revealed_positions.items():
+         for i, cc in enumerate(cand):
+             if i not in pos_set and cc == letter:
+                 return False
+ 
+     if wrong_letters:
+         for bad in wrong_letters:
+             if bad in cand:
+                 return False
+ 
+     return True
+ 
+ def find_word(soup: BeautifulSoup, html: str) -> str | None:
+     # 1) span con letter-spacing
+     span = soup.find("span", attrs={"style": lambda s: s and "letter-spacing" in s.lower()})
+     if span:
+-        t = normalize_text(span.get_text(strip=True)).upper()
++        t = parse_game_word(span.get_text())
+         if t and re.fullmatch(r"[A-Z_ ]+", t):
+             return t
+     # 2) primer span dentro de center
+     center = soup.find("center")
+     if center:
+         sp2 = center.find("span")
+         if sp2:
+-            t = normalize_text(sp2.get_text(strip=True)).upper()
++            t = parse_game_word(sp2.get_text())
+             if t and re.fullmatch(r"[A-Z_ ]+", t):
+                 return t
+     # 3) spans en #textbar que parezcan palabra (_ y letras)
+     for sp in soup.select("#textbar span"):
+-        t = normalize_text(sp.get_text(strip=True)).upper()
++        t = parse_game_word(sp.get_text())
+         if "_" in t and re.fullmatch(r"[A-Z_ ]+", t):
+             return t
+     # 4) regex en HTML
+     m = re.search(r"<span[^>]*>([A-Za-z_ \u00A0]{3,})</span>", html, re.I)
+     if m:
+-        t = normalize_text(m.group(1)).upper()
++        t = parse_game_word(m.group(1))
+         if "_" in t and re.fullmatch(r"[A-Z_ ]+", t):
+             return t
+     # 5) regex en texto plano
+-    plain = normalize_text(soup.get_text(" ", strip=True)).upper()
+-    for m2 in re.finditer(r"[A-Z_ ]{3,}", plain):
+-        t = m2.group(0)
++    plain = soup.get_text(" ")
++    for m2 in re.finditer(r"[A-Za-z_ \u00A0]{3,}", plain):
++        t = parse_game_word(m2.group(0))
+         if "_" in t and re.fullmatch(r"[A-Z_ ]+", t):
+             return t
+     return None
+ 
+ def is_instruction_banner_text(text_upper: str) -> bool:
+     """
+     Detecta el banner de instrucciones (cuando en Word aparece el texto largo).
+     """
+     # Señales robustas (inglés del sitio):
+     return (
+         "INSTRUCTIONS" in text_upper and
+         "HANGMAN GAME" in text_upper and
+         "RANDOMLY SELECTS" in text_upper
+     )
+ 
+ def grab_metrics(soup: BeautifulSoup) -> tuple[str, str, str]:
+     txt = normalize_text(soup.get_text(" ", strip=True))
+     def rx(label):
+         m = re.search(rf"{re.escape(label)}:\s*(\d+)", txt, re.I)
+         return m.group(1) if m else "?"
+     return rx("Solved Hangmen in a row"), rx("Correct Guesses"), rx("Lives left")
+ 
+ def extract_used_and_wrong_letters(soup: BeautifulSoup, raw_word: str | None) -> tuple[set[str], set[str]]:
+     used = set()
+     for a in soup.find_all("a", class_="letterGuess"):
  
 EOF
 )
