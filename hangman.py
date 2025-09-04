@@ -96,19 +96,15 @@ def matches_pattern(candidate: str, raw_game_word: str, wrong_letters: set[str] 
     - NO repite una letra revelada en posiciones ocultas
     - excluye letras fallidas
     """
-    cand = candidate.upper()
-    patt = raw_game_word.upper()
+    cand = candidate.upper().replace(" ", "")
+    patt = raw_game_word.upper().replace(" ", "")
     if len(cand) != len(patt):
         return False
 
     revealed_positions: dict[str, set[int]] = {}
     for i, (pc, cc) in enumerate(zip(patt, cand)):
-        if pc == " ":
-            if cc != " ":
-                return False
-        elif pc == "_":
-            if cc == " ":
-                return False
+        if pc == "_":
+            continue
         elif pc.isalpha():
             if cc != pc:
                 return False

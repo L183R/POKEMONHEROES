@@ -1,9 +1,15 @@
  (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
 diff --git a/hangman.py b/hangman.py
-index bf4a3027c51bc70424d8ba03f631412aab98e2be..6b818941681e057a58332d663cc78c1089fcdf7c 100644
+index bf4a3027c51bc70424d8ba03f631412aab98e2be..d5fa7d1bff638c4128f005394959a878eb7ca09c 100644
 --- a/hangman.py
 +++ b/hangman.py
-@@ -48,52 +48,56 @@ def cookies_from_string(s: str) -> dict:
+@@ -42,69 +42,69 @@ INPUT_TIMEOUT_SEC = 5
+ if os.name == "nt":
+     import msvcrt  # Windows
+ 
+ def cookies_from_string(s: str) -> dict:
+     d = {}
+     for part in [p.strip() for p in s.split(";") if p.strip()]:
          if "=" in part and not part.lower().startswith("expires"):
              k, v = part.split("=", 1)
              d[k.strip()] = v.strip()
@@ -23,18 +29,19 @@ index bf4a3027c51bc70424d8ba03f631412aab98e2be..6b818941681e057a58332d663cc78c10
  
  def matches_pattern(candidate: str, raw_game_word: str, wrong_letters: set[str] | None = None) -> bool:
      """
-     - misma longitud/espacios que el patrón
+-    - misma longitud/espacios que el patrón
++    - misma longitud que el patrón (ignorando espacios)
      - respeta letras reveladas
      - '_' acepta letra (no espacio)
      - NO repite una letra revelada en posiciones ocultas
      - excluye letras fallidas
++
++    Nota: el HTML a veces introduce espacios entre cada letra. Para evitar
++    falsos negativos, se ignoran los espacios al comparar el patrón con la
++    candidata.
      """
 -    cand = candidate.upper()
 -    patt = raw_game_word.upper()
-+    # Algunas fuentes del juego insertan espacios entre caracteres (p.ej. "_ _ _ _").
-+    # Para comparar correctamente contra el banco de palabras, ignoramos esos
-+    # espacios artificiales. Conservamos las letras tal cual para respetar
-+    # patrones con caracteres revelados y las posiciones reales.
 +    cand = candidate.upper().replace(" ", "")
 +    patt = raw_game_word.upper().replace(" ", "")
      if len(cand) != len(patt):
@@ -42,12 +49,14 @@ index bf4a3027c51bc70424d8ba03f631412aab98e2be..6b818941681e057a58332d663cc78c10
  
      revealed_positions: dict[str, set[int]] = {}
      for i, (pc, cc) in enumerate(zip(patt, cand)):
-         if pc == " ":
-             if cc != " ":
-                 return False
-         elif pc == "_":
-             if cc == " ":
-                 return False
+-        if pc == " ":
+-            if cc != " ":
+-                return False
+-        elif pc == "_":
+-            if cc == " ":
+-                return False
++        if pc == "_":
++            continue
          elif pc.isalpha():
              if cc != pc:
                  return False
@@ -62,6 +71,17 @@ index bf4a3027c51bc70424d8ba03f631412aab98e2be..6b818941681e057a58332d663cc78c10
                  return False
  
      if wrong_letters:
+         for bad in wrong_letters:
+             if bad in cand:
+                 return False
+ 
+     return True
+ 
+ def find_word(soup: BeautifulSoup, html: str) -> str | None:
+     # 1) span con letter-spacing
+     span = soup.find("span", attrs={"style": lambda s: s and "letter-spacing" in s.lower()})
+     if span:
+         t = normalize_text(span.get_text(strip=True)).upper()
  
 EOF
 )
