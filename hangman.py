@@ -77,8 +77,10 @@ def cookies_from_string(s: str) -> dict:
     return d
 
 def normalize_text(txt: str) -> str:
-    txt = unescape(txt).replace("\xa0", " ")
-    return re.sub(r"[ \t\r\f\v]+", " ", txt)
+    txt = unescape(txt)
+    txt = re.sub(r"\xa0{2,}", " ", txt)
+    txt = txt.replace("\xa0", "")
+    return re.sub(r"[ \t\r\f\v]+", " ", txt).strip()
 
 def load_wordlist(path: Path) -> list[str]:
     if not path.exists():

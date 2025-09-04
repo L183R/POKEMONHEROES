@@ -1,9 +1,22 @@
  (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
 diff --git a/hangman.py b/hangman.py
-index bf4a3027c51bc70424d8ba03f631412aab98e2be..d5fa7d1bff638c4128f005394959a878eb7ca09c 100644
+index bf4a3027c51bc70424d8ba03f631412aab98e2be..ba0a70126259b1c81060c419b3fb1f69b84ae533 100644
 --- a/hangman.py
 +++ b/hangman.py
-@@ -42,69 +42,69 @@ INPUT_TIMEOUT_SEC = 5
+@@ -29,52 +29,54 @@ AUTO_GUESS_WHEN_CANDIDATES = True
+ AUTO_GUESS_MAX_PER_ROUND = 26
+ AUTO_GUESS_SLEEP_SEC = 0.6
+ 
+ # Fallback cuando NO hay candidatas: orden de frecuencia en inglés
+ FALLBACK_GUESS_WHEN_NO_CANDIDATES = True
+ FALLBACK_FREQ_ORDER = "ETAOINSHRDLUCMFYWGPBVKXQJZ"
+ FALLBACK_MAX_PER_ROUND = 26
+ FALLBACK_SLEEP_SEC = 0.5
+ 
+ # Timeout de input (auto-ENTER)
+ INPUT_TIMEOUT_SEC = 5
+ # ==========================
+ 
  if os.name == "nt":
      import msvcrt  # Windows
  
@@ -16,8 +29,12 @@ index bf4a3027c51bc70424d8ba03f631412aab98e2be..d5fa7d1bff638c4128f005394959a878
      return d
  
  def normalize_text(txt: str) -> str:
-     txt = unescape(txt).replace("\xa0", " ")
-     return re.sub(r"[ \t\r\f\v]+", " ", txt)
+-    txt = unescape(txt).replace("\xa0", " ")
+-    return re.sub(r"[ \t\r\f\v]+", " ", txt)
++    txt = unescape(txt)
++    txt = re.sub(r"\xa0{2,}", " ", txt)
++    txt = txt.replace("\xa0", "")
++    return re.sub(r"[ \t\r\f\v]+", " ", txt).strip()
  
  def load_wordlist(path: Path) -> list[str]:
      if not path.exists():
@@ -29,59 +46,20 @@ index bf4a3027c51bc70424d8ba03f631412aab98e2be..d5fa7d1bff638c4128f005394959a878
  
  def matches_pattern(candidate: str, raw_game_word: str, wrong_letters: set[str] | None = None) -> bool:
      """
--    - misma longitud/espacios que el patrón
-+    - misma longitud que el patrón (ignorando espacios)
+     - misma longitud/espacios que el patrón
      - respeta letras reveladas
      - '_' acepta letra (no espacio)
      - NO repite una letra revelada en posiciones ocultas
      - excluye letras fallidas
-+
-+    Nota: el HTML a veces introduce espacios entre cada letra. Para evitar
-+    falsos negativos, se ignoran los espacios al comparar el patrón con la
-+    candidata.
      """
--    cand = candidate.upper()
--    patt = raw_game_word.upper()
-+    cand = candidate.upper().replace(" ", "")
-+    patt = raw_game_word.upper().replace(" ", "")
+     cand = candidate.upper()
+     patt = raw_game_word.upper()
      if len(cand) != len(patt):
          return False
  
      revealed_positions: dict[str, set[int]] = {}
      for i, (pc, cc) in enumerate(zip(patt, cand)):
--        if pc == " ":
--            if cc != " ":
--                return False
--        elif pc == "_":
--            if cc == " ":
--                return False
-+        if pc == "_":
-+            continue
-         elif pc.isalpha():
-             if cc != pc:
-                 return False
-             revealed_positions.setdefault(pc, set()).add(i)
-         else:
-             if cc != pc:
-                 return False
- 
-     for letter, pos_set in revealed_positions.items():
-         for i, cc in enumerate(cand):
-             if i not in pos_set and cc == letter:
-                 return False
- 
-     if wrong_letters:
-         for bad in wrong_letters:
-             if bad in cand:
-                 return False
- 
-     return True
- 
- def find_word(soup: BeautifulSoup, html: str) -> str | None:
-     # 1) span con letter-spacing
-     span = soup.find("span", attrs={"style": lambda s: s and "letter-spacing" in s.lower()})
-     if span:
-         t = normalize_text(span.get_text(strip=True)).upper()
+         if pc == " ":
  
 EOF
 )
