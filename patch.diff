@@ -1,207 +1,187 @@
  (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
-diff --git a/Memorygame.py b/Memorygame.py
-index 0b23db169297f9b103f886fc7da07c21818ed29f..4ab3580e5153782f08b6505214be50685a09d6dd 100644
---- a/Memorygame.py
-+++ b/Memorygame.py
-@@ -196,174 +196,185 @@ def flip_generic(session, cookies, idx: int, expected: str | None,
-             # NO warmup acá: sólo backoff y reintentar
-             print(f"[net] idx={idx} {type(e).__name__}: {e}. Esperando {max(backoff,0.8):.2f}s…")
-             time.sleep(max(backoff, 0.8))
-             backoff *= 1.4
- 
-     return expected  # agotado
- 
- def flip_explore(session, cookies, idx: int, prev_known: str | None) -> str | None:
-     return flip_generic(session, cookies, idx, expected=None,
-                         max_retries=MAX_RETRIES_EXP, base_sleep=RETRY_SLEEP_EXP, deadline_sec=DEADLINE_EXP_SEC)
- 
- def flip_strict_pair(session, cookies, idx: int, expected_id: str) -> str | None:
-     return flip_generic(session, cookies, idx, expected=expected_id,
-                         max_retries=MAX_RETRIES_PAIR, base_sleep=RETRY_SLEEP_PAIR, deadline_sec=DEADLINE_PAIR_SEC)
- 
- # ---- Solver ----
- def solve(size: int, cookies: dict, warmup: bool = True) -> None:
-     s = build_session()
-     if warmup:
-         ensure_warmup(s, cookies)
- 
-     known_id_by_idx: dict[int, str] = {}  # idx -> "XYZ"
-     id_to_idxs: dict[str, set[int]] = {}  # "XYZ" -> {idx, ...}
-     solved = set()                        # índices resueltos
-     pending_pairs: list[tuple[int, int, str]] = []  # (i, j, id) pendientes de cerrar
--    skipped: set[int] = set()
-+    skipped_until: dict[int, float] = {}  # idx -> timestamp para reintentar
- 
-     log_path = Path(f"concentration_log_{int(time.time())}.txt")
-     with log_path.open("w", encoding="utf-8") as outf:
- 
-         def log(msg: str):
-             print(msg)
-             outf.write(msg + "\n")
-             outf.flush()
- 
-         def register(idx: int, cid: str):
-             known_id_by_idx[idx] = cid
-             id_to_idxs.setdefault(cid, set()).add(idx)
-             mates = [i for i in id_to_idxs[cid] if i != idx and i not in solved]
-             if mates:
-                 j = mates[0]
-                 pair = (min(idx, j), max(idx, j), cid)
-                 if pair not in pending_pairs:
-                     pending_pairs.append(pair)
- 
-+        def mark_skipped(idx: int):
-+            skipped_until[idx] = monotonic() + COOLDOWN_AFTER_SKIP
-+
-+        def is_skipped(idx: int) -> bool:
-+            until = skipped_until.get(idx)
-+            if until is None:
-+                return False
-+            if monotonic() >= until:
-+                skipped_until.pop(idx, None)
-+                return False
-+            return True
-+
-         def find_next_pair():
-             while pending_pairs:
-                 i, j, cid = pending_pairs[0]
-                 if i in solved or j in solved:
-                     pending_pairs.pop(0)
-                     continue
--                if i in skipped or j in skipped:
-+                if is_skipped(i) or is_skipped(j):
-                     # buscá otro par disponible
-                     for k in range(1, len(pending_pairs)):
-                         ii, jj, cc = pending_pairs[k]
--                        if ii not in solved and jj not in solved and ii not in skipped and jj not in skipped:
-+                        if ii not in solved and jj not in solved and not is_skipped(ii) and not is_skipped(jj):
-                             pending_pairs.pop(k)
-                             pending_pairs.insert(0, (ii, jj, cc))
-                             return pending_pairs[0]
-                     return None
-                 return pending_pairs[0]
-             return None
- 
-         def pick_unknown(exclude):
-             for k in range(size):
--                if k in solved or k in exclude or k in skipped:
-+                if k in solved or k in exclude or is_skipped(k):
-                     continue
-                 if k not in known_id_by_idx:
-                     return k
-             for k in range(size):
--                if k not in solved and k not in exclude and k not in skipped:
-+                if k not in solved and k not in exclude and not is_skipped(k):
-                     return k
--            for k in list(skipped):
--                if k not in solved and k not in exclude:
--                    skipped.discard(k)
-+            for k in list(skipped_until):
-+                if not is_skipped(k) and k not in solved and k not in exclude:
-                     return k
-             return None
- 
-         while len(solved) < size:
-             # 1) Cerrar pares primero (modo estricto)
-             pair = find_next_pair()
-             if pair:
-                 a, b, cid_goal = pair
- 
-                 cid_a = flip_strict_pair(s, cookies, a, expected_id=cid_goal)
-                 if cid_a != cid_goal:
--                    skipped.add(a)
-+                    mark_skipped(a)
-                     log(f"[pair-skip] idx={a:02d} no estabiliza id={cid_goal}. Lo intento luego.")
-                     time.sleep(0.8)
-                     continue
-                 register(a, cid_a)
-                 log(f"[Flip A*] idx={a:02d} -> id={cid_a} (estricto)")
- 
-                 time.sleep(SLEEP_AFTER_A_BEFORE_B)
- 
-                 cid_b = flip_strict_pair(s, cookies, b, expected_id=cid_goal)
-                 if cid_b != cid_goal:
--                    skipped.add(b)
-+                    mark_skipped(b)
-                     log(f"[pair-skip] idx={b:02d} no estabiliza id={cid_goal}. Lo intento luego.")
-                     time.sleep(0.8)
-                     continue
-                 register(b, cid_b)
-                 log(f"[Flip B*] idx={b:02d} -> id={cid_b} (estricto)")
- 
-                 if cid_a == cid_b == cid_goal:
-                     solved.update({a, b})
-                     pending_pairs[:] = [p for p in pending_pairs if not (p[0] in {a, b} or p[1] in {a, b})]
-                     log(f"✅ MATCH id={cid_goal} | par=({a},{b}) | resueltas={len(solved)}/{size}")
-                     time.sleep(PAIR_PAUSE)
+diff --git a/hangman.py b/hangman.py
+index bf4a3027c51bc70424d8ba03f631412aab98e2be..8ef68138e330b4fc3e68da393553c5ee44b5e45c 100644
+--- a/hangman.py
++++ b/hangman.py
+@@ -291,93 +291,175 @@ def timed_input(prompt: str, timeout: int) -> str:
+                     if buf:
+                         buf.pop()
+                         print("\b \b", end="", flush=True)
                  else:
-                     log(f"⚠️ Par inconsistente: ({a}:{cid_a}) vs ({b}:{cid_b}) esperado={cid_goal}")
-                     time.sleep(MISMATCH_PAUSE)
-                 continue
+                     buf.append(ch)
+                     print(ch, end="", flush=True)
+             if time.time() - start >= timeout:
+                 print()
+                 return ""
+             time.sleep(0.05)
+     else:
+         import select
+         rlist, _, _ = select.select([sys.stdin], [], [], timeout)
+         if rlist:
+             line = sys.stdin.readline()
+             return line.rstrip("\n")
+         else:
+             print()
+             return ""
  
-             # 2) Explorar
-             a = pick_unknown(exclude=set())
-             if a is None:
-                 break
+ def auto_guess_loop(sess, cookies, wordlist, soup, raw_word, used, wrong):
+     """
+     Con candidatas: intentar letras más frecuentes (excluyendo usadas).
+     """
+     tries = 0
++    pending_letters: list[str] = []
+     while AUTO_GUESS_WHEN_CANDIDATES and tries < AUTO_GUESS_MAX_PER_ROUND:
+         candidates = [w for w in wordlist if matches_pattern(w, raw_word, wrong_letters=wrong)]
+         if not candidates:
+             break
+-        ranking = rank_letters(candidates, used_letters=used)
++        ranking = rank_letters(candidates, used_letters=used.union(set(pending_letters)))
+         if not ranking:
+             break
+         next_letter = ranking[0][0]
+         print(f"\n🤖 Auto: probando {next_letter} (top entre {len(candidates)} candidatas)")
+-        html = request_page(sess, cookies, next_letter)
++        try:
++            html = request_page(sess, cookies, next_letter)
++        except Exception as e:
++            print(f"⚠️ Error al probar {next_letter}: {e}. Se reintentará después.")
++            pending_letters.append(next_letter)
++            tries += 1
++            time.sleep(AUTO_GUESS_SLEEP_SEC)
++            continue
++        soup = BeautifulSoup(html, "html.parser")
++        raw_word_new = find_word(soup, html)
++        print_state(raw_word_new, soup)
++        used_after, wrong_after = extract_used_and_wrong_letters(soup, raw_word_new)
++        if next_letter not in used_after:
++            print(f"⚠️ Sin respuesta para {next_letter}. Se reintentará al final.")
++            pending_letters.append(next_letter)
++        else:
++            raw_word = raw_word_new
++            used, wrong = used_after, wrong_after
++            if raw_word and "_" not in raw_word:
++                word_upper = raw_word.upper().strip()
++                bank = load_wordlist(WORDLIST_PATH)
++                if word_upper not in [w.upper() for w in bank]:
++                    with WORDLIST_PATH.open("a", encoding="utf-8") as f:
++                        f.write(word_upper + "\n")
++                    print(f"\n✅ Palabra agregada al banco: {word_upper}")
++        _, _, lives = grab_metrics(soup)
++        if round_finished(raw_word, lives):
++            break
++        tries += 1
++        time.sleep(AUTO_GUESS_SLEEP_SEC)
++
++    # Reintentar letras que no dieron respuesta
++    for letter in pending_letters:
++        if tries >= AUTO_GUESS_MAX_PER_ROUND:
++            break
++        print(f"\n🤖 Auto: reintentando {letter} (sin respuesta previa)")
++        try:
++            html = request_page(sess, cookies, letter)
++        except Exception as e:
++            print(f"⚠️ Error al reintentar {letter}: {e}")
++            continue
+         soup = BeautifulSoup(html, "html.parser")
+         raw_word = find_word(soup, html)
+         print_state(raw_word, soup)
+         used, wrong = extract_used_and_wrong_letters(soup, raw_word)
+         if raw_word and "_" not in raw_word:
+             word_upper = raw_word.upper().strip()
+             bank = load_wordlist(WORDLIST_PATH)
+             if word_upper not in [w.upper() for w in bank]:
+                 with WORDLIST_PATH.open("a", encoding="utf-8") as f:
+                     f.write(word_upper + "\n")
+                 print(f"\n✅ Palabra agregada al banco: {word_upper}")
+         _, _, lives = grab_metrics(soup)
+         if round_finished(raw_word, lives):
+             break
+         tries += 1
+         time.sleep(AUTO_GUESS_SLEEP_SEC)
+     return raw_word, soup
  
-             prev_a = known_id_by_idx.get(a)
-             cid_a = flip_explore(s, cookies, a, prev_known=prev_a)
+ def fallback_guess_loop(sess, cookies, soup, raw_word, used, wrong):
+     """
+     Sin candidatas: probar letras por frecuencia en inglés (excluye usadas).
+     """
+     pool = [ch for ch in FALLBACK_FREQ_ORDER if ch not in used]
+     if not pool:
+         print("\n(No hay letras disponibles para fallback)")
+         return raw_word, soup
  
-             if cid_a is None:
--                skipped.add(a)
-+                mark_skipped(a)
-                 log(f"[skip] idx={a:02d} sin ID estable. Lo intento luego.")
-                 time.sleep(0.8)
-                 continue
+     tries = 0
++    pending_letters: list[str] = []
+     for next_letter in pool:
+         if tries >= FALLBACK_MAX_PER_ROUND:
+             break
+         print(f"\n🤖 Fallback: probando {next_letter} (sin candidatas)")
+-        html = request_page(sess, cookies, next_letter)
++        try:
++            html = request_page(sess, cookies, next_letter)
++        except Exception as e:
++            print(f"⚠️ Error al probar {next_letter}: {e}. Se reintentará después.")
++            pending_letters.append(next_letter)
++            tries += 1
++            time.sleep(FALLBACK_SLEEP_SEC)
++            continue
++        soup = BeautifulSoup(html, "html.parser")
++        raw_word_new = find_word(soup, html)
++        print_state(raw_word_new, soup)
++        used_after, wrong_after = extract_used_and_wrong_letters(soup, raw_word_new)
++        if next_letter not in used_after:
++            print(f"⚠️ Sin respuesta para {next_letter}. Se reintentará al final.")
++            pending_letters.append(next_letter)
++        else:
++            raw_word = raw_word_new
++            used, wrong = used_after, wrong_after
++            if raw_word and "_" not in raw_word:
++                word_upper = raw_word.upper().strip()
++                bank = load_wordlist(WORDLIST_PATH)
++                if word_upper not in [w.upper() for w in bank]:
++                    with WORDLIST_PATH.open("a", encoding="utf-8") as f:
++                        f.write(word_upper + "\n")
++                    print(f"\n✅ Palabra agregada al banco: {word_upper}")
++        _, _, lives = grab_metrics(soup)
++        if round_finished(raw_word, lives):
++            break
++        tries += 1
++        time.sleep(FALLBACK_SLEEP_SEC)
++
++    # Reintentar letras que no dieron respuesta
++    for letter in pending_letters:
++        if tries >= FALLBACK_MAX_PER_ROUND:
++            break
++        print(f"\n🤖 Fallback: reintentando {letter} (sin respuesta previa)")
++        try:
++            html = request_page(sess, cookies, letter)
++        except Exception as e:
++            print(f"⚠️ Error al reintentar {letter}: {e}")
++            continue
+         soup = BeautifulSoup(html, "html.parser")
+         raw_word = find_word(soup, html)
+         print_state(raw_word, soup)
+         used, wrong = extract_used_and_wrong_letters(soup, raw_word)
+         if raw_word and "_" not in raw_word:
+             word_upper = raw_word.upper().strip()
+             bank = load_wordlist(WORDLIST_PATH)
+             if word_upper not in [w.upper() for w in bank]:
+                 with WORDLIST_PATH.open("a", encoding="utf-8") as f:
+                     f.write(word_upper + "\n")
+                 print(f"\n✅ Palabra agregada al banco: {word_upper}")
+         _, _, lives = grab_metrics(soup)
+         if round_finished(raw_word, lives):
+             break
+         tries += 1
+         time.sleep(FALLBACK_SLEEP_SEC)
+     return raw_word, soup
  
-             register(a, cid_a)
-             log(f"[Flip A] idx={a:02d} -> id={cid_a}")
+ def main():
+     cookies = cookies_from_string(COOKIE_STRING)
+     wordlist = load_wordlist(WORDLIST_PATH)
  
--            mates = [i for i in id_to_idxs.get(cid_a, set()) if i != a and i not in solved and i not in skipped]
-+            mates = [i for i in id_to_idxs.get(cid_a, set()) if i != a and i not in solved and not is_skipped(i)]
-             if mates:
-                 b = mates[0]
-             else:
-                 b = pick_unknown(exclude={a})
-                 if b is None:
-                     continue
- 
-             time.sleep(SLEEP_AFTER_A_BEFORE_B)
- 
-             prev_b = known_id_by_idx.get(b)
-             if b in id_to_idxs.get(cid_a, set()):
-                 cid_b = flip_strict_pair(s, cookies, b, expected_id=cid_a)
-             else:
-                 cid_b = flip_explore(s, cookies, b, prev_known=prev_b)
- 
-             if cid_b is None:
--                skipped.add(b)
-+                mark_skipped(b)
-                 log(f"[skip] idx={b:02d} sin ID estable. Lo intento luego.")
-                 time.sleep(0.8)
-                 continue
- 
-             register(b, cid_b)
-             log(f"[Flip B] idx={b:02d} -> id={cid_b}")
- 
-             if cid_a == cid_b:
-                 solved.update({a, b})
-                 pending_pairs[:] = [p for p in pending_pairs if not (p[0] in {a, b} or p[1] in {a, b})]
-                 log(f"✅ MATCH id={cid_a} | par=({a},{b}) | resueltas={len(solved)}/{size}")
-                 time.sleep(PAIR_PAUSE)
-             else:
-                 log(f"❌ NO MATCH: ({a}:{cid_a}) vs ({b}:{cid_b}) | resueltas={len(solved)}/{size}")
-                 time.sleep(MISMATCH_PAUSE)
- 
-         log(f"Listo. Pares resueltos: {len(solved)}/{size}")
-         log(f"Log guardado en: {log_path}")
- 
- if __name__ == "__main__":
-     try:
-         while True:
-             cookies = load_cookies()
- 
-             # Juega una partida
+     with requests.Session() as sess:
+         # GET inicial
+         try:
  
 EOF
 )
