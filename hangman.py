@@ -378,6 +378,8 @@ def auto_guess_loop(sess, cookies, wordlist, soup, raw_word, used, wrong):
                 wordlist.append(word_upper)
                 print(f"\n✅ Palabra agregada al banco: {word_upper}")
         _, _, lives = grab_metrics(soup)
+        if lives == "?":
+            break
         if round_finished(raw_word, lives):
             break
         tries += 1
@@ -411,6 +413,8 @@ def fallback_guess_loop(sess, cookies, wordlist, soup, raw_word, used, wrong):
                 wordlist.append(word_upper)
                 print(f"\n✅ Palabra agregada al banco: {word_upper}")
         _, _, lives = grab_metrics(soup)
+        if lives == "?":
+            break
         if round_finished(raw_word, lives):
             break
         tries += 1
@@ -469,10 +473,25 @@ def main():
                     )
                 except KeyboardInterrupt:
                     print("\n⏹ Autorefresco cancelado por el usuario.")
-                print_state(raw_word, soup)
+                solved, correct, lives = print_state(raw_word, soup)
             else:
                 print()
-                print_state(raw_word, soup)
+                solved, correct, lives = print_state(raw_word, soup)
+
+            if lives == "?":
+                print("\nℹ️ 'Lives left' desconocido. Esperando 5s y refrescando...")
+                time.sleep(5)
+                try:
+                    html = refresh_round(sess, cookies)
+                except Exception as e:
+                    print(f"Error al refrescar: {e}")
+                    continue
+                soup = BeautifulSoup(html, "html.parser")
+                raw_word = find_word(soup, html)
+                solved, correct, lives = print_state(raw_word, soup)
+                used, wrong = extract_used_and_wrong_letters(soup, raw_word)
+                print("Letras fallidas:", " ".join(sorted(wrong)) if wrong else "-")
+                continue
 
             # Letras usadas/fallidas
             used, wrong = extract_used_and_wrong_letters(soup, raw_word)
@@ -530,6 +549,21 @@ def main():
 
             # Fin de ronda → refrescar
             _, _, lives = grab_metrics(soup)
+            if lives == "?":
+                print("\nℹ️ 'Lives left' desconocido. Esperando 5s y refrescando...")
+                time.sleep(5)
+                try:
+                    html2 = refresh_round(sess, cookies)
+                except Exception as e:
+                    print(f"Error al refrescar: {e}")
+                    continue
+                soup2 = BeautifulSoup(html2, "html.parser")
+                new_raw = find_word(soup2, html2)
+                print("\n— Refrescado —")
+                print_state(new_raw, soup2)
+                used2, wrong2 = extract_used_and_wrong_letters(soup2, new_raw)
+                print("Letras fallidas:", " ".join(sorted(wrong2)) if wrong2 else "-")
+                continue
             if round_finished(raw_word, lives):
                 log_round_result(raw_word)
                 print("\n🔄 Ronda terminada. Refrescando para nueva palabra...")
