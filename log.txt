@@ -26936,3 +26936,9005 @@ Word:   H A N G M A N   G _   _   S S   T H _   W _ R D   I N S T R U C T I O N 
 Solved Hangmen in a row: ?
 Correct Guesses: ?
 Lives left: ?
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: _ _ _ _ _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 0
+Lives left: 6
+Letras fallidas: -
+
+Candidatas (shape) (303):
+- IVYSAUR
+- METAPOD
+- PIDGEOT
+- RATTATA
+- SPEAROW
+- PIKACHU
+- VENONAT
+- DIGLETT
+- DUGTRIO
+- PERSIAN
+- PSYDUCK
+- GOLDUCK
+- POLIWAG
+- KADABRA
+- MACHOKE
+- MACHAMP
+- GEODUDE
+- SLOWBRO
+- DEWGONG
+- HAUNTER
+- DROWZEE
+- KINGLER
+- VOLTORB
+- MAROWAK
+- KOFFING
+- WEEZING
+- RHYHORN
+- CHANSEY
+- TANGELA
+- GOLDEEN
+- SEAKING
+- STARMIE
+- SCYTHER
+- JOLTEON
+- FLAREON
+- PORYGON
+- OMANYTE
+- OMASTAR
+- SNORLAX
+- MOLTRES
+- DRATINI
+- BAYLEEF
+- QUILAVA
+- SENTRET
+- NOCTOWL
+- ARIADOS
+- LANTURN
+- TOGETIC
+- FLAAFFY
+- SUNKERN
+- UMBREON
+- MURKROW
+- STEELIX
+- SHUCKLE
+- SNEASEL
+- CORSOLA
+- MANTINE
+- KINGDRA
+- DONPHAN
+- TYROGUE
+- MILTANK
+- BLISSEY
+- SUICUNE
+- PUPITAR
+- TREECKO
+- GROVYLE
+- TORCHIC
+- LINOONE
+- WURMPLE
+- SILCOON
+- CASCOON
+- NUZLEAF
+- SHIFTRY
+- TAILLOW
+- SWELLOW
+- WINGULL
+- SURSKIT
+- BRELOOM
+- SLAKOTH
+- SLAKING
+- NINCADA
+- NINJASK
+- WHISMUR
+- LOUDRED
+- EXPLOUD
+- AZURILL
+- SABLEYE
+- VOLBEAT
+- ROSELIA
+- WAILMER
+- WAILORD
+- TORKOAL
+- GRUMPIG
+- VIBRAVA
+- ALTARIA
+- SEVIPER
+- SOLROCK
+- CLAYDOL
+- CRADILY
+- ANORITH
+- ARMALDO
+- MILOTIC
+- KECLEON
+- SHUPPET
+- BANETTE
+- DUSKULL
+- TROPIUS
+- SNORUNT
+- WALREIN
+- HUNTAIL
+- LUVDISC
+- SHELGON
+- GROUDON
+- JIRACHI
+- TURTWIG
+- BIBAREL
+- CHERUBI
+- CHERRIM
+- SHELLOS
+- AMBIPOM
+- BUNEARY
+- LOPUNNY
+- GLAMEOW
+- PURUGLY
+- BRONZOR
+- HAPPINY
+- LUCARIO
+- SKORUPI
+- DRAPION
+- FINNEON
+- MANTYKE
+- WEAVILE
+- YANMEGA
+- LEAFEON
+- GLACEON
+- GLISCOR
+- GALLADE
+- MESPRIT
+- HEATRAN
+- MANAPHY
+- DARKRAI
+- SHAYMIN
+- VICTINI
+- SERVINE
+- PIGNITE
+- WATCHOG
+- HERDIER
+- LIEPARD
+- PANSAGE
+- PANSEAR
+- PANPOUR
+- BLITZLE
+- BOLDORE
+- SWOOBAT
+- DRILBUR
+- TIMBURR
+- GURDURR
+- TYMPOLE
+- PETILIL
+- SANDILE
+- DWEBBLE
+- CRUSTLE
+- SCRAGGY
+- SCRAFTY
+- ZOROARK
+- GOTHITA
+- SOLOSIS
+- DUOSION
+- FOONGUS
+- LITWICK
+- LAMPENT
+- FRAXURE
+- HAXORUS
+- CUBCHOO
+- BEARTIC
+- SHELMET
+- MIENFOO
+- BISHARP
+- RUFFLET
+- VULLABY
+- HEATMOR
+- CHESPIN
+- BRAIXEN
+- DELPHOX
+- FROAKIE
+- FLABEBE
+- FLOETTE
+- FLORGES
+- PANCHAM
+- PANGORO
+- FURFROU
+- HONEDGE
+- SWIRLIX
+- MALAMAR
+- BINACLE
+- AURORUS
+- SYLVEON
+- DEDENNE
+- CARBINK
+- SLIGGOO
+- AVALUGG
+- NOIVERN
+- XERNEAS
+- YVELTAL
+- ZYGARDE
+- DIANCIE
+- DARTRIX
+- POPPLIO
+- BRIONNE
+- PIKIPEK
+- YUNGOOS
+- GRUBBIN
+- TOXAPEX
+- MUDBRAY
+- STUFFUL
+- STEENEE
+- MIMIKYU
+- BRUXISH
+- KOMMO-O
+- COSMOEM
+- KARTANA
+- POIPOLE
+- ZERAORA
+- DREDNAW
+- GROOKEY
+- SKWOVET
+- BLIPBUG
+- DOTTLER
+- THIEVUL
+- DUBWOOL
+- CHEWTLE
+- DREDNAW
+- BOLTUND
+- FLAPPLE
+- HATENNA
+- HATTREM
+- MORGREM
+- CURSOLA
+- MILCERY
+- FALINKS
+- MORPEKO
+- URSHIFU
+- CALYREX
+- WYRDEER
+- KLEAVOR
+- FUECOCO
+- LECHONK
+- SPIDOPS
+- CETITAN
+- DONDOZO
+- FINIZEN
+- PALAFIN
+- TADBULB
+- WATTREL
+- FIDOUGH
+- GLIMMET
+- FLAMIGO
+- FLITTLE
+- TING-LU
+- OKIDOGI
+- OGERPON
+- DIPPLIN
+- IMPASTA
+- VITAMIN
+- RUN AWAY
+- AGILITY
+- REMAKES
+- REMAKES
+- AUCTION
+- AUCTION
+- MR MOODY
+- MR MOODY
+- COOCOOT
+- COOCOOT
+- JANGMO O
+- JANGMO O
+- CONTEST
+- CONTEST
+- PIDGEOT
+- SLOWBRO
+- STEELIX
+- SABLEYE
+- ALTARIA
+- BANETTE
+- LOPUNNY
+- LUCARIO
+- GALLADE
+- DIANCIE
+- PIKACHU
+- MACHAMP
+- SNORLAX
+- DREDNAW
+- FLAPPLE
+- URSHIFU
+- NET BALL
+- SCANNER
+- SCANNER
+- CALCIUM
+- CALCIUM
+- LOTTERY
+- LOTTERY
+- WEATHER
+- WEATHER
+
+Letras por frecuencia (excluyendo intentadas):
+E:155 A:154 R:142 O:137 L:131 I:129 N:115 T:100 S:88 U:79 C:64 D:61 G:59 M:56 P:55
+
+🤖 Auto: probando E (top entre 303 candidatas)
+Word: _ _ _ _ _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 0
+Lives left: 5
+
+🤖 Auto: probando A (top entre 148 candidatas)
+Word: _ _ _ _ _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 0
+Lives left: 4
+
+🤖 Auto: probando O (top entre 66 candidatas)
+Word: _ _ _ _ _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 0
+Lives left: 3
+
+🤖 Auto: probando I (top entre 25 candidatas)
+Word: _ I _ _ I _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 1
+Lives left: 3
+
+🤖 Auto: probando C (top entre 1 candidatas)
+Word: _ I _ _ I _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 1
+Lives left: 2
+
+Candidatas (2):
+- PIGNITE
+- LITWICK
+
+Letras por frecuencia (excluyendo intentadas):
+I:2 T:2 C:1 E:1 G:1 K:1 L:1 N:1 P:1 W:1
+
+🤖 Auto: probando I (top entre 2 candidatas)
+Word: _ I _ _ I _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 1
+Lives left: 2
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: _ I _ _ I _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 1
+Lives left: 2
+Letras fallidas: A C E O
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando T (sin candidatas)
+Word: _ I _ _ I _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 1
+Lives left: 1
+
+🤖 Fallback: probando N (sin candidatas)
+Word: _ I _ _ I N _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 2
+Lives left: 1
+
+🤖 Fallback: probando S (sin candidatas)
+Word: _ I S _ I N _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 3
+Lives left: 1
+
+🤖 Fallback: probando H (sin candidatas)
+Word: _ I S H I N _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 4
+Lives left: 1
+
+🤖 Fallback: probando R (sin candidatas)
+Word: F I S H I N G 
+Solved Hangmen in a row: 0
+Correct Guesses: 4
+Lives left: 0
+
+✅ Palabra agregada al banco: FISHING
+
+✅ Palabra agregada al banco: FISHING
+RESULT: FISHING - SUCCESS
+
+🔄 Ronda terminada. Refrescando para nueva palabra...
+
+— Nueva ronda —
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando E (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando T (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando A (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando O (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando I (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando N (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando S (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando H (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando R (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando D (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando L (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando U (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando C (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando M (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando F (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Y (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando W (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando G (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando P (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando B (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando V (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando K (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando X (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Q (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando J (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Z (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando E (sin candidatas)
+Word: _ _ _ _ _ _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 0
+Lives left: 5
+
+🤖 Fallback: probando T (sin candidatas)
+Word: _ _ _ _ T _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 1
+Lives left: 5
+
+🤖 Fallback: probando A (sin candidatas)
+Word: _ _ _ A T _ _ A 
+Solved Hangmen in a row: 0
+Correct Guesses: 2
+Lives left: 5
+
+🤖 Fallback: probando O (sin candidatas)
+Word: _ _ _ A T _ _ A 
+Solved Hangmen in a row: 0
+Correct Guesses: 2
+Lives left: 4
+
+🤖 Fallback: probando I (sin candidatas)
+Word: _ I _ A T I _ A 
+Solved Hangmen in a row: 0
+Correct Guesses: 3
+Lives left: 4
+
+🤖 Fallback: probando N (sin candidatas)
+Word: _ I _ A T I N A 
+Solved Hangmen in a row: 0
+Correct Guesses: 4
+Lives left: 4
+
+🤖 Fallback: probando S (sin candidatas)
+Word: _ I _ A T I N A 
+Solved Hangmen in a row: 0
+Correct Guesses: 4
+Lives left: 3
+
+🤖 Fallback: probando H (sin candidatas)
+Word: _ I _ A T I N A 
+Solved Hangmen in a row: 0
+Correct Guesses: 4
+Lives left: 2
+
+🤖 Fallback: probando R (sin candidatas)
+Word: _ I R A T I N A 
+Solved Hangmen in a row: 0
+Correct Guesses: 5
+Lives left: 2
+
+🤖 Fallback: probando D (sin candidatas)
+Word: _ I R A T I N A 
+Solved Hangmen in a row: 0
+Correct Guesses: 5
+Lives left: 1
+
+🤖 Fallback: probando L (sin candidatas)
+Word: G I R A T I N A 
+Solved Hangmen in a row: 0
+Correct Guesses: 5
+Lives left: 0
+
+ℹ️ Palabra ya estaba en el banco: GIRATINA
+RESULT: GIRATINA - SUCCESS
+
+🔄 Ronda terminada. Refrescando para nueva palabra...
+
+— Nueva ronda —
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando E (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando T (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando A (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando O (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando I (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando N (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando S (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando H (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando R (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando D (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando L (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando U (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando C (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando M (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando F (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Y (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando W (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando G (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando P (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando B (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando V (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando K (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando X (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Q (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando J (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Z (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando E (sin candidatas)
+Word: _ _ _ _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 0
+Lives left: 5
+
+🤖 Fallback: probando T (sin candidatas)
+Word: _ _ _ _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 0
+Lives left: 4
+
+🤖 Fallback: probando A (sin candidatas)
+Word: _ _ _ _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 0
+Lives left: 3
+
+🤖 Fallback: probando O (sin candidatas)
+Word: _ O _ _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 1
+Lives left: 3
+
+🤖 Fallback: probando I (sin candidatas)
+Word: _ O _ _ I _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 2
+Lives left: 3
+
+🤖 Fallback: probando N (sin candidatas)
+Word: _ O _ _ I _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 2
+Lives left: 2
+
+🤖 Fallback: probando S (sin candidatas)
+Word: _ O _ _ I _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 2
+Lives left: 1
+
+🤖 Fallback: probando H (sin candidatas)
+Word: H O _ _ I _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 3
+Lives left: 1
+
+🤖 Fallback: probando R (sin candidatas)
+Word: H O P P I P 
+Solved Hangmen in a row: 0
+Correct Guesses: 3
+Lives left: 0
+
+ℹ️ Palabra ya estaba en el banco: HOPPIP
+RESULT: HOPPIP - SUCCESS
+
+🔄 Ronda terminada. Refrescando para nueva palabra...
+
+— Nueva ronda —
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando E (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando T (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando A (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando O (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando I (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando N (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando S (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando H (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando R (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando D (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando L (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando U (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando C (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando M (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando F (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Y (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando W (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando G (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando P (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando B (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando V (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando K (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando X (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Q (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando J (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Z (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando E (sin candidatas)
+Word: _ _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 0
+Lives left: 5
+
+🤖 Fallback: probando T (sin candidatas)
+Word: _ _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 0
+Lives left: 4
+
+🤖 Fallback: probando A (sin candidatas)
+Word: A _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 1
+Lives left: 4
+
+🤖 Fallback: probando O (sin candidatas)
+Word: A _ O _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 2
+Lives left: 4
+
+🤖 Fallback: probando I (sin candidatas)
+Word: A _ O _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 2
+Lives left: 3
+
+🤖 Fallback: probando N (sin candidatas)
+Word: A _ O N 
+Solved Hangmen in a row: 0
+Correct Guesses: 3
+Lives left: 3
+
+🤖 Fallback: probando S (sin candidatas)
+Word: A _ O N 
+Solved Hangmen in a row: 0
+Correct Guesses: 3
+Lives left: 2
+
+🤖 Fallback: probando H (sin candidatas)
+Word: A _ O N 
+Solved Hangmen in a row: 0
+Correct Guesses: 3
+Lives left: 1
+
+🤖 Fallback: probando R (sin candidatas)
+Word: A R O N 
+Solved Hangmen in a row: 0
+Correct Guesses: 4
+Lives left: 1
+
+ℹ️ Palabra ya estaba en el banco: ARON
+RESULT: ARON - SUCCESS
+
+🔄 Ronda terminada. Refrescando para nueva palabra...
+
+— Nueva ronda —
+Word: _ _ _ _ _ _ _ 
+Solved Hangmen in a row: 1
+Correct Guesses: 0
+Lives left: 6
+Letras fallidas: -
+
+Candidatas (shape) (304):
+- IVYSAUR
+- METAPOD
+- PIDGEOT
+- RATTATA
+- SPEAROW
+- PIKACHU
+- VENONAT
+- DIGLETT
+- DUGTRIO
+- PERSIAN
+- PSYDUCK
+- GOLDUCK
+- POLIWAG
+- KADABRA
+- MACHOKE
+- MACHAMP
+- GEODUDE
+- SLOWBRO
+- DEWGONG
+- HAUNTER
+- DROWZEE
+- KINGLER
+- VOLTORB
+- MAROWAK
+- KOFFING
+- WEEZING
+- RHYHORN
+- CHANSEY
+- TANGELA
+- GOLDEEN
+- SEAKING
+- STARMIE
+- SCYTHER
+- JOLTEON
+- FLAREON
+- PORYGON
+- OMANYTE
+- OMASTAR
+- SNORLAX
+- MOLTRES
+- DRATINI
+- BAYLEEF
+- QUILAVA
+- SENTRET
+- NOCTOWL
+- ARIADOS
+- LANTURN
+- TOGETIC
+- FLAAFFY
+- SUNKERN
+- UMBREON
+- MURKROW
+- STEELIX
+- SHUCKLE
+- SNEASEL
+- CORSOLA
+- MANTINE
+- KINGDRA
+- DONPHAN
+- TYROGUE
+- MILTANK
+- BLISSEY
+- SUICUNE
+- PUPITAR
+- TREECKO
+- GROVYLE
+- TORCHIC
+- LINOONE
+- WURMPLE
+- SILCOON
+- CASCOON
+- NUZLEAF
+- SHIFTRY
+- TAILLOW
+- SWELLOW
+- WINGULL
+- SURSKIT
+- BRELOOM
+- SLAKOTH
+- SLAKING
+- NINCADA
+- NINJASK
+- WHISMUR
+- LOUDRED
+- EXPLOUD
+- AZURILL
+- SABLEYE
+- VOLBEAT
+- ROSELIA
+- WAILMER
+- WAILORD
+- TORKOAL
+- GRUMPIG
+- VIBRAVA
+- ALTARIA
+- SEVIPER
+- SOLROCK
+- CLAYDOL
+- CRADILY
+- ANORITH
+- ARMALDO
+- MILOTIC
+- KECLEON
+- SHUPPET
+- BANETTE
+- DUSKULL
+- TROPIUS
+- SNORUNT
+- WALREIN
+- HUNTAIL
+- LUVDISC
+- SHELGON
+- GROUDON
+- JIRACHI
+- TURTWIG
+- BIBAREL
+- CHERUBI
+- CHERRIM
+- SHELLOS
+- AMBIPOM
+- BUNEARY
+- LOPUNNY
+- GLAMEOW
+- PURUGLY
+- BRONZOR
+- HAPPINY
+- LUCARIO
+- SKORUPI
+- DRAPION
+- FINNEON
+- MANTYKE
+- WEAVILE
+- YANMEGA
+- LEAFEON
+- GLACEON
+- GLISCOR
+- GALLADE
+- MESPRIT
+- HEATRAN
+- MANAPHY
+- DARKRAI
+- SHAYMIN
+- VICTINI
+- SERVINE
+- PIGNITE
+- WATCHOG
+- HERDIER
+- LIEPARD
+- PANSAGE
+- PANSEAR
+- PANPOUR
+- BLITZLE
+- BOLDORE
+- SWOOBAT
+- DRILBUR
+- TIMBURR
+- GURDURR
+- TYMPOLE
+- PETILIL
+- SANDILE
+- DWEBBLE
+- CRUSTLE
+- SCRAGGY
+- SCRAFTY
+- ZOROARK
+- GOTHITA
+- SOLOSIS
+- DUOSION
+- FOONGUS
+- LITWICK
+- LAMPENT
+- FRAXURE
+- HAXORUS
+- CUBCHOO
+- BEARTIC
+- SHELMET
+- MIENFOO
+- BISHARP
+- RUFFLET
+- VULLABY
+- HEATMOR
+- CHESPIN
+- BRAIXEN
+- DELPHOX
+- FROAKIE
+- FLABEBE
+- FLOETTE
+- FLORGES
+- PANCHAM
+- PANGORO
+- FURFROU
+- HONEDGE
+- SWIRLIX
+- MALAMAR
+- BINACLE
+- AURORUS
+- SYLVEON
+- DEDENNE
+- CARBINK
+- SLIGGOO
+- AVALUGG
+- NOIVERN
+- XERNEAS
+- YVELTAL
+- ZYGARDE
+- DIANCIE
+- DARTRIX
+- POPPLIO
+- BRIONNE
+- PIKIPEK
+- YUNGOOS
+- GRUBBIN
+- TOXAPEX
+- MUDBRAY
+- STUFFUL
+- STEENEE
+- MIMIKYU
+- BRUXISH
+- KOMMO-O
+- COSMOEM
+- KARTANA
+- POIPOLE
+- ZERAORA
+- DREDNAW
+- GROOKEY
+- SKWOVET
+- BLIPBUG
+- DOTTLER
+- THIEVUL
+- DUBWOOL
+- CHEWTLE
+- DREDNAW
+- BOLTUND
+- FLAPPLE
+- HATENNA
+- HATTREM
+- MORGREM
+- CURSOLA
+- MILCERY
+- FALINKS
+- MORPEKO
+- URSHIFU
+- CALYREX
+- WYRDEER
+- KLEAVOR
+- FUECOCO
+- LECHONK
+- SPIDOPS
+- CETITAN
+- DONDOZO
+- FINIZEN
+- PALAFIN
+- TADBULB
+- WATTREL
+- FIDOUGH
+- GLIMMET
+- FLAMIGO
+- FLITTLE
+- TING-LU
+- OKIDOGI
+- OGERPON
+- DIPPLIN
+- IMPASTA
+- VITAMIN
+- RUN AWAY
+- AGILITY
+- REMAKES
+- REMAKES
+- AUCTION
+- AUCTION
+- MR MOODY
+- MR MOODY
+- COOCOOT
+- COOCOOT
+- JANGMO O
+- JANGMO O
+- CONTEST
+- CONTEST
+- PIDGEOT
+- SLOWBRO
+- STEELIX
+- SABLEYE
+- ALTARIA
+- BANETTE
+- LOPUNNY
+- LUCARIO
+- GALLADE
+- DIANCIE
+- PIKACHU
+- MACHAMP
+- SNORLAX
+- DREDNAW
+- FLAPPLE
+- URSHIFU
+- NET BALL
+- SCANNER
+- SCANNER
+- CALCIUM
+- CALCIUM
+- LOTTERY
+- LOTTERY
+- WEATHER
+- WEATHER
+- FISHING
+
+Letras por frecuencia (excluyendo intentadas):
+E:155 A:154 R:142 O:137 L:131 I:130 N:116 T:100 S:89 U:79 C:64 D:61 G:60 M:56 P:55
+
+🤖 Auto: probando E (top entre 304 candidatas)
+Word: _ _ _ _ _ _ _ 
+Solved Hangmen in a row: 1
+Correct Guesses: 0
+Lives left: 5
+
+🤖 Auto: probando A (top entre 149 candidatas)
+Word: _ _ _ _ _ _ _ 
+Solved Hangmen in a row: 1
+Correct Guesses: 0
+Lives left: 4
+
+🤖 Auto: probando O (top entre 67 candidatas)
+Word: _ _ _ _ _ _ _ 
+Solved Hangmen in a row: 1
+Correct Guesses: 0
+Lives left: 3
+
+🤖 Auto: probando I (top entre 26 candidatas)
+Word: _ I _ _ I _ _ 
+Solved Hangmen in a row: 1
+Correct Guesses: 1
+Lives left: 3
+
+🤖 Auto: probando C (top entre 2 candidatas)
+Word: _ I _ _ I C _ 
+Solved Hangmen in a row: 1
+Correct Guesses: 2
+Lives left: 3
+
+🤖 Auto: probando K (top entre 1 candidatas)
+Word: _ I _ _ I C K 
+Solved Hangmen in a row: 1
+Correct Guesses: 3
+Lives left: 3
+
+🤖 Auto: probando L (top entre 1 candidatas)
+Word: L I _ _ I C K 
+Solved Hangmen in a row: 1
+Correct Guesses: 4
+Lives left: 3
+
+🤖 Auto: probando T (top entre 1 candidatas)
+Word: L I T _ I C K 
+Solved Hangmen in a row: 1
+Correct Guesses: 5
+Lives left: 3
+
+🤖 Auto: probando W (top entre 1 candidatas)
+Word: L I T W I C K 
+Solved Hangmen in a row: 1
+Correct Guesses: 6
+Lives left: 3
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: _ _ _ _ _ _ _ _ _ _ 
+Solved Hangmen in a row: 2
+Correct Guesses: 0
+Lives left: 6
+Letras fallidas: -
+
+Candidatas (shape) (171):
+- CHARMANDER
+- CHARMELEON
+- BUTTERFREE
+- JIGGLYPUFF
+- WIGGLYTUFF
+- BELLSPROUT
+- WEEPINBELL
+- VICTREEBEL
+- TENTACRUEL
+- HITMONCHAN
+- KANGASKHAN
+- ELECTABUZZ
+- AERODACTYL
+- TYPHLOSION
+- FERALIGATR
+- MISDREAVUS
+- FORRETRESS
+- MASQUERAIN
+- KRICKETUNE
+- HIPPOPOTAS
+- LICKILICKY
+- ELECTIVIRE
+- ROGGENROLA
+- CONKELDURR
+- SEISMITOAD
+- WHIRLIPEDE
+- WHIMSICOTT
+- KROOKODILE
+- DARMANITAN
+- COFAGRIGUS
+- CARRACOSTA
+- GOTHITELLE
+- KARRABLAST
+- ESCAVALIER
+- GALVANTULA
+- FERROTHORN
+- EELEKTROSS
+- CHANDELURE
+- BOUFFALANT
+- CHESNAUGHT
+- FLETCHLING
+- TALONFLAME
+- SCATTERBUG
+- AROMATISSE
+- BARBARACLE
+- HELIOPTILE
+- INCINEROAR
+- CRABRAWLER
+- WISHIWASHI
+- TURTONATOR
+- TOGEDEMARU
+- CELESTEELA
+- GOSSIFLEUR
+- SANDACONDA
+- TOXTRICITY
+- SIZZLIPEDE
+- GRIMMSNARL
+- PERRSERKER
+- PINCURCHIN
+- COPPERAJAH
+- SPRIGATITO
+- SKELEDIRGE
+- OINKOLOGNE
+- TAROUNTULA
+- HOUNDSTONE
+- SCOVILLAIN
+- BOMBIRDIER
+- ANNIHILAPE
+- TOEDSCRUEL
+- BAXCALIBUR
+- GIMMIGHOUL
+- MABOSSTIFF
+- SCREAM TAIL
+- IRON TREADS
+- IRON BUNDLE
+- IRON THORNS
+- IRON LEAVES
+- ARCHALUDON
+- RAGING BOLT
+- DARK PONYTA
+- TRAINER RED
+- TRAINER RED
+- FROST ROTOM
+- FROST ROTOM
+- FURY CUTTER
+- FURY CUTTER
+- MEGA FLYGON
+- MEGA FLYGON
+- LIGHT STONE
+- LIGHT STONE
+- DRAGON RAGE
+- DRAGON RAGE
+- CLAW FOSSIL
+- CLAW FOSSIL
+- GIGA IMPACT
+- GIGA IMPACT
+- MEGA LUXRAY
+- MEGA LUXRAY
+- BATTLE TEAM
+- BATTLE TEAM
+- GAME CENTER
+- GAME CENTER
+- VALENFLOON
+- VALENFLOON
+- SHOAL SHELL
+- SHOAL SHELL
+- MIXER ROTOM
+- MIXER ROTOM
+- SHINY STONE
+- SHINY STONE
+- STARF BERRY
+- STARF BERRY
+- WOOD HAMMER
+- WOOD HAMMER
+- MEGA GENGAR
+- KANGASKHAN
+- MEGA PINSIR
+- AERODACTYL
+- MEGA SCIZOR
+- MEGA MAWILE
+- MEGA AGGRON
+- MEGA GLALIE
+- MEGA LATIAS
+- MEGA LATIOS
+- MEGA AUDINO
+- BUTTERFREE
+- SANDACONDA
+- TOXTRICITY
+- GRIMMSNARL
+- COPPERAJAH
+- MASTER BALL
+- SAFARI BALL
+- FRIEND BALL
+- REPEAT BALL
+- LUXURY BALL
+- CHERI BERRY
+- CHERI BERRY
+- SOOTHE BELL
+- SOOTHE BELL
+- RADIO TOWER
+- RADIO TOWER
+- HONEYCOMBS
+- HONEYCOMBS
+- CANDY BELLY
+- CANDY BELLY
+- VOLT SWITCH
+- VOLT SWITCH
+- ROWAP BERRY
+- ROWAP BERRY
+- COMBOWSKEN
+- COMBOWSKEN
+- GROOMICOTT
+- GROOMICOTT
+- PROBOLIGHT
+- PROBOLIGHT
+- SPEED CLICK
+- SPEED CLICK
+- PINAP BERRY
+- PINAP BERRY
+- PLAYGROUND
+- PLAYGROUND
+- WIGGLYBATH
+- WIGGLYBATH
+- CHILL DRIVE
+- CHILL DRIVE
+- MARINE CAVE
+- MARINE CAVE
+- ROBIN BLAZE
+- ROBIN BLAZE
+- PHARRALOIN
+- PHARRALOIN
+
+Letras por frecuencia (excluyendo intentadas):
+E:117 A:108 R:106 O:94 I:93 L:91 T:83 N:74 S:65 C:63 M:51 G:50 H:48 B:45 D:40
+
+🤖 Auto: probando E (top entre 171 candidatas)
+Word: _ E _ _ _ E _ _ E _ 
+Solved Hangmen in a row: 2
+Correct Guesses: 1
+Lives left: 6
+
+🤖 Auto: probando K (top entre 1 candidatas)
+Word: _ E _ _ _ E _ K E _ 
+Solved Hangmen in a row: 2
+Correct Guesses: 2
+Lives left: 6
+
+🤖 Auto: probando P (top entre 1 candidatas)
+Word: P E _ _ _ E _ K E _ 
+Solved Hangmen in a row: 2
+Correct Guesses: 3
+Lives left: 6
+
+🤖 Auto: probando R (top entre 1 candidatas)
+Word: P E R R _ E R K E R 
+Solved Hangmen in a row: 2
+Correct Guesses: 4
+Lives left: 6
+
+🤖 Auto: probando S (top entre 1 candidatas)
+Word: P E R R S E R K E R 
+Solved Hangmen in a row: 2
+Correct Guesses: 5
+Lives left: 6
+
+Candidatas (1):
+- PERRSERKER
+
+Letras por frecuencia (excluyendo intentadas):
+E:1 K:1 P:1 R:1 S:1
+
+🤖 Auto: probando E (top entre 1 candidatas)
+Word: _ _ _ _ E _ _ _ 
+Solved Hangmen in a row: 3
+Correct Guesses: 1
+Lives left: 6
+
+🤖 Auto: probando A (top entre 12 candidatas)
+Word: _ _ A _ E _ _ _ 
+Solved Hangmen in a row: 3
+Correct Guesses: 2
+Lives left: 6
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: _ _ A _ E _ _ _ 
+Solved Hangmen in a row: 3
+Correct Guesses: 2
+Lives left: 6
+Letras fallidas: -
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando T (sin candidatas)
+Word: _ _ A _ E _ _ _ 
+Solved Hangmen in a row: 3
+Correct Guesses: 2
+Lives left: 5
+
+🤖 Fallback: probando O (sin candidatas)
+Word: _ _ A _ E O _ _ 
+Solved Hangmen in a row: 3
+Correct Guesses: 3
+Lives left: 5
+
+🤖 Fallback: probando I (sin candidatas)
+Word: _ _ A _ E O _ _ 
+Solved Hangmen in a row: 3
+Correct Guesses: 3
+Lives left: 4
+
+🤖 Fallback: probando N (sin candidatas)
+Word: _ _ A _ E O _ _ 
+Solved Hangmen in a row: 3
+Correct Guesses: 3
+Lives left: 3
+
+🤖 Fallback: probando S (sin candidatas)
+Word: _ _ A _ E O _ _ 
+Solved Hangmen in a row: 3
+Correct Guesses: 3
+Lives left: 2
+
+🤖 Fallback: probando H (sin candidatas)
+Word: _ _ A _ E O _ _ 
+Solved Hangmen in a row: 3
+Correct Guesses: 3
+Lives left: 1
+
+🤖 Fallback: probando R (sin candidatas)
+Word: _ _ A _ E O R _ 
+Solved Hangmen in a row: 3
+Correct Guesses: 4
+Lives left: 1
+
+🤖 Fallback: probando D (sin candidatas)
+Word: F L A M E O R B 
+Solved Hangmen in a row: 3
+Correct Guesses: 4
+Lives left: 0
+
+✅ Palabra agregada al banco: FLAMEORB
+
+✅ Palabra agregada al banco: FLAMEORB
+RESULT: FLAMEORB - SUCCESS
+
+🔄 Ronda terminada. Refrescando para nueva palabra...
+
+— Nueva ronda —
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando E (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando T (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando A (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando O (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando I (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando N (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando S (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando H (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando R (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando D (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando L (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando U (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando C (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando M (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando F (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Y (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando W (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando G (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando P (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando B (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando V (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando K (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando X (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Q (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando J (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Z (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando E (sin candidatas)
+Word: _ E _ E _ _ _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 1
+Lives left: 6
+
+🤖 Fallback: probando T (sin candidatas)
+Word: T E _ E _ _ T _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 2
+Lives left: 6
+
+🤖 Fallback: probando A (sin candidatas)
+Word: T E _ E _ A T _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 3
+Lives left: 6
+
+🤖 Fallback: probando O (sin candidatas)
+Word: T E _ E _ A T _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 3
+Lives left: 5
+
+🤖 Fallback: probando I (sin candidatas)
+Word: T E _ E _ A T _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 3
+Lives left: 4
+
+🤖 Fallback: probando N (sin candidatas)
+Word: T E _ E _ A T _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 3
+Lives left: 3
+
+🤖 Fallback: probando S (sin candidatas)
+Word: T E _ E _ A T _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 3
+Lives left: 2
+
+🤖 Fallback: probando H (sin candidatas)
+Word: T E _ E _ A T H _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 4
+Lives left: 2
+
+🤖 Fallback: probando R (sin candidatas)
+Word: T E _ E _ A T H _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 4
+Lives left: 1
+
+🤖 Fallback: probando D (sin candidatas)
+Word: T E L E P A T H Y 
+Solved Hangmen in a row: 0
+Correct Guesses: 4
+Lives left: 0
+
+✅ Palabra agregada al banco: TELEPATHY
+
+✅ Palabra agregada al banco: TELEPATHY
+RESULT: TELEPATHY - SUCCESS
+
+🔄 Ronda terminada. Refrescando para nueva palabra...
+
+— Nueva ronda —
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando E (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando T (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando A (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando O (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando I (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando N (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando S (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando H (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando R (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando D (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando L (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando U (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando C (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando M (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando F (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Y (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando W (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando G (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando P (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando B (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando V (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando K (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando X (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Q (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando J (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Z (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando E (sin candidatas)
+Word: _ _ E _ _ _ E _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 1
+Lives left: 6
+
+🤖 Fallback: probando T (sin candidatas)
+Word: _ _ E _ _ _ E _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 1
+Lives left: 5
+
+🤖 Fallback: probando A (sin candidatas)
+Word: _ _ E _ A _ E _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 2
+Lives left: 5
+
+🤖 Fallback: probando O (sin candidatas)
+Word: _ _ E _ A _ E _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 2
+Lives left: 4
+
+🤖 Fallback: probando I (sin candidatas)
+Word: _ _ E _ A _ E _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 2
+Lives left: 3
+
+🤖 Fallback: probando N (sin candidatas)
+Word: _ _ E _ A _ E _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 2
+Lives left: 2
+
+🤖 Fallback: probando S (sin candidatas)
+Word: _ _ E _ A _ E _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 2
+Lives left: 1
+
+🤖 Fallback: probando H (sin candidatas)
+Word: G R E P A B E R R Y 
+Solved Hangmen in a row: 0
+Correct Guesses: 2
+Lives left: 0
+
+✅ Palabra agregada al banco: GREPABERRY
+
+✅ Palabra agregada al banco: GREPABERRY
+RESULT: GREPABERRY - SUCCESS
+
+🔄 Ronda terminada. Refrescando para nueva palabra...
+
+— Nueva ronda —
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando E (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando T (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando A (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando O (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando I (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando N (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando S (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando H (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando R (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando D (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando L (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando U (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando C (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando M (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando F (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Y (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando W (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando G (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando P (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando B (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando V (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando K (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando X (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Q (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando J (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Z (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando E (sin candidatas)
+Word: _ _ _ _ E _ _ _ E 
+Solved Hangmen in a row: 0
+Correct Guesses: 1
+Lives left: 6
+
+🤖 Fallback: probando T (sin candidatas)
+Word: _ _ _ _ E _ _ _ E 
+Solved Hangmen in a row: 0
+Correct Guesses: 1
+Lives left: 5
+
+🤖 Fallback: probando A (sin candidatas)
+Word: _ A _ _ E _ _ _ E 
+Solved Hangmen in a row: 0
+Correct Guesses: 2
+Lives left: 5
+
+🤖 Fallback: probando O (sin candidatas)
+Word: _ A _ _ E _ O _ E 
+Solved Hangmen in a row: 0
+Correct Guesses: 3
+Lives left: 5
+
+🤖 Fallback: probando I (sin candidatas)
+Word: _ A _ _ E _ O _ E 
+Solved Hangmen in a row: 0
+Correct Guesses: 3
+Lives left: 4
+
+🤖 Fallback: probando N (sin candidatas)
+Word: _ A _ N E _ O N E 
+Solved Hangmen in a row: 0
+Correct Guesses: 4
+Lives left: 4
+
+🤖 Fallback: probando S (sin candidatas)
+Word: _ A _ N E _ O N E 
+Solved Hangmen in a row: 0
+Correct Guesses: 4
+Lives left: 3
+
+🤖 Fallback: probando H (sin candidatas)
+Word: _ A _ N E _ O N E 
+Solved Hangmen in a row: 0
+Correct Guesses: 4
+Lives left: 2
+
+🤖 Fallback: probando R (sin candidatas)
+Word: _ A _ N E _ O N E 
+Solved Hangmen in a row: 0
+Correct Guesses: 4
+Lives left: 1
+
+🤖 Fallback: probando D (sin candidatas)
+Word: M A G N E Z O N E 
+Solved Hangmen in a row: 0
+Correct Guesses: 4
+Lives left: 0
+
+ℹ️ Palabra ya estaba en el banco: MAGNEZONE
+RESULT: MAGNEZONE - SUCCESS
+
+🔄 Ronda terminada. Refrescando para nueva palabra...
+
+— Nueva ronda —
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando E (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando T (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando A (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando O (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando I (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando N (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando S (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando H (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando R (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando D (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando L (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando U (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando C (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando M (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando F (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Y (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando W (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando G (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando P (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando B (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando V (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando K (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando X (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Q (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando J (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Z (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando E (sin candidatas)
+Word: _ _ _ _ _ _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 0
+Lives left: 5
+
+🤖 Fallback: probando T (sin candidatas)
+Word: _ _ _ _ _ _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 0
+Lives left: 4
+
+🤖 Fallback: probando A (sin candidatas)
+Word: _ _ _ _ _ _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 0
+Lives left: 3
+
+🤖 Fallback: probando O (sin candidatas)
+Word: _ _ _ _ _ _ O _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 1
+Lives left: 3
+
+🤖 Fallback: probando I (sin candidatas)
+Word: _ I _ I _ I O _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 2
+Lives left: 3
+
+🤖 Fallback: probando N (sin candidatas)
+Word: _ I _ I _ I O N 
+Solved Hangmen in a row: 0
+Correct Guesses: 3
+Lives left: 3
+
+🤖 Fallback: probando S (sin candidatas)
+Word: _ I _ I _ I O N 
+Solved Hangmen in a row: 0
+Correct Guesses: 3
+Lives left: 2
+
+🤖 Fallback: probando H (sin candidatas)
+Word: _ I _ I _ I O N 
+Solved Hangmen in a row: 0
+Correct Guesses: 3
+Lives left: 1
+
+🤖 Fallback: probando R (sin candidatas)
+Word: _ I R I _ I O N 
+Solved Hangmen in a row: 0
+Correct Guesses: 4
+Lives left: 1
+
+🤖 Fallback: probando D (sin candidatas)
+Word: V I R I Z I O N 
+Solved Hangmen in a row: 0
+Correct Guesses: 4
+Lives left: 0
+
+ℹ️ Palabra ya estaba en el banco: VIRIZION
+RESULT: VIRIZION - SUCCESS
+
+🔄 Ronda terminada. Refrescando para nueva palabra...
+
+— Nueva ronda —
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando E (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando T (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando A (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando O (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando I (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando N (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando S (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando H (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando R (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando D (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando L (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando U (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando C (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando M (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando F (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Y (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando W (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando G (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando P (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando B (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando V (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando K (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando X (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Q (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando J (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Z (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando E (sin candidatas)
+Word: _ _ _ _ _ _ _ _ _ _ E 
+Solved Hangmen in a row: 0
+Correct Guesses: 1
+Lives left: 6
+
+🤖 Fallback: probando T (sin candidatas)
+Word: _ _ _ _ _ _ _ _ _ _ E 
+Solved Hangmen in a row: 0
+Correct Guesses: 1
+Lives left: 5
+
+🤖 Fallback: probando A (sin candidatas)
+Word: _ _ A _ _ _ _ _ A _ E 
+Solved Hangmen in a row: 0
+Correct Guesses: 2
+Lives left: 5
+
+🤖 Fallback: probando O (sin candidatas)
+Word: _ _ A _ O _ _ _ A _ E 
+Solved Hangmen in a row: 0
+Correct Guesses: 3
+Lives left: 5
+
+🤖 Fallback: probando I (sin candidatas)
+Word: _ _ A _ O _ _ _ A _ E 
+Solved Hangmen in a row: 0
+Correct Guesses: 3
+Lives left: 4
+
+🤖 Fallback: probando N (sin candidatas)
+Word: _ _ A _ O N _ _ A _ E 
+Solved Hangmen in a row: 0
+Correct Guesses: 4
+Lives left: 4
+
+🤖 Fallback: probando S (sin candidatas)
+Word: _ _ A _ O N S _ A _ E 
+Solved Hangmen in a row: 0
+Correct Guesses: 5
+Lives left: 4
+
+🤖 Fallback: probando H (sin candidatas)
+Word: _ _ A _ O N S _ A _ E 
+Solved Hangmen in a row: 0
+Correct Guesses: 5
+Lives left: 3
+
+🤖 Fallback: probando R (sin candidatas)
+Word: _ R A _ O N S _ A _ E 
+Solved Hangmen in a row: 0
+Correct Guesses: 6
+Lives left: 3
+
+🤖 Fallback: probando D (sin candidatas)
+Word: D R A _ O N S _ A _ E 
+Solved Hangmen in a row: 0
+Correct Guesses: 7
+Lives left: 3
+
+🤖 Fallback: probando L (sin candidatas)
+Word: D R A _ O N S _ A L E 
+Solved Hangmen in a row: 0
+Correct Guesses: 8
+Lives left: 3
+
+🤖 Fallback: probando U (sin candidatas)
+Word: D R A _ O N S _ A L E 
+Solved Hangmen in a row: 0
+Correct Guesses: 8
+Lives left: 2
+
+🤖 Fallback: probando C (sin candidatas)
+Word: D R A _ O N S C A L E 
+Solved Hangmen in a row: 0
+Correct Guesses: 9
+Lives left: 2
+
+🤖 Fallback: probando M (sin candidatas)
+Word: D R A _ O N S C A L E 
+Solved Hangmen in a row: 0
+Correct Guesses: 9
+Lives left: 1
+
+🤖 Fallback: probando F (sin candidatas)
+Word: D R A G O N S C A L E 
+Solved Hangmen in a row: 0
+Correct Guesses: 9
+Lives left: 0
+
+✅ Palabra agregada al banco: DRAGONSCALE
+
+✅ Palabra agregada al banco: DRAGONSCALE
+RESULT: DRAGONSCALE - SUCCESS
+
+🔄 Ronda terminada. Refrescando para nueva palabra...
+
+— Nueva ronda —
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando E (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando T (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando A (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando O (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando I (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando N (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando S (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando H (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando R (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando D (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando L (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando U (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando C (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando M (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando F (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Y (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando W (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando G (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando P (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando B (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando V (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando K (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando X (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Q (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando J (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Z (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando E (sin candidatas)
+Word: _ _ _ E _ _ _ E _ _ _ _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 1
+Lives left: 6
+
+🤖 Fallback: probando T (sin candidatas)
+Word: _ _ _ E _ _ _ E _ _ _ _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 1
+Lives left: 5
+
+🤖 Fallback: probando A (sin candidatas)
+Word: _ _ _ E _ _ _ E _ _ _ _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 1
+Lives left: 4
+
+🤖 Fallback: probando O (sin candidatas)
+Word: _ _ _ E _ _ _ E _ O O _ _ O 
+Solved Hangmen in a row: 0
+Correct Guesses: 2
+Lives left: 4
+
+🤖 Fallback: probando I (sin candidatas)
+Word: _ _ _ E _ _ _ E _ O O _ I O 
+Solved Hangmen in a row: 0
+Correct Guesses: 3
+Lives left: 4
+
+🤖 Fallback: probando N (sin candidatas)
+Word: _ _ _ E _ _ _ E _ O O _ I O 
+Solved Hangmen in a row: 0
+Correct Guesses: 3
+Lives left: 3
+
+🤖 Fallback: probando S (sin candidatas)
+Word: S _ _ E _ _ _ E _ O O _ I O 
+Solved Hangmen in a row: 0
+Correct Guesses: 4
+Lives left: 3
+
+🤖 Fallback: probando H (sin candidatas)
+Word: S _ _ E _ _ _ E _ O O _ I O 
+Solved Hangmen in a row: 0
+Correct Guesses: 4
+Lives left: 2
+
+🤖 Fallback: probando R (sin candidatas)
+Word: S _ _ E R _ R E _ O O _ I O 
+Solved Hangmen in a row: 0
+Correct Guesses: 5
+Lives left: 2
+
+🤖 Fallback: probando D (sin candidatas)
+Word: S _ _ E R _ R E _ O O _ I O 
+Solved Hangmen in a row: 0
+Correct Guesses: 5
+Lives left: 1
+
+🤖 Fallback: probando L (sin candidatas)
+Word: S _ _ E R _ R E L O O _ I O 
+Solved Hangmen in a row: 0
+Correct Guesses: 6
+Lives left: 1
+
+🤖 Fallback: probando U (sin candidatas)
+Word: S U _ E R _ R E L O O _ I O 
+Solved Hangmen in a row: 0
+Correct Guesses: 7
+Lives left: 1
+
+🤖 Fallback: probando C (sin candidatas)
+Word: S U P E R B R E L O O M I O 
+Solved Hangmen in a row: 0
+Correct Guesses: 7
+Lives left: 0
+
+✅ Palabra agregada al banco: SUPERBRELOOMIO
+
+✅ Palabra agregada al banco: SUPERBRELOOMIO
+RESULT: SUPERBRELOOMIO - SUCCESS
+
+🔄 Ronda terminada. Refrescando para nueva palabra...
+
+— Nueva ronda —
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando E (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando T (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando A (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando O (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando I (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando N (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando S (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando H (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando R (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando D (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando L (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando U (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando C (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando M (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando F (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Y (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando W (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando G (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando P (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando B (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando V (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando K (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando X (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Q (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando J (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Z (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando E (sin candidatas)
+Word: _ _ E _ _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 1
+Lives left: 6
+
+🤖 Fallback: probando T (sin candidatas)
+Word: _ _ E T _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 2
+Lives left: 6
+
+🤖 Fallback: probando A (sin candidatas)
+Word: _ _ E T _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 2
+Lives left: 5
+
+🤖 Fallback: probando O (sin candidatas)
+Word: _ _ E T _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 2
+Lives left: 4
+
+🤖 Fallback: probando I (sin candidatas)
+Word: _ _ E T _ I _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 3
+Lives left: 4
+
+🤖 Fallback: probando N (sin candidatas)
+Word: _ _ E T _ I _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 3
+Lives left: 3
+
+🤖 Fallback: probando S (sin candidatas)
+Word: _ _ E T S I S 
+Solved Hangmen in a row: 0
+Correct Guesses: 4
+Lives left: 3
+
+🤖 Fallback: probando H (sin candidatas)
+Word: _ H E T S I S 
+Solved Hangmen in a row: 0
+Correct Guesses: 5
+Lives left: 3
+
+🤖 Fallback: probando R (sin candidatas)
+Word: _ H E T S I S 
+Solved Hangmen in a row: 0
+Correct Guesses: 5
+Lives left: 2
+
+🤖 Fallback: probando D (sin candidatas)
+Word: _ H E T S I S 
+Solved Hangmen in a row: 0
+Correct Guesses: 5
+Lives left: 1
+
+🤖 Fallback: probando L (sin candidatas)
+Word: G H E T S I S 
+Solved Hangmen in a row: 0
+Correct Guesses: 5
+Lives left: 0
+
+✅ Palabra agregada al banco: GHETSIS
+
+✅ Palabra agregada al banco: GHETSIS
+RESULT: GHETSIS - SUCCESS
+
+🔄 Ronda terminada. Refrescando para nueva palabra...
+
+— Nueva ronda —
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando E (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando T (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando A (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando O (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando I (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando N (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando S (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando H (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando R (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando D (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando L (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando U (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando C (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando M (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando F (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Y (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando W (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando G (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando P (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando B (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando V (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando K (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando X (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Q (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando J (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Z (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando E (sin candidatas)
+Word: _ _ _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 0
+Lives left: 5
+
+🤖 Fallback: probando T (sin candidatas)
+Word: _ _ _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 0
+Lives left: 4
+
+🤖 Fallback: probando A (sin candidatas)
+Word: _ _ _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 0
+Lives left: 3
+
+🤖 Fallback: probando O (sin candidatas)
+Word: _ _ O _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 1
+Lives left: 3
+
+🤖 Fallback: probando I (sin candidatas)
+Word: _ _ O _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 1
+Lives left: 2
+
+🤖 Fallback: probando N (sin candidatas)
+Word: _ _ O _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 1
+Lives left: 1
+
+🤖 Fallback: probando S (sin candidatas)
+Word: B R O C K 
+Solved Hangmen in a row: 0
+Correct Guesses: 1
+Lives left: 0
+
+✅ Palabra agregada al banco: BROCK
+
+✅ Palabra agregada al banco: BROCK
+RESULT: BROCK - SUCCESS
+
+🔄 Ronda terminada. Refrescando para nueva palabra...
+
+— Nueva ronda —
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando E (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando T (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando A (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando O (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando I (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando N (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando S (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando H (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando R (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando D (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando L (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando U (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando C (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando M (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando F (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Y (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando W (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando G (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando P (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando B (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando V (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando K (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando X (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Q (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando J (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Z (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando E (sin candidatas)
+Word: _ _ _ _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 0
+Lives left: 5
+
+🤖 Fallback: probando T (sin candidatas)
+Word: _ _ _ _ _ T 
+Solved Hangmen in a row: 0
+Correct Guesses: 1
+Lives left: 5
+
+🤖 Fallback: probando A (sin candidatas)
+Word: _ _ _ _ A T 
+Solved Hangmen in a row: 0
+Correct Guesses: 2
+Lives left: 5
+
+🤖 Fallback: probando O (sin candidatas)
+Word: _ O _ _ A T 
+Solved Hangmen in a row: 0
+Correct Guesses: 3
+Lives left: 5
+
+🤖 Fallback: probando I (sin candidatas)
+Word: _ O _ _ A T 
+Solved Hangmen in a row: 0
+Correct Guesses: 3
+Lives left: 4
+
+🤖 Fallback: probando N (sin candidatas)
+Word: _ O _ _ A T 
+Solved Hangmen in a row: 0
+Correct Guesses: 3
+Lives left: 3
+
+🤖 Fallback: probando S (sin candidatas)
+Word: _ O _ _ A T 
+Solved Hangmen in a row: 0
+Correct Guesses: 3
+Lives left: 2
+
+🤖 Fallback: probando H (sin candidatas)
+Word: _ O _ _ A T 
+Solved Hangmen in a row: 0
+Correct Guesses: 3
+Lives left: 1
+
+🤖 Fallback: probando R (sin candidatas)
+Word: G O L B A T 
+Solved Hangmen in a row: 0
+Correct Guesses: 3
+Lives left: 0
+
+ℹ️ Palabra ya estaba en el banco: GOLBAT
+RESULT: GOLBAT - SUCCESS
+
+🔄 Ronda terminada. Refrescando para nueva palabra...
+
+— Nueva ronda —
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando E (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando T (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando A (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando O (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando I (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando N (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando S (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando H (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando R (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando D (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando L (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando U (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando C (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando M (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando F (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Y (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando W (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando G (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando P (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando B (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando V (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando K (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando X (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Q (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando J (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Z (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando E (sin candidatas)
+Word: _ _ _ _ _ _ _ _ _ _ _ E 
+Solved Hangmen in a row: 0
+Correct Guesses: 1
+Lives left: 6
+
+🤖 Fallback: probando T (sin candidatas)
+Word: _ _ _ _ _ _ _ _ _ _ _ E 
+Solved Hangmen in a row: 0
+Correct Guesses: 1
+Lives left: 5
+
+🤖 Fallback: probando A (sin candidatas)
+Word: _ _ _ _ _ _ _ A _ _ _ E 
+Solved Hangmen in a row: 0
+Correct Guesses: 2
+Lives left: 5
+
+🤖 Fallback: probando O (sin candidatas)
+Word: _ _ _ _ _ _ _ A _ _ _ E 
+Solved Hangmen in a row: 0
+Correct Guesses: 2
+Lives left: 4
+
+🤖 Fallback: probando I (sin candidatas)
+Word: _ I _ _ _ _ _ A I _ I E 
+Solved Hangmen in a row: 0
+Correct Guesses: 3
+Lives left: 4
+
+🤖 Fallback: probando N (sin candidatas)
+Word: _ I N _ _ _ _ A I _ I E 
+Solved Hangmen in a row: 0
+Correct Guesses: 4
+Lives left: 4
+
+🤖 Fallback: probando S (sin candidatas)
+Word: _ I N _ _ _ _ A I _ I E 
+Solved Hangmen in a row: 0
+Correct Guesses: 4
+Lives left: 3
+
+🤖 Fallback: probando H (sin candidatas)
+Word: _ I N _ _ _ _ A I _ I E 
+Solved Hangmen in a row: 0
+Correct Guesses: 4
+Lives left: 2
+
+🤖 Fallback: probando R (sin candidatas)
+Word: _ I N _ _ _ R A I R I E 
+Solved Hangmen in a row: 0
+Correct Guesses: 5
+Lives left: 2
+
+🤖 Fallback: probando D (sin candidatas)
+Word: _ I N D _ _ R A I R I E 
+Solved Hangmen in a row: 0
+Correct Guesses: 6
+Lives left: 2
+
+🤖 Fallback: probando L (sin candidatas)
+Word: _ I N D _ _ R A I R I E 
+Solved Hangmen in a row: 0
+Correct Guesses: 6
+Lives left: 1
+
+🤖 Fallback: probando U (sin candidatas)
+Word: W I N D Y P R A I R I E 
+Solved Hangmen in a row: 0
+Correct Guesses: 6
+Lives left: 0
+
+✅ Palabra agregada al banco: WINDYPRAIRIE
+
+✅ Palabra agregada al banco: WINDYPRAIRIE
+RESULT: WINDYPRAIRIE - SUCCESS
+
+🔄 Ronda terminada. Refrescando para nueva palabra...
+
+— Nueva ronda —
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando E (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando T (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando A (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando O (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando I (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando N (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando S (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando H (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando R (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando D (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando L (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando U (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando C (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando M (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando F (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Y (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando W (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando G (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando P (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando B (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando V (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando K (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando X (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Q (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando J (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Z (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando E (sin candidatas)
+Word: _ E _ E _ _ _ _ _ _ E 
+Solved Hangmen in a row: 0
+Correct Guesses: 1
+Lives left: 6
+
+🤖 Fallback: probando T (sin candidatas)
+Word: _ E _ E _ _ _ _ _ _ E 
+Solved Hangmen in a row: 0
+Correct Guesses: 1
+Lives left: 5
+
+🤖 Fallback: probando A (sin candidatas)
+Word: _ E _ E _ _ _ A _ _ E 
+Solved Hangmen in a row: 0
+Correct Guesses: 2
+Lives left: 5
+
+🤖 Fallback: probando O (sin candidatas)
+Word: _ E _ E _ _ _ A _ _ E 
+Solved Hangmen in a row: 0
+Correct Guesses: 2
+Lives left: 4
+
+🤖 Fallback: probando I (sin candidatas)
+Word: _ E _ E _ _ _ A _ _ E 
+Solved Hangmen in a row: 0
+Correct Guesses: 2
+Lives left: 3
+
+🤖 Fallback: probando N (sin candidatas)
+Word: _ E _ E _ _ _ A N _ E 
+Solved Hangmen in a row: 0
+Correct Guesses: 3
+Lives left: 3
+
+🤖 Fallback: probando S (sin candidatas)
+Word: _ E _ E _ _ _ A N _ E 
+Solved Hangmen in a row: 0
+Correct Guesses: 3
+Lives left: 2
+
+🤖 Fallback: probando H (sin candidatas)
+Word: _ E _ E _ _ H A N _ E 
+Solved Hangmen in a row: 0
+Correct Guesses: 4
+Lives left: 2
+
+🤖 Fallback: probando R (sin candidatas)
+Word: _ E _ E _ _ H A N _ E 
+Solved Hangmen in a row: 0
+Correct Guesses: 4
+Lives left: 1
+
+🤖 Fallback: probando D (sin candidatas)
+Word: G E M E X C H A N G E 
+Solved Hangmen in a row: 0
+Correct Guesses: 4
+Lives left: 0
+
+✅ Palabra agregada al banco: GEMEXCHANGE
+
+✅ Palabra agregada al banco: GEMEXCHANGE
+RESULT: GEMEXCHANGE - SUCCESS
+
+🔄 Ronda terminada. Refrescando para nueva palabra...
+
+— Nueva ronda —
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando E (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando T (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando A (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando O (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando I (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando N (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando S (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando H (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando R (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando D (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando L (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando U (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando C (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando M (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando F (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Y (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando W (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando G (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando P (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando B (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando V (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando K (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando X (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Q (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando J (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Z (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando E (sin candidatas)
+Word: _ _ _ _ _ _ E _ _ _ E _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 1
+Lives left: 6
+
+🤖 Fallback: probando T (sin candidatas)
+Word: _ _ _ _ _ _ E _ _ _ E _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 1
+Lives left: 5
+
+🤖 Fallback: probando A (sin candidatas)
+Word: _ A _ _ A _ E _ _ _ E _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 2
+Lives left: 5
+
+🤖 Fallback: probando O (sin candidatas)
+Word: _ A _ _ A _ E O _ _ E _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 3
+Lives left: 5
+
+🤖 Fallback: probando I (sin candidatas)
+Word: _ A _ _ A _ E O _ _ E _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 3
+Lives left: 4
+
+🤖 Fallback: probando N (sin candidatas)
+Word: _ A _ _ A _ E O _ N E _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 4
+Lives left: 4
+
+🤖 Fallback: probando S (sin candidatas)
+Word: _ A _ _ A _ E O _ N E _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 4
+Lives left: 3
+
+🤖 Fallback: probando H (sin candidatas)
+Word: _ A _ _ A _ E O _ N E _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 4
+Lives left: 2
+
+🤖 Fallback: probando R (sin candidatas)
+Word: _ A _ _ A R E O _ N E R 
+Solved Hangmen in a row: 0
+Correct Guesses: 5
+Lives left: 2
+
+🤖 Fallback: probando D (sin candidatas)
+Word: D A _ _ A R E O _ N E R 
+Solved Hangmen in a row: 0
+Correct Guesses: 6
+Lives left: 2
+
+🤖 Fallback: probando L (sin candidatas)
+Word: D A _ _ A R E O _ N E R 
+Solved Hangmen in a row: 0
+Correct Guesses: 6
+Lives left: 1
+
+🤖 Fallback: probando U (sin candidatas)
+Word: D A Y C A R E O W N E R 
+Solved Hangmen in a row: 0
+Correct Guesses: 6
+Lives left: 0
+
+✅ Palabra agregada al banco: DAYCAREOWNER
+
+✅ Palabra agregada al banco: DAYCAREOWNER
+RESULT: DAYCAREOWNER - SUCCESS
+
+🔄 Ronda terminada. Refrescando para nueva palabra...
+
+— Nueva ronda —
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando E (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando T (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando A (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando O (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando I (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando N (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando S (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando H (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando R (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando D (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando L (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando U (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando C (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando M (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando F (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Y (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando W (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando G (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando P (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando B (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando V (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando K (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando X (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Q (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando J (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Z (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando E (sin candidatas)
+Word: _ _ _ _ _ _ _ _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 0
+Lives left: 5
+
+🤖 Fallback: probando T (sin candidatas)
+Word: _ _ _ _ _ _ T _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 1
+Lives left: 5
+
+🤖 Fallback: probando A (sin candidatas)
+Word: _ _ _ _ _ _ T _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 1
+Lives left: 4
+
+🤖 Fallback: probando O (sin candidatas)
+Word: _ _ _ _ _ _ T _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 1
+Lives left: 3
+
+🤖 Fallback: probando I (sin candidatas)
+Word: _ I _ _ _ _ T _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 2
+Lives left: 3
+
+🤖 Fallback: probando N (sin candidatas)
+Word: _ I _ _ _ _ T _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 2
+Lives left: 2
+
+🤖 Fallback: probando S (sin candidatas)
+Word: _ I _ _ _ _ T _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 2
+Lives left: 1
+
+🤖 Fallback: probando H (sin candidatas)
+Word: W I G G L Y T U F F 
+Solved Hangmen in a row: 0
+Correct Guesses: 2
+Lives left: 0
+
+ℹ️ Palabra ya estaba en el banco: WIGGLYTUFF
+RESULT: WIGGLYTUFF - SUCCESS
+
+🔄 Ronda terminada. Refrescando para nueva palabra...
+
+— Nueva ronda —
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando E (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando T (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando A (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando O (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando I (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando N (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando S (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando H (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando R (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando D (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando L (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando U (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando C (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando M (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando F (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Y (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando W (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando G (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando P (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando B (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando V (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando K (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando X (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Q (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando J (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Z (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando E (sin candidatas)
+Word: _ _ _ E _ _ _ _ _ _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 1
+Lives left: 6
+
+🤖 Fallback: probando T (sin candidatas)
+Word: _ _ T E _ _ _ T _ _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 2
+Lives left: 6
+
+🤖 Fallback: probando A (sin candidatas)
+Word: _ _ T E _ A _ T _ _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 3
+Lives left: 6
+
+🤖 Fallback: probando O (sin candidatas)
+Word: _ _ T E _ A _ T _ O _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 4
+Lives left: 6
+
+🤖 Fallback: probando I (sin candidatas)
+Word: I _ T E _ A _ T I O _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 5
+Lives left: 6
+
+🤖 Fallback: probando N (sin candidatas)
+Word: I N T E _ A _ T I O N _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 6
+Lives left: 6
+
+🤖 Fallback: probando S (sin candidatas)
+Word: I N T E _ A _ T I O N S 
+Solved Hangmen in a row: 0
+Correct Guesses: 7
+Lives left: 6
+
+🤖 Fallback: probando H (sin candidatas)
+Word: I N T E _ A _ T I O N S 
+Solved Hangmen in a row: 0
+Correct Guesses: 7
+Lives left: 5
+
+🤖 Fallback: probando R (sin candidatas)
+Word: I N T E R A _ T I O N S 
+Solved Hangmen in a row: 0
+Correct Guesses: 8
+Lives left: 5
+
+🤖 Fallback: probando D (sin candidatas)
+Word: I N T E R A _ T I O N S 
+Solved Hangmen in a row: 0
+Correct Guesses: 8
+Lives left: 4
+
+🤖 Fallback: probando L (sin candidatas)
+Word: I N T E R A _ T I O N S 
+Solved Hangmen in a row: 0
+Correct Guesses: 8
+Lives left: 3
+
+🤖 Fallback: probando U (sin candidatas)
+Word: I N T E R A _ T I O N S 
+Solved Hangmen in a row: 0
+Correct Guesses: 8
+Lives left: 2
+
+🤖 Fallback: probando C (sin candidatas)
+Word: I N T E R A C T I O N S 
+Solved Hangmen in a row: 0
+Correct Guesses: 9
+Lives left: 2
+
+✅ Palabra agregada al banco: INTERACTIONS
+
+✅ Palabra agregada al banco: INTERACTIONS
+RESULT: INTERACTIONS - SUCCESS
+
+🔄 Ronda terminada. Refrescando para nueva palabra...
+
+— Nueva ronda —
+Word: _ _ _ _ _ _ 
+Solved Hangmen in a row: 1
+Correct Guesses: 0
+Lives left: 6
+Letras fallidas: -
+
+Candidatas (shape) (189):
+- WEEDLE
+- KAKUNA
+- PIDGEY
+- FEAROW
+- RAICHU
+- VULPIX
+- GOLBAT
+- ODDISH
+- MEOWTH
+- MANKEY
+- MACHOP
+- PONYTA
+- DODRIO
+- GRIMER
+- GASTLY
+- GENGAR
+- KRABBY
+- CUBONE
+- RHYDON
+- HORSEA
+- SEADRA
+- STARYU
+- MR MIME
+- MAGMAR
+- PINSIR
+- TAUROS
+- LAPRAS
+- KABUTO
+- ZAPDOS
+- MEWTWO
+- FURRET
+- LEDYBA
+- LEDIAN
+- CROBAT
+- CLEFFA
+- TOGEPI
+- MAREEP
+- MARILL
+- HOPPIP
+- WOOPER
+- ESPEON
+- PINECO
+- GLIGAR
+- SCIZOR
+- SLUGMA
+- SWINUB
+- PHANPY
+- ELEKID
+- RAIKOU
+- CELEBI
+- MUDKIP
+- DUSTOX
+- LOMBRE
+- SEEDOT
+- KIRLIA
+- SKITTY
+- MAWILE
+- LAIRON
+- AGGRON
+- PLUSLE
+- GULPIN
+- SWALOT
+- SPOINK
+- SPINDA
+- FLYGON
+- CACNEA
+- SWABLU
+- BALTOY
+- LILEEP
+- FEEBAS
+- WYNAUT
+- GLALIE
+- SPHEAL
+- SEALEO
+- BELDUM
+- METANG
+- REGICE
+- LATIAS
+- LATIOS
+- KYOGRE
+- DEOXYS
+- GROTLE
+- PIPLUP
+- STARLY
+- BIDOOF
+- LUXRAY
+- MOTHIM
+- COMBEE
+- BUIZEL
+- STUNKY
+- BONSLY
+- MIME JR
+- CHATOT
+- GABITE
+- SNOVER
+- DIALGA
+- PALKIA
+- PHIONE
+- ARCEUS
+- EMBOAR
+- DEWOTT
+- PATRAT
+- PIDOVE
+- WOOBAT
+- AUDINO
+- YAMASK
+- ARCHEN
+- SWANNA
+- EMOLGA
+- JOLTIK
+- TYNAMO
+- ELGYEM
+- GOLETT
+- GOLURK
+- DURANT
+- ZEKROM
+- KYUREM
+- KELDEO
+- SPEWPA
+- LITLEO
+- PYROAR
+- SKIDDO
+- GOGOAT
+- ESPURR
+- SKRELP
+- TYRUNT
+- AMAURA
+- GOODRA
+- KLEFKI
+- NOIBAT
+- ROWLET
+- LITTEN
+- BEWEAR
+- COMFEY
+- WIMPOD
+- MINIOR
+- KOMALA
+- DRAMPA
+- COSMOG
+- LUNALA
+- MELTAN
+- RABOOT
+- SOBBLE
+- NICKIT
+- WOOLOO
+- YAMPER
+- CARKOL
+- APPLIN
+- MR RIME
+- EISCUE
+- CUFANT
+- DREEPY
+- ZACIAN
+- ZARUDE
+- QUAXLY
+- NYMBLE
+- RELLOR
+- RABSCA
+- VELUZA
+- SMOLIV
+- DOLLIV
+- PAWMOT
+- VAROOM
+- CHI-YU
+- NUGGET
+- KOMMO O
+- PUMPLE
+- PUMPLE
+- MT MOON
+- MT MOON
+- PAL PAD
+- PAL PAD
+- GENGAR
+- PINSIR
+- MEWTWO
+- SCIZOR
+- MAWILE
+- AGGRON
+- GLALIE
+- LATIAS
+- LATIOS
+- AUDINO
+- MEOWTH
+- FLYING
+- FLYING
+- MASUDA
+- MASUDA
+- POTION
+- POTION
+
+Letras por frecuencia (excluyendo intentadas):
+A:96 O:87 E:83 L:72 I:70 R:65 T:53 N:52 M:49 S:49 P:43 U:43 D:35 Y:33 G:32
+
+🤖 Auto: probando A (top entre 189 candidatas)
+Word: _ _ _ _ _ _ 
+Solved Hangmen in a row: 1
+Correct Guesses: 0
+Lives left: 5
+
+🤖 Auto: probando E (top entre 93 candidatas)
+Word: _ _ _ _ _ E 
+Solved Hangmen in a row: 1
+Correct Guesses: 1
+Lives left: 5
+
+🤖 Auto: probando L (top entre 13 candidatas)
+Word: _ _ _ _ _ E 
+Solved Hangmen in a row: 1
+Correct Guesses: 1
+Lives left: 4
+
+🤖 Auto: probando I (top entre 6 candidatas)
+Word: _ _ _ I _ E 
+Solved Hangmen in a row: 1
+Correct Guesses: 2
+Lives left: 4
+
+🤖 Auto: probando M (top entre 2 candidatas)
+Word: _ _ _ I _ E 
+Solved Hangmen in a row: 1
+Correct Guesses: 2
+Lives left: 3
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: _ _ _ I _ E 
+Solved Hangmen in a row: 1
+Correct Guesses: 2
+Lives left: 3
+Letras fallidas: A L M
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando T (sin candidatas)
+Word: _ _ _ I T E 
+Solved Hangmen in a row: 1
+Correct Guesses: 3
+Lives left: 3
+
+🤖 Fallback: probando O (sin candidatas)
+Word: _ _ _ I T E 
+Solved Hangmen in a row: 1
+Correct Guesses: 3
+Lives left: 2
+
+🤖 Fallback: probando N (sin candidatas)
+Word: _ _ _ I T E 
+Solved Hangmen in a row: 1
+Correct Guesses: 3
+Lives left: 1
+
+🤖 Fallback: probando S (sin candidatas)
+Word: S _ _ I T E 
+Solved Hangmen in a row: 1
+Correct Guesses: 4
+Lives left: 1
+
+🤖 Fallback: probando H (sin candidatas)
+Word: S P R I T E 
+Solved Hangmen in a row: 1
+Correct Guesses: 4
+Lives left: 0
+
+✅ Palabra agregada al banco: SPRITE
+
+✅ Palabra agregada al banco: SPRITE
+RESULT: SPRITE - SUCCESS
+
+🔄 Ronda terminada. Refrescando para nueva palabra...
+
+— Nueva ronda —
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando E (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando T (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando A (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando O (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando I (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando N (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando S (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando H (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando R (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando D (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando L (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando U (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando C (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando M (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando F (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Y (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando W (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando G (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando P (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando B (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando V (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando K (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando X (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Q (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando J (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Z (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando E (sin candidatas)
+Word: _ _ _ _ _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 0
+Lives left: 5
+
+🤖 Fallback: probando T (sin candidatas)
+Word: _ _ _ T _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 1
+Lives left: 5
+
+🤖 Fallback: probando A (sin candidatas)
+Word: _ _ _ T _ _ A 
+Solved Hangmen in a row: 0
+Correct Guesses: 2
+Lives left: 5
+
+🤖 Fallback: probando O (sin candidatas)
+Word: _ _ _ T _ _ A 
+Solved Hangmen in a row: 0
+Correct Guesses: 2
+Lives left: 4
+
+🤖 Fallback: probando I (sin candidatas)
+Word: _ _ _ T _ I A 
+Solved Hangmen in a row: 0
+Correct Guesses: 3
+Lives left: 4
+
+🤖 Fallback: probando N (sin candidatas)
+Word: _ _ N T _ I A 
+Solved Hangmen in a row: 0
+Correct Guesses: 4
+Lives left: 4
+
+🤖 Fallback: probando S (sin candidatas)
+Word: _ _ N T _ I A 
+Solved Hangmen in a row: 0
+Correct Guesses: 4
+Lives left: 3
+
+🤖 Fallback: probando H (sin candidatas)
+Word: _ _ N T H I A 
+Solved Hangmen in a row: 0
+Correct Guesses: 5
+Lives left: 3
+
+🤖 Fallback: probando R (sin candidatas)
+Word: _ _ N T H I A 
+Solved Hangmen in a row: 0
+Correct Guesses: 5
+Lives left: 2
+
+🤖 Fallback: probando D (sin candidatas)
+Word: _ _ N T H I A 
+Solved Hangmen in a row: 0
+Correct Guesses: 5
+Lives left: 1
+
+🤖 Fallback: probando L (sin candidatas)
+Word: C Y N T H I A 
+Solved Hangmen in a row: 0
+Correct Guesses: 5
+Lives left: 0
+
+✅ Palabra agregada al banco: CYNTHIA
+
+✅ Palabra agregada al banco: CYNTHIA
+RESULT: CYNTHIA - SUCCESS
+
+🔄 Ronda terminada. Refrescando para nueva palabra...
+
+— Nueva ronda —
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando E (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando T (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando A (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando O (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando I (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando N (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando S (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando H (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando R (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando D (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando L (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando U (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando C (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando M (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando F (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Y (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando W (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando G (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando P (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando B (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando V (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando K (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando X (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Q (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando J (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Z (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando E (sin candidatas)
+Word: _ _ _ _ _ _ _ _ _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 0
+Lives left: 5
+
+🤖 Fallback: probando T (sin candidatas)
+Word: _ _ _ _ _ _ _ _ _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 0
+Lives left: 4
+
+🤖 Fallback: probando A (sin candidatas)
+Word: _ _ _ _ _ _ _ _ _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 0
+Lives left: 3
+
+🤖 Fallback: probando O (sin candidatas)
+Word: _ _ _ _ _ _ O _ _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 1
+Lives left: 3
+
+🤖 Fallback: probando I (sin candidatas)
+Word: _ _ _ _ _ _ O _ _ I _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 2
+Lives left: 3
+
+🤖 Fallback: probando N (sin candidatas)
+Word: _ _ _ _ _ _ O _ _ I _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 2
+Lives left: 2
+
+🤖 Fallback: probando S (sin candidatas)
+Word: S _ _ _ _ _ O S S I _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 3
+Lives left: 2
+
+🤖 Fallback: probando H (sin candidatas)
+Word: S _ _ _ _ _ O S S I _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 3
+Lives left: 1
+
+🤖 Fallback: probando R (sin candidatas)
+Word: S K U L L F O S S I L 
+Solved Hangmen in a row: 0
+Correct Guesses: 3
+Lives left: 0
+
+✅ Palabra agregada al banco: SKULLFOSSIL
+
+✅ Palabra agregada al banco: SKULLFOSSIL
+RESULT: SKULLFOSSIL - SUCCESS
+
+🔄 Ronda terminada. Refrescando para nueva palabra...
+
+— Nueva ronda —
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando E (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando T (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando A (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando O (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando I (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando N (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando S (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando H (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando R (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando D (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando L (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando U (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando C (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando M (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando F (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Y (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando W (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando G (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando P (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando B (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando V (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando K (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando X (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Q (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando J (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Z (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando E (sin candidatas)
+Word: _ _ E _ _ _ E _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 1
+Lives left: 6
+
+🤖 Fallback: probando T (sin candidatas)
+Word: _ _ E _ _ _ E _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 1
+Lives left: 5
+
+🤖 Fallback: probando A (sin candidatas)
+Word: _ _ E _ _ _ E _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 1
+Lives left: 4
+
+🤖 Fallback: probando O (sin candidatas)
+Word: _ _ E _ _ _ E _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 1
+Lives left: 3
+
+🤖 Fallback: probando I (sin candidatas)
+Word: _ _ E _ I _ E _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 2
+Lives left: 3
+
+🤖 Fallback: probando N (sin candidatas)
+Word: _ _ E _ I _ E _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 2
+Lives left: 2
+
+🤖 Fallback: probando S (sin candidatas)
+Word: _ _ E _ I _ E _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 2
+Lives left: 1
+
+🤖 Fallback: probando H (sin candidatas)
+Word: _ H E _ I _ E _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 3
+Lives left: 1
+
+🤖 Fallback: probando R (sin candidatas)
+Word: _ H E R I _ E R R _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 4
+Lives left: 1
+
+🤖 Fallback: probando D (sin candidatas)
+Word: C H E R I B E R R Y 
+Solved Hangmen in a row: 0
+Correct Guesses: 4
+Lives left: 0
+
+✅ Palabra agregada al banco: CHERIBERRY
+
+✅ Palabra agregada al banco: CHERIBERRY
+RESULT: CHERIBERRY - SUCCESS
+
+🔄 Ronda terminada. Refrescando para nueva palabra...
+
+— Nueva ronda —
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando E (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando T (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando A (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando O (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando I (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando N (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando S (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando H (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando R (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando D (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando L (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando U (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando C (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando M (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando F (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Y (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando W (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando G (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando P (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando B (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando V (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando K (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando X (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Q (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando J (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Z (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando E (sin candidatas)
+Word: _ _ _ _ _ _ E _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 1
+Lives left: 6
+
+🤖 Fallback: probando T (sin candidatas)
+Word: _ T _ _ T _ E _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 2
+Lives left: 6
+
+🤖 Fallback: probando A (sin candidatas)
+Word: _ T A _ T _ E _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 3
+Lives left: 6
+
+🤖 Fallback: probando O (sin candidatas)
+Word: _ T A _ T _ E _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 3
+Lives left: 5
+
+🤖 Fallback: probando I (sin candidatas)
+Word: _ T A _ T _ E _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 3
+Lives left: 4
+
+🤖 Fallback: probando N (sin candidatas)
+Word: _ T A N T _ E _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 4
+Lives left: 4
+
+🤖 Fallback: probando S (sin candidatas)
+Word: S T A N T _ E _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 5
+Lives left: 4
+
+🤖 Fallback: probando H (sin candidatas)
+Word: S T A N T _ E _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 5
+Lives left: 3
+
+🤖 Fallback: probando R (sin candidatas)
+Word: S T A N T _ E R 
+Solved Hangmen in a row: 0
+Correct Guesses: 6
+Lives left: 3
+
+🤖 Fallback: probando D (sin candidatas)
+Word: S T A N T _ E R 
+Solved Hangmen in a row: 0
+Correct Guesses: 6
+Lives left: 2
+
+🤖 Fallback: probando L (sin candidatas)
+Word: S T A N T L E R 
+Solved Hangmen in a row: 0
+Correct Guesses: 7
+Lives left: 2
+
+ℹ️ Palabra ya estaba en el banco: STANTLER
+RESULT: STANTLER - SUCCESS
+
+🔄 Ronda terminada. Refrescando para nueva palabra...
+
+— Nueva ronda —
+Word: _ _ _ _ _ _ _ 
+Solved Hangmen in a row: 1
+Correct Guesses: 0
+Lives left: 6
+Letras fallidas: -
+
+Candidatas (shape) (306):
+- IVYSAUR
+- METAPOD
+- PIDGEOT
+- RATTATA
+- SPEAROW
+- PIKACHU
+- VENONAT
+- DIGLETT
+- DUGTRIO
+- PERSIAN
+- PSYDUCK
+- GOLDUCK
+- POLIWAG
+- KADABRA
+- MACHOKE
+- MACHAMP
+- GEODUDE
+- SLOWBRO
+- DEWGONG
+- HAUNTER
+- DROWZEE
+- KINGLER
+- VOLTORB
+- MAROWAK
+- KOFFING
+- WEEZING
+- RHYHORN
+- CHANSEY
+- TANGELA
+- GOLDEEN
+- SEAKING
+- STARMIE
+- SCYTHER
+- JOLTEON
+- FLAREON
+- PORYGON
+- OMANYTE
+- OMASTAR
+- SNORLAX
+- MOLTRES
+- DRATINI
+- BAYLEEF
+- QUILAVA
+- SENTRET
+- NOCTOWL
+- ARIADOS
+- LANTURN
+- TOGETIC
+- FLAAFFY
+- SUNKERN
+- UMBREON
+- MURKROW
+- STEELIX
+- SHUCKLE
+- SNEASEL
+- CORSOLA
+- MANTINE
+- KINGDRA
+- DONPHAN
+- TYROGUE
+- MILTANK
+- BLISSEY
+- SUICUNE
+- PUPITAR
+- TREECKO
+- GROVYLE
+- TORCHIC
+- LINOONE
+- WURMPLE
+- SILCOON
+- CASCOON
+- NUZLEAF
+- SHIFTRY
+- TAILLOW
+- SWELLOW
+- WINGULL
+- SURSKIT
+- BRELOOM
+- SLAKOTH
+- SLAKING
+- NINCADA
+- NINJASK
+- WHISMUR
+- LOUDRED
+- EXPLOUD
+- AZURILL
+- SABLEYE
+- VOLBEAT
+- ROSELIA
+- WAILMER
+- WAILORD
+- TORKOAL
+- GRUMPIG
+- VIBRAVA
+- ALTARIA
+- SEVIPER
+- SOLROCK
+- CLAYDOL
+- CRADILY
+- ANORITH
+- ARMALDO
+- MILOTIC
+- KECLEON
+- SHUPPET
+- BANETTE
+- DUSKULL
+- TROPIUS
+- SNORUNT
+- WALREIN
+- HUNTAIL
+- LUVDISC
+- SHELGON
+- GROUDON
+- JIRACHI
+- TURTWIG
+- BIBAREL
+- CHERUBI
+- CHERRIM
+- SHELLOS
+- AMBIPOM
+- BUNEARY
+- LOPUNNY
+- GLAMEOW
+- PURUGLY
+- BRONZOR
+- HAPPINY
+- LUCARIO
+- SKORUPI
+- DRAPION
+- FINNEON
+- MANTYKE
+- WEAVILE
+- YANMEGA
+- LEAFEON
+- GLACEON
+- GLISCOR
+- GALLADE
+- MESPRIT
+- HEATRAN
+- MANAPHY
+- DARKRAI
+- SHAYMIN
+- VICTINI
+- SERVINE
+- PIGNITE
+- WATCHOG
+- HERDIER
+- LIEPARD
+- PANSAGE
+- PANSEAR
+- PANPOUR
+- BLITZLE
+- BOLDORE
+- SWOOBAT
+- DRILBUR
+- TIMBURR
+- GURDURR
+- TYMPOLE
+- PETILIL
+- SANDILE
+- DWEBBLE
+- CRUSTLE
+- SCRAGGY
+- SCRAFTY
+- ZOROARK
+- GOTHITA
+- SOLOSIS
+- DUOSION
+- FOONGUS
+- LITWICK
+- LAMPENT
+- FRAXURE
+- HAXORUS
+- CUBCHOO
+- BEARTIC
+- SHELMET
+- MIENFOO
+- BISHARP
+- RUFFLET
+- VULLABY
+- HEATMOR
+- CHESPIN
+- BRAIXEN
+- DELPHOX
+- FROAKIE
+- FLABEBE
+- FLOETTE
+- FLORGES
+- PANCHAM
+- PANGORO
+- FURFROU
+- HONEDGE
+- SWIRLIX
+- MALAMAR
+- BINACLE
+- AURORUS
+- SYLVEON
+- DEDENNE
+- CARBINK
+- SLIGGOO
+- AVALUGG
+- NOIVERN
+- XERNEAS
+- YVELTAL
+- ZYGARDE
+- DIANCIE
+- DARTRIX
+- POPPLIO
+- BRIONNE
+- PIKIPEK
+- YUNGOOS
+- GRUBBIN
+- TOXAPEX
+- MUDBRAY
+- STUFFUL
+- STEENEE
+- MIMIKYU
+- BRUXISH
+- KOMMO-O
+- COSMOEM
+- KARTANA
+- POIPOLE
+- ZERAORA
+- DREDNAW
+- GROOKEY
+- SKWOVET
+- BLIPBUG
+- DOTTLER
+- THIEVUL
+- DUBWOOL
+- CHEWTLE
+- DREDNAW
+- BOLTUND
+- FLAPPLE
+- HATENNA
+- HATTREM
+- MORGREM
+- CURSOLA
+- MILCERY
+- FALINKS
+- MORPEKO
+- URSHIFU
+- CALYREX
+- WYRDEER
+- KLEAVOR
+- FUECOCO
+- LECHONK
+- SPIDOPS
+- CETITAN
+- DONDOZO
+- FINIZEN
+- PALAFIN
+- TADBULB
+- WATTREL
+- FIDOUGH
+- GLIMMET
+- FLAMIGO
+- FLITTLE
+- TING-LU
+- OKIDOGI
+- OGERPON
+- DIPPLIN
+- IMPASTA
+- VITAMIN
+- RUN AWAY
+- AGILITY
+- REMAKES
+- REMAKES
+- AUCTION
+- AUCTION
+- MR MOODY
+- MR MOODY
+- COOCOOT
+- COOCOOT
+- JANGMO O
+- JANGMO O
+- CONTEST
+- CONTEST
+- PIDGEOT
+- SLOWBRO
+- STEELIX
+- SABLEYE
+- ALTARIA
+- BANETTE
+- LOPUNNY
+- LUCARIO
+- GALLADE
+- DIANCIE
+- PIKACHU
+- MACHAMP
+- SNORLAX
+- DREDNAW
+- FLAPPLE
+- URSHIFU
+- NET BALL
+- SCANNER
+- SCANNER
+- CALCIUM
+- CALCIUM
+- LOTTERY
+- LOTTERY
+- WEATHER
+- WEATHER
+- FISHING
+- GHETSIS
+- CYNTHIA
+
+Letras por frecuencia (excluyendo intentadas):
+E:156 A:155 R:142 O:137 I:132 L:131 N:117 T:102 S:90 U:79 C:65 D:61 G:61 M:56 P:55
+
+🤖 Auto: probando E (top entre 306 candidatas)
+Word: _ _ E E _ _ _ 
+Solved Hangmen in a row: 1
+Correct Guesses: 1
+Lives left: 6
+
+🤖 Auto: probando T (top entre 3 candidatas)
+Word: T _ E E _ _ _ 
+Solved Hangmen in a row: 1
+Correct Guesses: 2
+Lives left: 6
+
+🤖 Auto: probando C (top entre 1 candidatas)
+Word: T _ E E C _ _ 
+Solved Hangmen in a row: 1
+Correct Guesses: 3
+Lives left: 6
+
+🤖 Auto: probando K (top entre 1 candidatas)
+Word: T _ E E C K _ 
+Solved Hangmen in a row: 1
+Correct Guesses: 4
+Lives left: 6
+
+🤖 Auto: probando O (top entre 1 candidatas)
+Word: T _ E E C K O 
+Solved Hangmen in a row: 1
+Correct Guesses: 5
+Lives left: 6
+
+🤖 Auto: probando R (top entre 1 candidatas)
+Word: T R E E C K O 
+Solved Hangmen in a row: 1
+Correct Guesses: 6
+Lives left: 6
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: _ _ _ _ _ _ _ _ _ 
+Solved Hangmen in a row: 2
+Correct Guesses: 0
+Lives left: 6
+Letras fallidas: -
+
+Candidatas (shape) (276):
+- ELECTRODE
+- SPROUTRIO
+- PILOSWINE
+- BULBASAUR
+- CHARIZARD
+- WARTORTLE
+- BLASTOISE
+- PIDGEOTTO
+- SANDSHREW
+- SANDSLASH
+- NIDOQUEEN
+- NINETALES
+- VILEPLUME
+- GROWLITHE
+- POLIWHIRL
+- POLIWRATH
+- TENTACOOL
+- MAGNEMITE
+- FARFETCHD
+- ELECTRODE
+- EXEGGCUTE
+- EXEGGUTOR
+- HITMONLEE
+- LICKITUNG
+- DRAGONAIR
+- DRAGONITE
+- CHIKORITA
+- CYNDAQUIL
+- IGGLYBUFF
+- BELLOSSOM
+- AZUMARILL
+- SUDOWOODO
+- WOBBUFFET
+- GIRAFARIG
+- DUNSPARCE
+- HERACROSS
+- TEDDIURSA
+- PILOSWINE
+- OCTILLERY
+- HITMONTOP
+- TYRANITAR
+- COMBUSKEN
+- MARSHTOMP
+- POOCHYENA
+- MIGHTYENA
+- ZIGZAGOON
+- BEAUTIFLY
+- GARDEVOIR
+- SHROOMISH
+- ELECTRIKE
+- MANECTRIC
+- CRAWDAUNT
+- RELICANTH
+- SALAMENCE
+- METAGROSS
+- REGISTEEL
+- INFERNAPE
+- STARAPTOR
+- KRICKETOT
+- RAMPARDOS
+- BASTIODON
+- VESPIQUEN
+- PACHIRISU
+- GASTRODON
+- MISMAGIUS
+- HONCHKROW
+- CHINGLING
+- SPIRITOMB
+- HIPPOWDON
+- TOXICROAK
+- CARNIVINE
+- ABOMASNOW
+- MAGNEZONE
+- RHYPERIOR
+- TANGROWTH
+- MAGMORTAR
+- MAMOSWINE
+- PORYGON-Z
+- PROBOPASS
+- REGIGIGAS
+- CRESSELIA
+- SERPERIOR
+- STOUTLAND
+- TRANQUILL
+- ZEBSTRIKA
+- EXCADRILL
+- PALPITOAD
+- SCOLIPEDE
+- LILLIGANT
+- GOTHORITA
+- REUNICLUS
+- VANILLITE
+- VANILLISH
+- VANILLUXE
+- AMOONGUSS
+- JELLICENT
+- ALOMOMOLA
+- FERROSEED
+- KLINKLANG
+- EELEKTRIK
+- CRYOGONAL
+- DRUDDIGON
+- MANDIBUZZ
+- HYDREIGON
+- VOLCARONA
+- TERRAKION
+- THUNDURUS
+- QUILLADIN
+- FROGADIER
+- DIGGERSBY
+- AEGISLASH
+- CLAUNCHER
+- CLAWITZER
+- HELIOLISK
+- TYRANTRUM
+- TREVENANT
+- PUMPKABOO
+- GOURGEIST
+- VOLCANION
+- DECIDUEYE
+- PRIMARINA
+- TOUCANNON
+- CHARJABUG
+- ARAQUANID
+- SHIINOTIC
+- BOUNSWEET
+- PASSIMIAN
+- GOLISOPOD
+- SANDYGAST
+- PALOSSAND
+- PYUKUMUKU
+- TYPE: NULL
+- PHEROMOSA
+- XURKITREE
+- MARSHADOW
+- NAGANADEL
+- STAKATAKA
+- RILLABOOM
+- SCORBUNNY
+- CINDERACE
+- COALOSSAL
+- SILICOBRA
+- CRAMORANT
+- CLOBBOPUS
+- GRAPPLOCT
+- HATTERENE
+- OBSTAGOON
+- SIRFETCHD
+- RUNERIGUS
+- DRACOZOLT
+- ARCTOZOLT
+- DRACOVISH
+- ARCTOVISH
+- DURALUDON
+- DRAGAPULT
+- ZAMAZENTA
+- ETERNATUS
+- REGIELEKI
+- REGIDRAGO
+- GLASTRIER
+- SPECTRIER
+- FLORAGATO
+- QUAQUAVAL
+- TATSUGIRI
+- BELLIBOLT
+- TANDEMAUS
+- NACLSTACK
+- GARGANACL
+- REVAVROOM
+- FARIGIRAF
+- KINGAMBIT
+- TOEDSCOOL
+- CHARCADET
+- ARMAROUGE
+- CERULEDGE
+- TINKATINK
+- TINKATUFF
+- GHOLDENGO
+- CHIEN-PAO
+- GREAT TUSK
+- IRON HANDS
+- MUNKIDORI
+- SINISTCHA
+- HYDRAPPLE
+- IRON CROWN
+- TERAPAGOS
+- SCOPE LENS
+- EMERA MALL
+- EMERA MALL
+- BLAST BURN
+- BLAST BURN
+- OMEGA RUBY
+- OMEGA RUBY
+- PROF BIRCH
+- PROF BIRCH
+- JAW FOSSIL
+- JAW FOSSIL
+- SHINY HUNT
+- SHINY HUNT
+- TANGHETTI
+- TANGHETTI
+- PROTECTOR
+- PROTECTOR
+- DREAM BALL
+- DREAM BALL
+- FIGY BERRY
+- FIGY BERRY
+- SLOW START
+- SLOW START
+- COBA BERRY
+- COBA BERRY
+- ZOMBEAGLE
+- ZOMBEAGLE
+- GREAT BALL
+- GREAT BALL
+- CHARIZARD
+- BLASTOISE
+- HERACROSS
+- TYRANITAR
+- GARDEVOIR
+- MANECTRIC
+- MEGA ABSOL
+- SALAMENCE
+- METAGROSS
+- ABOMASNOW
+- COALOSSAL
+- HATTERENE
+- DURALUDON
+- RILLABOOM
+- CINDERACE
+- GREAT BALL
+- ULTRA BALL
+- HEAVY BALL
+- LEVEL BALL
+- SPORT BALL
+- TIMER BALL
+- QUICK BALL
+- DREAM BALL
+- BEAST BALL
+- EASTER EGG
+- EASTER EGG
+- HONEYCOMB
+- HONEYCOMB
+- FIRE BLAST
+- FIRE BLAST
+- IGGLYBATH
+- IGGLYBATH
+- DRAGON GEM
+- DRAGON GEM
+- MAGO BERRY
+- MAGO BERRY
+- CATCH RATE
+- CATCH RATE
+- BLUK BERRY
+- BLUK BERRY
+- MACHOTIDE
+- MACHOTIDE
+- ECLIPSEON
+- ECLIPSEON
+- MEGA STONE
+- MEGA STONE
+- POKEWORLD
+- POKEWORLD
+- BURN DRIVE
+- BURN DRIVE
+- EVENT SHOP
+- EVENT SHOP
+- WIKI BERRY
+- WIKI BERRY
+- FIRE STONE
+- FIRE STONE
+- TAILLUCHI
+- TAILLUCHI
+- ELITE FOUR
+- ELITE FOUR
+- TELEPATHY
+
+Letras por frecuencia (excluyendo intentadas):
+A:186 R:166 E:160 I:143 O:143 T:131 L:119 N:118 S:104 C:84 G:79 U:72 D:69 B:67 H:66
+
+🤖 Auto: probando A (top entre 276 candidatas)
+Word: _ _ _ _ A _ A _ _ 
+Solved Hangmen in a row: 2
+Correct Guesses: 1
+Lives left: 6
+
+🤖 Auto: probando L (top entre 5 candidatas)
+Word: _ L _ _ A _ A L L 
+Solved Hangmen in a row: 2
+Correct Guesses: 2
+Lives left: 6
+
+🤖 Auto: probando B (top entre 1 candidatas)
+Word: _ L _ _ A B A L L 
+Solved Hangmen in a row: 2
+Correct Guesses: 3
+Lives left: 6
+
+🤖 Auto: probando R (top entre 1 candidatas)
+Word: _ L _ R A B A L L 
+Solved Hangmen in a row: 2
+Correct Guesses: 4
+Lives left: 6
+
+🤖 Auto: probando T (top entre 1 candidatas)
+Word: _ L T R A B A L L 
+Solved Hangmen in a row: 2
+Correct Guesses: 5
+Lives left: 6
+
+🤖 Auto: probando U (top entre 1 candidatas)
+Word: U L T R A B A L L 
+Solved Hangmen in a row: 2
+Correct Guesses: 6
+Lives left: 6
+
+✅ Palabra agregada al banco: ULTRABALL
+
+Candidatas (1):
+- ULTRA BALL
+
+Letras por frecuencia (excluyendo intentadas):
+A:1 B:1 L:1 R:1 T:1 U:1
+
+🤖 Auto: probando A (top entre 1 candidatas)
+Word: _ _ _ _ _ _ _ _ _ 
+Solved Hangmen in a row: 3
+Correct Guesses: 0
+Lives left: 5
+
+🤖 Auto: probando E (top entre 90 candidatas)
+Word: _ E _ _ _ _ _ _ _ 
+Solved Hangmen in a row: 3
+Correct Guesses: 1
+Lives left: 5
+
+🤖 Auto: probando L (top entre 4 candidatas)
+Word: _ E L _ _ _ _ L _ 
+Solved Hangmen in a row: 3
+Correct Guesses: 2
+Lives left: 5
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: _ E L _ _ _ _ L _ 
+Solved Hangmen in a row: 3
+Correct Guesses: 2
+Lives left: 5
+Letras fallidas: A
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando T (sin candidatas)
+Word: _ E L _ _ _ _ L _ 
+Solved Hangmen in a row: 3
+Correct Guesses: 2
+Lives left: 4
+
+🤖 Fallback: probando O (sin candidatas)
+Word: _ E L _ _ _ O L _ 
+Solved Hangmen in a row: 3
+Correct Guesses: 3
+Lives left: 4
+
+🤖 Fallback: probando I (sin candidatas)
+Word: _ E L I _ _ O L _ 
+Solved Hangmen in a row: 3
+Correct Guesses: 4
+Lives left: 4
+
+🤖 Fallback: probando N (sin candidatas)
+Word: _ E L I _ _ O L _ 
+Solved Hangmen in a row: 3
+Correct Guesses: 4
+Lives left: 3
+
+🤖 Fallback: probando S (sin candidatas)
+Word: _ E L I _ _ O L _ 
+Solved Hangmen in a row: 3
+Correct Guesses: 4
+Lives left: 2
+
+🤖 Fallback: probando H (sin candidatas)
+Word: _ E L I _ _ O L _ 
+Solved Hangmen in a row: 3
+Correct Guesses: 4
+Lives left: 1
+
+🤖 Fallback: probando R (sin candidatas)
+Word: R E L I _ _ O L _ 
+Solved Hangmen in a row: 3
+Correct Guesses: 5
+Lives left: 1
+
+🤖 Fallback: probando D (sin candidatas)
+Word: R E L I _ _ O L D 
+Solved Hangmen in a row: 3
+Correct Guesses: 6
+Lives left: 1
+
+🤖 Fallback: probando U (sin candidatas)
+Word: R E L I C G O L D 
+Solved Hangmen in a row: 3
+Correct Guesses: 6
+Lives left: 0
+
+✅ Palabra agregada al banco: RELICGOLD
+
+✅ Palabra agregada al banco: RELICGOLD
+RESULT: RELICGOLD - SUCCESS
+
+🔄 Ronda terminada. Refrescando para nueva palabra...
+
+— Nueva ronda —
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando E (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando T (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando A (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando O (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando I (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando N (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando S (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando H (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando R (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando D (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando L (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando U (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando C (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando M (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando F (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Y (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando W (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando G (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando P (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando B (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando V (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando K (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando X (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Q (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando J (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Z (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando E (sin candidatas)
+Word: _ _ _ _ _ _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 0
+Lives left: 5
+
+🤖 Fallback: probando T (sin candidatas)
+Word: _ _ _ _ _ _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 0
+Lives left: 4
+
+🤖 Fallback: probando A (sin candidatas)
+Word: _ _ _ _ _ _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 0
+Lives left: 3
+
+🤖 Fallback: probando O (sin candidatas)
+Word: _ _ O _ O _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 1
+Lives left: 3
+
+🤖 Fallback: probando I (sin candidatas)
+Word: _ _ O _ O _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 1
+Lives left: 2
+
+🤖 Fallback: probando N (sin candidatas)
+Word: _ _ O _ O _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 1
+Lives left: 1
+
+🤖 Fallback: probando S (sin candidatas)
+Word: C H O C O L U V 
+Solved Hangmen in a row: 0
+Correct Guesses: 1
+Lives left: 0
+
+ℹ️ Palabra ya estaba en el banco: CHOCOLUV
+RESULT: CHOCOLUV - SUCCESS
+
+🔄 Ronda terminada. Refrescando para nueva palabra...
+
+— Nueva ronda —
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando E (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando T (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando A (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando O (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando I (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando N (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando S (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando H (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando R (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando D (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando L (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando U (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando C (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando M (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando F (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Y (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando W (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando G (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando P (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando B (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando V (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando K (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando X (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Q (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando J (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Z (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando E (sin candidatas)
+Word: _ _ _ _ _ _ _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 0
+Lives left: 5
+
+🤖 Fallback: probando T (sin candidatas)
+Word: _ _ _ _ _ _ _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 0
+Lives left: 4
+
+🤖 Fallback: probando A (sin candidatas)
+Word: _ _ _ _ _ _ _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 0
+Lives left: 3
+
+🤖 Fallback: probando O (sin candidatas)
+Word: _ _ _ _ O _ _ O _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 1
+Lives left: 3
+
+🤖 Fallback: probando I (sin candidatas)
+Word: _ I _ _ O _ _ O _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 2
+Lives left: 3
+
+🤖 Fallback: probando N (sin candidatas)
+Word: _ I _ _ O _ _ O N 
+Solved Hangmen in a row: 0
+Correct Guesses: 3
+Lives left: 3
+
+🤖 Fallback: probando S (sin candidatas)
+Word: _ I _ _ O _ _ O N 
+Solved Hangmen in a row: 0
+Correct Guesses: 3
+Lives left: 2
+
+🤖 Fallback: probando H (sin candidatas)
+Word: H I _ _ O _ _ O N 
+Solved Hangmen in a row: 0
+Correct Guesses: 4
+Lives left: 2
+
+🤖 Fallback: probando R (sin candidatas)
+Word: H I _ _ O _ _ O N 
+Solved Hangmen in a row: 0
+Correct Guesses: 4
+Lives left: 1
+
+🤖 Fallback: probando D (sin candidatas)
+Word: H I _ _ O _ D O N 
+Solved Hangmen in a row: 0
+Correct Guesses: 5
+Lives left: 1
+
+🤖 Fallback: probando L (sin candidatas)
+Word: H I P P O W D O N 
+Solved Hangmen in a row: 0
+Correct Guesses: 5
+Lives left: 0
+
+ℹ️ Palabra ya estaba en el banco: HIPPOWDON
+RESULT: HIPPOWDON - SUCCESS
+
+🔄 Ronda terminada. Refrescando para nueva palabra...
+
+— Nueva ronda —
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando E (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando T (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando A (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando O (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando I (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando N (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando S (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando H (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando R (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando D (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando L (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando U (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando C (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando M (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando F (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Y (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando W (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando G (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando P (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando B (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando V (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando K (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando X (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Q (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando J (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Z (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando E (sin candidatas)
+Word: _ _ _ _ _ _ E _ _ _ _ _ E _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 1
+Lives left: 6
+
+🤖 Fallback: probando T (sin candidatas)
+Word: _ _ _ _ _ _ E _ _ _ _ _ E _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 1
+Lives left: 5
+
+🤖 Fallback: probando A (sin candidatas)
+Word: _ _ A _ _ _ E A _ _ _ _ E _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 2
+Lives left: 5
+
+🤖 Fallback: probando O (sin candidatas)
+Word: _ _ A _ _ _ E A _ _ O _ E _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 3
+Lives left: 5
+
+🤖 Fallback: probando I (sin candidatas)
+Word: _ _ A _ I _ E A _ _ O _ E _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 4
+Lives left: 5
+
+🤖 Fallback: probando N (sin candidatas)
+Word: _ _ A _ I _ E A _ _ O _ E _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 4
+Lives left: 4
+
+🤖 Fallback: probando S (sin candidatas)
+Word: _ _ A _ I _ E A _ _ O _ E _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 4
+Lives left: 3
+
+🤖 Fallback: probando H (sin candidatas)
+Word: _ _ A _ I _ E A _ _ O _ E _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 4
+Lives left: 2
+
+🤖 Fallback: probando R (sin candidatas)
+Word: _ R A _ I _ E A _ _ O _ E R 
+Solved Hangmen in a row: 0
+Correct Guesses: 5
+Lives left: 2
+
+🤖 Fallback: probando D (sin candidatas)
+Word: _ R A _ I D E A _ _ O _ E R 
+Solved Hangmen in a row: 0
+Correct Guesses: 6
+Lives left: 2
+
+🤖 Fallback: probando L (sin candidatas)
+Word: _ R A _ I D E A _ L O _ E R 
+Solved Hangmen in a row: 0
+Correct Guesses: 7
+Lives left: 2
+
+🤖 Fallback: probando U (sin candidatas)
+Word: _ R A _ I D E A _ L O _ E R 
+Solved Hangmen in a row: 0
+Correct Guesses: 7
+Lives left: 1
+
+🤖 Fallback: probando C (sin candidatas)
+Word: _ R A C I D E A _ L O _ E R 
+Solved Hangmen in a row: 0
+Correct Guesses: 8
+Lives left: 1
+
+🤖 Fallback: probando M (sin candidatas)
+Word: G R A C I D E A F L O W E R 
+Solved Hangmen in a row: 0
+Correct Guesses: 8
+Lives left: 0
+
+✅ Palabra agregada al banco: GRACIDEAFLOWER
+
+✅ Palabra agregada al banco: GRACIDEAFLOWER
+RESULT: GRACIDEAFLOWER - SUCCESS
+
+🔄 Ronda terminada. Refrescando para nueva palabra...
+
+— Nueva ronda —
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando E (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando T (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando A (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando O (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando I (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando N (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando S (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando H (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando R (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando D (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando L (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando U (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando C (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando M (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando F (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Y (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando W (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando G (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando P (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando B (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando V (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando K (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando X (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Q (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando J (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Z (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando E (sin candidatas)
+Word: _ _ _ _ _ _ _ E _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 1
+Lives left: 6
+
+🤖 Fallback: probando T (sin candidatas)
+Word: _ _ _ _ _ T _ E _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 2
+Lives left: 6
+
+🤖 Fallback: probando A (sin candidatas)
+Word: _ A _ _ A T _ E _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 3
+Lives left: 6
+
+🤖 Fallback: probando O (sin candidatas)
+Word: _ A _ _ A T _ E _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 3
+Lives left: 5
+
+🤖 Fallback: probando I (sin candidatas)
+Word: _ A _ _ A T _ E _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 3
+Lives left: 4
+
+🤖 Fallback: probando N (sin candidatas)
+Word: _ A N _ A T _ E _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 4
+Lives left: 4
+
+🤖 Fallback: probando S (sin candidatas)
+Word: _ A N S A T _ E _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 5
+Lives left: 4
+
+🤖 Fallback: probando H (sin candidatas)
+Word: _ A N S A T _ E _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 5
+Lives left: 3
+
+🤖 Fallback: probando R (sin candidatas)
+Word: _ A N S A T _ E R R _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 6
+Lives left: 3
+
+🤖 Fallback: probando D (sin candidatas)
+Word: _ A N S A T _ E R R _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 6
+Lives left: 2
+
+🤖 Fallback: probando L (sin candidatas)
+Word: L A N S A T _ E R R _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 7
+Lives left: 2
+
+🤖 Fallback: probando U (sin candidatas)
+Word: L A N S A T _ E R R _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 7
+Lives left: 1
+
+🤖 Fallback: probando C (sin candidatas)
+Word: L A N S A T B E R R Y 
+Solved Hangmen in a row: 0
+Correct Guesses: 7
+Lives left: 0
+
+✅ Palabra agregada al banco: LANSATBERRY
+
+✅ Palabra agregada al banco: LANSATBERRY
+RESULT: LANSATBERRY - SUCCESS
+
+🔄 Ronda terminada. Refrescando para nueva palabra...
+
+— Nueva ronda —
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando E (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando T (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando A (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando O (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando I (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando N (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando S (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando H (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando R (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando D (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando L (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando U (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando C (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando M (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando F (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Y (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando W (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando G (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando P (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando B (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando V (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando K (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando X (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Q (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando J (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Z (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando E (sin candidatas)
+Word: _ E _ _ E _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 1
+Lives left: 6
+
+🤖 Fallback: probando T (sin candidatas)
+Word: _ E _ _ E T T _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 2
+Lives left: 6
+
+🤖 Fallback: probando A (sin candidatas)
+Word: _ E _ _ E T T A 
+Solved Hangmen in a row: 0
+Correct Guesses: 3
+Lives left: 6
+
+🤖 Fallback: probando O (sin candidatas)
+Word: _ E _ O E T T A 
+Solved Hangmen in a row: 0
+Correct Guesses: 4
+Lives left: 6
+
+🤖 Fallback: probando I (sin candidatas)
+Word: _ E _ O E T T A 
+Solved Hangmen in a row: 0
+Correct Guesses: 4
+Lives left: 5
+
+🤖 Fallback: probando N (sin candidatas)
+Word: _ E _ O E T T A 
+Solved Hangmen in a row: 0
+Correct Guesses: 4
+Lives left: 4
+
+🤖 Fallback: probando S (sin candidatas)
+Word: _ E _ O E T T A 
+Solved Hangmen in a row: 0
+Correct Guesses: 4
+Lives left: 3
+
+🤖 Fallback: probando H (sin candidatas)
+Word: _ E _ O E T T A 
+Solved Hangmen in a row: 0
+Correct Guesses: 4
+Lives left: 2
+
+🤖 Fallback: probando R (sin candidatas)
+Word: _ E _ O E T T A 
+Solved Hangmen in a row: 0
+Correct Guesses: 4
+Lives left: 1
+
+🤖 Fallback: probando D (sin candidatas)
+Word: M E L O E T T A 
+Solved Hangmen in a row: 0
+Correct Guesses: 4
+Lives left: 0
+
+ℹ️ Palabra ya estaba en el banco: MELOETTA
+RESULT: MELOETTA - SUCCESS
+
+🔄 Ronda terminada. Refrescando para nueva palabra...
+
+— Nueva ronda —
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando E (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando T (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando A (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando O (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando I (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando N (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando S (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando H (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando R (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando D (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando L (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando U (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando C (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando M (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando F (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Y (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando W (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando G (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando P (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando B (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando V (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando K (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando X (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Q (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando J (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando Z (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando E (sin candidatas)
+Word: _ _ _ _ _ _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 0
+Lives left: 5
+
+🤖 Fallback: probando T (sin candidatas)
+Word: _ _ _ _ _ _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 0
+Lives left: 4
+
+🤖 Fallback: probando A (sin candidatas)
+Word: _ A _ _ _ _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 1
+Lives left: 4
+
+🤖 Fallback: probando O (sin candidatas)
+Word: _ A _ _ _ _ _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 1
+Lives left: 3
+
+🤖 Fallback: probando I (sin candidatas)
+Word: _ A _ _ _ I _ _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 2
+Lives left: 3
+
+🤖 Fallback: probando N (sin candidatas)
+Word: _ A _ _ _ I N _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 3
+Lives left: 3
+
+🤖 Fallback: probando S (sin candidatas)
+Word: _ A _ _ _ I N _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 3
+Lives left: 2
+
+🤖 Fallback: probando H (sin candidatas)
+Word: _ A _ _ _ I N _ 
+Solved Hangmen in a row: 0
+Correct Guesses: 3
+Lives left: 1
+
+🤖 Fallback: probando R (sin candidatas)
+Word: G A M B L I N G 
+Solved Hangmen in a row: 0
+Correct Guesses: 3
+Lives left: 0
+
+ℹ️ Palabra ya estaba en el banco: GAMBLING
+RESULT: GAMBLING - SUCCESS
+
+🔄 Ronda terminada. Refrescando para nueva palabra...
+
+— Nueva ronda —
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Letra (A-Z) | ENTER=refrescar | salir/exit (auto-ENTER en 5s): 
+
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+Letras fallidas: -
+
+Candidatas (0): (ninguna con ese patrón en el banco)
+
+🤖 Fallback: probando E (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando T (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando A (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando O (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando I (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando N (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando S (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando H (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando R (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?
+
+🤖 Fallback: probando D (sin candidatas)
+Word: G _ _ S S   T H _   W _ R D 
+Solved Hangmen in a row: ?
+Correct Guesses: ?
+Lives left: ?

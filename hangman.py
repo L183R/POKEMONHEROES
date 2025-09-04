@@ -82,6 +82,25 @@ def normalize_text(txt: str) -> str:
     txt = txt.replace("\xa0", "")
     return re.sub(r"[ \t\r\f\v]+", " ", txt).strip()
 
+
+def parse_game_word(raw: str) -> str:
+    raw = unescape(raw).replace("\xa0", " ").upper()
+    raw = re.sub(r"[^A-Z_ ]+", "", raw)
+    out: list[str] = []
+    i = 0
+    while i < len(raw):
+        if raw[i] == " ":
+            j = i
+            while j < len(raw) and raw[j] == " ":
+                j += 1
+            if j - i > 1:
+                out.append(" ")
+            i = j
+        else:
+            out.append(raw[i])
+            i += 1
+    return "".join(out)
+
 def load_wordlist(path: Path) -> list[str]:
     if not path.exists():
         return []
@@ -131,7 +150,7 @@ def find_word(soup: BeautifulSoup, html: str) -> str | None:
     # 1) span con letter-spacing
     span = soup.find("span", attrs={"style": lambda s: s and "letter-spacing" in s.lower()})
     if span:
-        t = normalize_text(span.get_text(strip=True)).upper()
+        t = parse_game_word(span.get_text())
         if t and re.fullmatch(r"[A-Z_ ]+", t):
             return t
     # 2) primer span dentro de center
@@ -139,24 +158,24 @@ def find_word(soup: BeautifulSoup, html: str) -> str | None:
     if center:
         sp2 = center.find("span")
         if sp2:
-            t = normalize_text(sp2.get_text(strip=True)).upper()
+            t = parse_game_word(sp2.get_text())
             if t and re.fullmatch(r"[A-Z_ ]+", t):
                 return t
     # 3) spans en #textbar que parezcan palabra (_ y letras)
     for sp in soup.select("#textbar span"):
-        t = normalize_text(sp.get_text(strip=True)).upper()
+        t = parse_game_word(sp.get_text())
         if "_" in t and re.fullmatch(r"[A-Z_ ]+", t):
             return t
     # 4) regex en HTML
     m = re.search(r"<span[^>]*>([A-Za-z_ \u00A0]{3,})</span>", html, re.I)
     if m:
-        t = normalize_text(m.group(1)).upper()
+        t = parse_game_word(m.group(1))
         if "_" in t and re.fullmatch(r"[A-Z_ ]+", t):
             return t
     # 5) regex en texto plano
-    plain = normalize_text(soup.get_text(" ", strip=True)).upper()
-    for m2 in re.finditer(r"[A-Z_ ]{3,}", plain):
-        t = m2.group(0)
+    plain = soup.get_text(" ")
+    for m2 in re.finditer(r"[A-Za-z_ \u00A0]{3,}", plain):
+        t = parse_game_word(m2.group(0))
         if "_" in t and re.fullmatch(r"[A-Z_ ]+", t):
             return t
     return None
