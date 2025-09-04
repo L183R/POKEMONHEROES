@@ -1,160 +1,64 @@
  (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
 diff --git a/hangman.py b/hangman.py
-index bf4a3027c51bc70424d8ba03f631412aab98e2be..f65429830daed4b61057206a6c2ad6141528da1a 100644
+index bf4a3027c51bc70424d8ba03f631412aab98e2be..f2211abed58caa60837830d16dd1d4146a0f5029 100644
 --- a/hangman.py
 +++ b/hangman.py
-@@ -1,69 +1,95 @@
- #!/usr/bin/env python3
- # -*- coding: utf-8 -*-
+@@ -328,50 +328,55 @@ def auto_guess_loop(sess, cookies, wordlist, soup, raw_word, used, wrong):
+         print_state(raw_word, soup)
+         used, wrong = extract_used_and_wrong_letters(soup, raw_word)
+         if raw_word and "_" not in raw_word:
+             word_upper = raw_word.upper().strip()
+             bank = load_wordlist(WORDLIST_PATH)
+             if word_upper not in [w.upper() for w in bank]:
+                 with WORDLIST_PATH.open("a", encoding="utf-8") as f:
+                     f.write(word_upper + "\n")
+                 print(f"\n✅ Palabra agregada al banco: {word_upper}")
+         _, _, lives = grab_metrics(soup)
+         if round_finished(raw_word, lives):
+             break
+         tries += 1
+         time.sleep(AUTO_GUESS_SLEEP_SEC)
+     return raw_word, soup
  
- import sys
- import os
- import re
- import time
- import requests
- from bs4 import BeautifulSoup
- from html import unescape
- from pathlib import Path
- from collections import Counter
-+import builtins
-+import atexit
- 
- # ========= CONFIG =========
- URL = "https://pokeheroes.com/gc_hangman"
- COOKIE_STRING = "PHPSESSID=pdnh5fl1jvn139c0l0rglmug7s; _gcl_au=1.1.1884119554.1756846145.1072503122.1756846377.1756846377; username=L183R; password=6299ad21b8644aa31efb9e2ed4d660160c5480d44dac3f9a090179086e8db991b39e11d5f4b959a13df5f863aebaba997753ef0392427a3c519b48f425b1f6e8; username=L183R; password=6299ad21b8644aa31efb9e2ed4d660160c5480d44dac3f9a090179086e8db991b39e11d5f4b959a13df5f863aebaba997753ef0392427a3c519b48f425b1f6e8; friendbar_hide=hide"  # ← poné tu PHPSESSID válido
- WORDLIST_PATH = Path("hangman_words.txt")
-+LOG_PATH = Path("log.txt")
- 
- # Autorefresco cuando NO se encuentra la palabra
- AUTO_REFRESH_ON_FALLBACK = True
- REFRESH_INTERVAL_SEC = 2
- MAX_REFRESH_TRIES = 60
- 
- # Cuando aparece el banner de INSTRUCTIONS, esperar 5 minutos antes de refrescar
- INSTRUCTION_WAIT_SEC = 300  # 5 minutos
- 
- # Auto-juego (letra más frecuente entre candidatas)
- AUTO_GUESS_WHEN_CANDIDATES = True
- AUTO_GUESS_MAX_PER_ROUND = 26
- AUTO_GUESS_SLEEP_SEC = 0.6
- 
- # Fallback cuando NO hay candidatas: orden de frecuencia en inglés
- FALLBACK_GUESS_WHEN_NO_CANDIDATES = True
- FALLBACK_FREQ_ORDER = "ETAOINSHRDLUCMFYWGPBVKXQJZ"
- FALLBACK_MAX_PER_ROUND = 26
- FALLBACK_SLEEP_SEC = 0.5
- 
- # Timeout de input (auto-ENTER)
- INPUT_TIMEOUT_SEC = 5
- # ==========================
- 
- if os.name == "nt":
-     import msvcrt  # Windows
- 
-+# === Logging setup ===
-+_original_print = builtins.print
-+_logged_messages: list[str] = []
-+
-+def log_print(*args, sep=" ", end="\n", **kwargs):
-+    msg = sep.join(str(a) for a in args) + end
-+    _logged_messages.append(msg.rstrip("\n"))
-+    with LOG_PATH.open("a", encoding="utf-8") as f:
-+        f.write(msg)
-+
-+builtins.print = log_print
-+
-+def _print_last_message():
-+    if _logged_messages:
-+        _original_print(_logged_messages[-1])
-+
-+atexit.register(_print_last_message)
-+# ======================
-+
-+def log_round_result(raw_word: str | None) -> None:
-+    success = bool(raw_word and "_" not in raw_word)
-+    log_print(f"RESULT: {raw_word or '-'} - {'SUCCESS' if success else 'FAIL'}")
-+
- def cookies_from_string(s: str) -> dict:
-     d = {}
-     for part in [p.strip() for p in s.split(";") if p.strip()]:
-         if "=" in part and not part.lower().startswith("expires"):
-             k, v = part.split("=", 1)
-             d[k.strip()] = v.strip()
-     return d
- 
- def normalize_text(txt: str) -> str:
-     txt = unescape(txt).replace("\xa0", " ")
-     return re.sub(r"[ \t\r\f\v]+", " ", txt)
- 
- def load_wordlist(path: Path) -> list[str]:
-     if not path.exists():
-         return []
-     return [line.strip() for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]
- 
- def spaced(s: str) -> str:
-     return " ".join(list(s))
- 
- def matches_pattern(candidate: str, raw_game_word: str, wrong_letters: set[str] | None = None) -> bool:
+ def fallback_guess_loop(sess, cookies, soup, raw_word, used, wrong):
      """
-     - misma longitud/espacios que el patrón
-     - respeta letras reveladas
-     - '_' acepta letra (no espacio)
-diff --git a/hangman.py b/hangman.py
-index bf4a3027c51bc70424d8ba03f631412aab98e2be..f65429830daed4b61057206a6c2ad6141528da1a 100644
---- a/hangman.py
-+++ b/hangman.py
-@@ -468,50 +494,51 @@ def main():
-                         print(top_line)
-                     else:
-                         print("\nLetras por frecuencia: (sin sugerencias; todas intentadas)")
-                     if AUTO_GUESS_WHEN_CANDIDATES:
-                         raw_word, soup = auto_guess_loop(sess, cookies, wordlist, soup, raw_word, used, wrong)
-                 else:
-                     print("\nCandidatas (0): (ninguna con ese patrón en el banco)")
-                     # Fallback: probar letras por frecuencia global si no hay candidatas
-                     if FALLBACK_GUESS_WHEN_NO_CANDIDATES:
-                         raw_word, soup = fallback_guess_loop(sess, cookies, soup, raw_word, used, wrong)
+     Sin candidatas: probar letras por frecuencia en inglés (excluye usadas).
+     """
+     pool = [ch for ch in FALLBACK_FREQ_ORDER if ch not in used]
+     if not pool:
+         print("\n(No hay letras disponibles para fallback)")
+         return raw_word, soup
  
-                 # Guardar si quedó completa
-                 if raw_word and "_" not in raw_word:
-                     word_upper = raw_word.upper().strip()
-                     if word_upper not in [w.upper() for w in wordlist]:
-                         with WORDLIST_PATH.open("a", encoding="utf-8") as f:
-                             f.write(word_upper + "\n")
-                         wordlist.append(word_upper)
-                         print(f"\n✅ Palabra agregada al banco: {word_upper}")
-                     else:
-                         print(f"\nℹ️ Palabra ya estaba en el banco: {word_upper}")
++    # Si la ronda ya terminó (sin vidas o palabra completa), no intentes fallback
++    _, _, lives = grab_metrics(soup)
++    if round_finished(raw_word, lives):
++        return raw_word, soup
++
+     tries = 0
+     for next_letter in pool:
+         if tries >= FALLBACK_MAX_PER_ROUND:
+             break
+         print(f"\n🤖 Fallback: probando {next_letter} (sin candidatas)")
+         html = request_page(sess, cookies, next_letter)
+         soup = BeautifulSoup(html, "html.parser")
+         raw_word = find_word(soup, html)
+         print_state(raw_word, soup)
+         used, wrong = extract_used_and_wrong_letters(soup, raw_word)
+         if raw_word and "_" not in raw_word:
+             word_upper = raw_word.upper().strip()
+             bank = load_wordlist(WORDLIST_PATH)
+             if word_upper not in [w.upper() for w in bank]:
+                 with WORDLIST_PATH.open("a", encoding="utf-8") as f:
+                     f.write(word_upper + "\n")
+                 print(f"\n✅ Palabra agregada al banco: {word_upper}")
+         _, _, lives = grab_metrics(soup)
+         if round_finished(raw_word, lives):
+             break
+         tries += 1
+         time.sleep(FALLBACK_SLEEP_SEC)
+     return raw_word, soup
  
-             # Fin de ronda → refrescar
-             _, _, lives = grab_metrics(soup)
-             if round_finished(raw_word, lives):
-+                log_round_result(raw_word)
-                 print("\n🔄 Ronda terminada. Refrescando para nueva palabra...")
-                 try:
-                     html2 = refresh_round(sess, cookies)
-                 except Exception as e:
-                     print(f"Error al refrescar: {e}")
-                     continue
-                 soup2 = BeautifulSoup(html2, "html.parser")
-                 new_raw = find_word(soup2, html2)
-                 print("\n— Nueva ronda —")
-                 print_state(new_raw, soup2)
-                 used2, wrong2 = extract_used_and_wrong_letters(soup2, new_raw)
-                 print("Letras fallidas:", " ".join(sorted(wrong2)) if wrong2 else "-")
- 
-                 # En nueva ronda: candidatas por shape y auto-adivinar
-                 if new_raw and is_new_round_pattern(new_raw):
-                     new_candidates = [w for w in wordlist if matches_pattern(w, new_raw, wrong_letters=wrong2)]
-                     if new_candidates:
-                         print(f"\nCandidatas (shape) ({len(new_candidates)}):")
-                         for w in new_candidates:
-                             print(f"- {w}")
-                         ranked2 = rank_letters(new_candidates, used_letters=used2)
-                         if ranked2:
-                             print("\nLetras por frecuencia (excluyendo intentadas):")
-                             print(" ".join(f"{ltr}:{cnt}" for ltr, cnt in ranked2[:15]))
-                         if AUTO_GUESS_WHEN_CANDIDATES:
+ def main():
  
 EOF
 )
