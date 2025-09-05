@@ -75,10 +75,13 @@ def log_round_result(raw_word: str | None) -> None:
     result_text = f"{raw_word or '-'} - {'SUCCESS' if success else 'FAIL'}"
     log_print(f"RESULT: {result_text}")
     if success:
+        current_streak += 1
         coins = current_streak * 25
         total_coins += coins
         if current_streak > max_streak:
             max_streak = current_streak
+    else:
+        current_streak = 0
     os.system("cls" if os.name == "nt" else "clear")
     for line in (
         f"Racha actual: {current_streak}",
