@@ -260,15 +260,17 @@ def is_game_page(soup: BeautifulSoup) -> bool:
 
 def print_state(raw_word: str | None, soup: BeautifulSoup):
     solved, correct, lives = grab_metrics(soup)
+    current_streak = solved
     if raw_word:
         print(f"Word: {spaced(raw_word)} ")
     else:
         center = soup.find("center")
         approx = normalize_text(center.get_text(" ", strip=True)).upper() if center else "(vacío)"
         print(f"Word: {spaced(approx)} (palabra no encontrada) ")
-    print(f"Solved Hangmen in a row: {solved}")
+    print(f"Racha actual: {current_streak}")
     print(f"Correct Guesses: {correct}")
     print(f"Lives left: {lives}")
+    Path("results.txt").write_text(str(current_streak), encoding="utf-8")
     return solved, correct, lives
 
 def round_finished(raw_word: str | None, lives: str | None) -> bool:
