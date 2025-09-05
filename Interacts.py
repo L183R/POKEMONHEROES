@@ -11,7 +11,7 @@ import requests
 
 # ======== CONFIG ========
 COOKIES_STRING = "PHPSESSID=pdnh5fl1jvn139c0l0rglmug7s; _gcl_au=1.1.1884119554.1756846145.1072503122.1756846377.1756846377; username=L183R; password=6299ad21b8644aa31efb9e2ed4d660160c5480d44dac3f9a090179086e8db991b39e11d5f4b959a13df5f863aebaba997753ef0392427a3c519b48f425b1f6e8; username=L183R; password=6299ad21b8644aa31efb9e2ed4d660160c5480d44dac3f9a090179086e8db991b39e11d5f4b959a13df5f863aebaba997753ef0392427a3c519b48f425b1f6e8"
-LIST_TYPE = "newest"     # "newest", "unreturned", etc.
+LIST_PRIORITY = ["unreturned", "online", "random"]
 CYCLES = 3334              # pedir 10 listas
 WORKERS = 30             # 10 workers
 SAVE_LISTS = False       # True para guardar cada clicklist HTML
@@ -44,7 +44,7 @@ def extract_pairs_from_clicklist(html: str) -> List[Tuple[str, str]]:
     # pkmn_arr.push(new Array("pkmnid","pkmnsid", ... ));
     return re.findall(r'pkmn_arr\.push\(new Array\("(\d+)","(\d+)"', html)
 
-def make_session(cookies: requests.cookies.RequestsCookieJar, list_type: str) -> requests.Session:
+def make_session(cookies: requests.cookies.RequestsCookieJar) -> requests.Session:
     s = requests.Session()
     s.headers.update(BASE_HEADERS)
     # referer se setea por request, pero dejamos UA y base aquí
@@ -89,21 +89,30 @@ def main():
     cookiejar = parse_cookie_string(COOKIES_STRING)
 
     # Pre-creamos sesiones por worker (requests.Session NO es thread-safe)
-    sessions = [make_session(cookiejar, LIST_TYPE) for _ in range(WORKERS)]
+    sessions = [make_session(cookiejar) for _ in range(WORKERS)]
 
     inarow_global = 1
+    interaction_count = 0
 
     for cycle in range(1, CYCLES + 1):
-        print(f"\n=== Ciclo {cycle}/{CYCLES}: pidiendo clicklist ({LIST_TYPE}) ===")
-        # Usamos una sesión cualquiera para pedir la lista (no importa cuál)
-        try:
-            pairs = fetch_clicklist(sessions[0], LIST_TYPE, SAVE_LISTS, cycle)
-        except requests.RequestException as e:
-            print(f"❌ Error al pedir clicklist: {e}")
-            break
+        pairs = []
+        list_type = ""
+        # intentamos en orden: unreturned -> online -> random
+        for candidate in LIST_PRIORITY:
+            print(f"\n=== Ciclo {cycle}/{CYCLES}: pidiendo clicklist ({candidate}) ===")
+            try:
+                pairs = fetch_clicklist(sessions[0], candidate, SAVE_LISTS, cycle)
+            except requests.RequestException as e:
+                print(f"❌ Error al pedir clicklist: {e}")
+                pairs = []
+            if pairs:
+                list_type = candidate
+                break
+            else:
+                print("Lista vacía, probando siguiente…")
 
         if not pairs:
-            print("No vinieron Pokémon en la lista. Corto.")
+            print("No vinieron Pokémon en ninguna lista. Corto.")
             break
 
         print(f"→ {len(pairs)} Pokémon en la lista. Mandando warms en paralelo ({WORKERS} workers, sin delay)…")
@@ -117,7 +126,7 @@ def main():
                 inarow = inarow_global
                 inarow_global += 1
                 jobs.append(
-                    ex.submit(warm_interact, sess, LIST_TYPE, pkmnid, pkmnsid, inarow, "")
+                    ex.submit(warm_interact, sess, list_type, pkmnid, pkmnsid, inarow, "")
                 )
 
             ok = 0
@@ -131,7 +140,8 @@ def main():
                     status = f"ERROR: {e}"
                 print(f"→ Resultado: {status}")
 
-        print(f"✔️ Ciclo {cycle} completo: {ok}/{total} warms HTTP 200")
+        interaction_count += ok
+        print(f"✔️ Ciclo {cycle} completo: {ok}/{total} warms HTTP 200 (total: {interaction_count})")
         # sin delay entre ciclos; si te bloquea, agregá un sleep acá
 
     print("\nListo. Vapaí.")
