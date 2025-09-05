@@ -1,71 +1,77 @@
  (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
 diff --git a/hangman.py b/hangman.py
-index bf4a3027c51bc70424d8ba03f631412aab98e2be..fb19783b962cf30629bfab9e8258ef2b5d7ade3e 100644
+index bf4a3027c51bc70424d8ba03f631412aab98e2be..dfa2eb29bed3d4cd626495d6c23f3eb6ee377723 100644
 --- a/hangman.py
 +++ b/hangman.py
-@@ -15,50 +15,57 @@ from collections import Counter
- URL = "https://pokeheroes.com/gc_hangman"
- COOKIE_STRING = "PHPSESSID=pdnh5fl1jvn139c0l0rglmug7s; _gcl_au=1.1.1884119554.1756846145.1072503122.1756846377.1756846377; username=L183R; password=6299ad21b8644aa31efb9e2ed4d660160c5480d44dac3f9a090179086e8db991b39e11d5f4b959a13df5f863aebaba997753ef0392427a3c519b48f425b1f6e8; username=L183R; password=6299ad21b8644aa31efb9e2ed4d660160c5480d44dac3f9a090179086e8db991b39e11d5f4b959a13df5f863aebaba997753ef0392427a3c519b48f425b1f6e8; friendbar_hide=hide"  # ← poné tu PHPSESSID válido
- WORDLIST_PATH = Path("hangman_words.txt")
+@@ -133,96 +133,119 @@ def find_word(soup: BeautifulSoup, html: str) -> str | None:
+     plain = normalize_text(soup.get_text(" ", strip=True)).upper()
+     for m2 in re.finditer(r"[A-Z_ ]{3,}", plain):
+         t = m2.group(0)
+         if "_" in t and re.fullmatch(r"[A-Z_ ]+", t):
+             return t
+     return None
  
- # Autorefresco cuando NO se encuentra la palabra
- AUTO_REFRESH_ON_FALLBACK = True
- REFRESH_INTERVAL_SEC = 2
- MAX_REFRESH_TRIES = 60
+ def is_instruction_banner_text(text_upper: str) -> bool:
+     """
+     Detecta el banner de instrucciones (cuando en Word aparece el texto largo).
+     """
+     # Señales robustas (inglés del sitio):
+     return (
+         "INSTRUCTIONS" in text_upper and
+         "HANGMAN GAME" in text_upper and
+         "RANDOMLY SELECTS" in text_upper
+     )
  
- # Cuando aparece el banner de INSTRUCTIONS, esperar 5 minutos antes de refrescar
- INSTRUCTION_WAIT_SEC = 300  # 5 minutos
+ def grab_metrics(soup: BeautifulSoup) -> tuple[str, str, str]:
+     txt = normalize_text(soup.get_text(" ", strip=True))
+     def rx(label):
+         m = re.search(rf"{re.escape(label)}:\s*(\d+)", txt, re.I)
+         return m.group(1) if m else "?"
+     return rx("Solved Hangmen in a row"), rx("Correct Guesses"), rx("Lives left")
  
- # Auto-juego (letra más frecuente entre candidatas)
- AUTO_GUESS_WHEN_CANDIDATES = True
- AUTO_GUESS_MAX_PER_ROUND = 26
- AUTO_GUESS_SLEEP_SEC = 0.6
- 
- # Fallback cuando NO hay candidatas: orden de frecuencia en inglés
- FALLBACK_GUESS_WHEN_NO_CANDIDATES = True
- FALLBACK_FREQ_ORDER = "ETAOINSHRDLUCMFYWGPBVKXQJZ"
- FALLBACK_MAX_PER_ROUND = 26
- FALLBACK_SLEEP_SEC = 0.5
- 
- # Timeout de input (auto-ENTER)
- INPUT_TIMEOUT_SEC = 5
-+# Recompensa base (1ra respuesta = 25, 2da = 50, ...)
-+COIN_BASE = 25
++# --- Estadísticas de rondas y monedas ---
++_last_streak: int | None = None
++_max_streak = 0
 +
-+# Variables de seguimiento
-+_prev_solved = None
-+_max_solved = 0
-+_coins_obtained = 0
- # ==========================
++def _update_round_stats(solved_str: str) -> None:
++    """Actualiza y muestra rondas, máximo y monedas según la racha actual."""
++    global _last_streak, _max_streak
++    if not solved_str.isdigit():
++        return
++    current = int(solved_str)
++
++    changed = (_last_streak is None) or (current != _last_streak)
++    if not changed:
++        return
++
++    _last_streak = current
++    if current > _max_streak:
++        _max_streak = current
++
++    coins = current * 25
++    print(f"Rondas: {current} | Máximo: {_max_streak} | Monedas: {coins}")
++
+ def extract_used_and_wrong_letters(soup: BeautifulSoup, raw_word: str | None) -> tuple[set[str], set[str]]:
+     used = set()
+     for a in soup.find_all("a", class_="letterGuess"):
+         letter = (a.get_text(strip=True) or "").upper()
+         if len(letter) == 1 and letter.isalpha() and not a.get("href"):
+             used.add(letter)
+     letters_in_word = set(ch for ch in (raw_word or "") if ch.isalpha())
+     wrong = used - letters_in_word if raw_word else used
+     return used, wrong
  
- if os.name == "nt":
-     import msvcrt  # Windows
+ def headers_common():
+     return {
+         "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+         "referer": "https://pokeheroes.com/gc_hangman?",
+         "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+         "accept-language": "es-ES,es;q=0.9,en;q=0.8",
+         "upgrade-insecure-requests": "1",
+     }
  
- def cookies_from_string(s: str) -> dict:
-     d = {}
-     for part in [p.strip() for p in s.split(";") if p.strip()]:
-         if "=" in part and not part.lower().startswith("expires"):
-             k, v = part.split("=", 1)
-             d[k.strip()] = v.strip()
-     return d
- 
- def normalize_text(txt: str) -> str:
-     txt = unescape(txt).replace("\xa0", " ")
-     return re.sub(r"[ \t\r\f\v]+", " ", txt)
- 
- def load_wordlist(path: Path) -> list[str]:
-     if not path.exists():
-         return []
-     return [line.strip() for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]
- 
- def spaced(s: str) -> str:
-     return " ".join(list(s))
- 
-diff --git a/hangman.py b/hangman.py
-index bf4a3027c51bc70424d8ba03f631412aab98e2be..fb19783b962cf30629bfab9e8258ef2b5d7ade3e 100644
---- a/hangman.py
-+++ b/hangman.py
-@@ -179,52 +186,76 @@ def request_page(sess: requests.Session, cookies: dict, letter: str | None):
+ def request_page(sess: requests.Session, cookies: dict, letter: str | None):
+     params = {"guess": letter} if letter else None
      r = sess.get(URL, params=params, headers=headers_common(), cookies=cookies, timeout=30)
      r.raise_for_status()
      return r.text
@@ -91,32 +97,9 @@ index bf4a3027c51bc70424d8ba03f631412aab98e2be..fb19783b962cf30629bfab9e8258ef2b
      print(f"Solved Hangmen in a row: {solved}")
      print(f"Correct Guesses: {correct}")
      print(f"Lives left: {lives}")
-+    _update_stats_on_change(solved)
++    _update_round_stats(solved)
      return solved, correct, lives
  
-+
-+def _update_stats_on_change(solved_str: str) -> None:
-+    global _prev_solved, _max_solved, _coins_obtained
-+    try:
-+        solved_int = int(solved_str)
-+    except (TypeError, ValueError):
-+        return
-+    if _prev_solved is None or solved_int != _prev_solved:
-+        gained = 0
-+        if _prev_solved is None:
-+            gained = COIN_BASE * solved_int * (solved_int + 1) // 2
-+        elif solved_int > _prev_solved:
-+            start = _prev_solved + 1
-+            count = solved_int - _prev_solved
-+            gained = COIN_BASE * (start + solved_int) * count // 2
-+        _coins_obtained += gained
-+        _prev_solved = solved_int
-+        if solved_int > _max_solved:
-+            _max_solved = solved_int
-+        print(f"Rounds: {solved_int}")
-+        print(f"Max rounds: {_max_solved}")
-+        print(f"Coins obtained: {_coins_obtained}")
-+
  def round_finished(raw_word: str | None, lives: str | None) -> bool:
      if raw_word and "_" not in raw_word:
          return True
@@ -140,8 +123,6 @@ index bf4a3027c51bc70424d8ba03f631412aab98e2be..fb19783b962cf30629bfab9e8258ef2b
          if not is_game_page(soup):
              Path("last_response.html").write_text(html, encoding="utf-8")
              print("\n❌ No llegó la página del juego. Guardé last_response.html")
-             return None, soup
- 
  
 EOF
 )

@@ -221,6 +221,29 @@ def grab_metrics(soup: BeautifulSoup) -> tuple[str, str, str]:
         return m.group(1) if m else "?"
     return rx("Solved Hangmen in a row"), rx("Correct Guesses"), rx("Lives left")
 
+# --- Estadísticas de rondas y monedas ---
+_last_streak: int | None = None
+_max_streak = 0
+
+def _update_round_stats(solved_str: str) -> None:
+    """Actualiza y muestra rondas, máximo y monedas según la racha actual."""
+    global _last_streak, _max_streak
+    if not solved_str.isdigit():
+        return
+    current = int(solved_str)
+
+    changed = (_last_streak is None) or (current != _last_streak)
+    if not changed:
+        return
+
+    _last_streak = current
+    if current > _max_streak:
+        _max_streak = current
+
+    coins = current * 25
+    print(f"Rondas: {current} | Máximo: {_max_streak} | Monedas: {coins}")
+
+
 def extract_used_and_wrong_letters(soup: BeautifulSoup, raw_word: str | None) -> tuple[set[str], set[str]]:
     used = set()
     for a in soup.find_all("a", class_="letterGuess"):
@@ -273,6 +296,7 @@ def print_state(raw_word: str | None, soup: BeautifulSoup):
     print(f"Correct Guesses: {correct}")
     print(f"Lives left: {lives}")
     RESULTS_PATH.write_text(str(current_streak), encoding="utf-8")
+    _update_round_stats(solved)
     return solved, correct, lives
 
 def round_finished(raw_word: str | None, lives: str | None) -> bool:
