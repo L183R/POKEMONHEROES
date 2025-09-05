@@ -144,22 +144,20 @@ def extract_card_id_from_bytes(content: bytes, prev_known: str | None = None) ->
     tokens = re.findall(rb"\d+", content)
     if not tokens:
         return None
-    def last3(t: bytes) -> str:
-        return t[-3:].decode("ascii", errors="ignore").zfill(3)
-    long_tokens = [t for t in tokens if len(t) >= 3]
-    if long_tokens:
-        for t in long_tokens:
-            v = last3(t)
-            if v != "000":
-                return v
-        return last3(long_tokens[0])
-    best = max(tokens, key=len)
-    v = last3(best)
+
+    # La respuesta típica contiene dos números: "0" (éxito) y luego el ID.
+    # Tomamos el último número encontrado como candidato y lo rellenamos a 3 dígitos.
+    candidate = tokens[-1]
+    v = candidate.decode("ascii", errors="ignore").zfill(3)
+
     if v == "000":
         return None
-    if prev_known and v != prev_known and len(best) < 3:
+
+    # Si la cadena es corta y teníamos un valor previo confiable, preferilo.
+    if prev_known and len(candidate) < 3 and v != prev_known:
         return prev_known
-    return v if len(best) >= 3 else None
+
+    return v
 
 # ---- Flip con dos modos: exploratorio vs estricto ----
 def flip_generic(session, cookies, idx: int, expected: str | None,
