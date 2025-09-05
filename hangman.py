@@ -74,16 +74,11 @@ def log_round_result(raw_word: str | None) -> None:
     success = bool(raw_word and "_" not in raw_word)
     result_text = f"{raw_word or '-'} - {'SUCCESS' if success else 'FAIL'}"
     log_print(f"RESULT: {result_text}")
-    with RESULTS_PATH.open("a", encoding="utf-8") as f:
-        f.write(result_text + "\n")
     if success:
-        coins = (current_streak + 1) * 25
+        coins = current_streak * 25
         total_coins += coins
-        current_streak += 1
         if current_streak > max_streak:
             max_streak = current_streak
-    else:
-        current_streak = 0
     os.system("cls" if os.name == "nt" else "clear")
     for line in (
         f"Racha actual: {current_streak}",
@@ -260,7 +255,11 @@ def is_game_page(soup: BeautifulSoup) -> bool:
 
 def print_state(raw_word: str | None, soup: BeautifulSoup):
     solved, correct, lives = grab_metrics(soup)
-    current_streak = solved
+    global current_streak
+    try:
+        current_streak = int(solved)
+    except (TypeError, ValueError):
+        current_streak = 0
     if raw_word:
         print(f"Word: {spaced(raw_word)} ")
     else:
@@ -270,7 +269,7 @@ def print_state(raw_word: str | None, soup: BeautifulSoup):
     print(f"Racha actual: {current_streak}")
     print(f"Correct Guesses: {correct}")
     print(f"Lives left: {lives}")
-    Path("results.txt").write_text(str(current_streak), encoding="utf-8")
+    RESULTS_PATH.write_text(str(current_streak), encoding="utf-8")
     return solved, correct, lives
 
 def round_finished(raw_word: str | None, lives: str | None) -> bool:

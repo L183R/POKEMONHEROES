@@ -1,9 +1,75 @@
  (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
 diff --git a/hangman.py b/hangman.py
-index bf4a3027c51bc70424d8ba03f631412aab98e2be..154871cccd3fca3b57a7750a2f05bd566f153d97 100644
+index b6002eed3973fa368f86f9e40bb9e123916d29ab..c789649bf6c51b0e0909c43cd5ed1d6ccb5624c0 100644
 --- a/hangman.py
 +++ b/hangman.py
-@@ -170,59 +170,61 @@ def headers_common():
+@@ -52,60 +52,55 @@ _logged_messages: list[str] = []
+ 
+ current_streak = 0
+ max_streak = 0
+ total_coins = 0
+ 
+ def log_print(*args, sep=" ", end="\n", **kwargs):
+     msg = sep.join(str(a) for a in args) + end
+     _logged_messages.append(msg.rstrip("\n"))
+     with LOG_PATH.open("a", encoding="utf-8") as f:
+         f.write(msg)
+ 
+ builtins.print = log_print
+ 
+ def _print_last_message():
+     if _logged_messages:
+         _original_print(_logged_messages[-1])
+ 
+ atexit.register(_print_last_message)
+ # ======================
+ 
+ def log_round_result(raw_word: str | None) -> None:
+     global current_streak, max_streak, total_coins
+     success = bool(raw_word and "_" not in raw_word)
+     result_text = f"{raw_word or '-'} - {'SUCCESS' if success else 'FAIL'}"
+     log_print(f"RESULT: {result_text}")
+-    with RESULTS_PATH.open("a", encoding="utf-8") as f:
+-        f.write(result_text + "\n")
+     if success:
+-        coins = (current_streak + 1) * 25
++        coins = current_streak * 25
+         total_coins += coins
+-        current_streak += 1
+         if current_streak > max_streak:
+             max_streak = current_streak
+-    else:
+-        current_streak = 0
+     os.system("cls" if os.name == "nt" else "clear")
+     for line in (
+         f"Racha actual: {current_streak}",
+         f"Racha máxima: {max_streak}",
+         f"Total de monedas ganadas: {total_coins}",
+     ):
+         log_print(line)
+         _original_print(line)
+ 
+ def cookies_from_string(s: str) -> dict:
+     d = {}
+     for part in [p.strip() for p in s.split(";") if p.strip()]:
+         if "=" in part and not part.lower().startswith("expires"):
+             k, v = part.split("=", 1)
+             d[k.strip()] = v.strip()
+     return d
+ 
+ def normalize_text(txt: str) -> str:
+     txt = unescape(txt)
+     txt = re.sub(r"\xa0{2,}", " ", txt)
+     txt = txt.replace("\xa0", "")
+     return re.sub(r"[ \t\r\f\v]+", " ", txt).strip()
+ 
+ 
+ def parse_game_word(raw: str) -> str:
+diff --git a/hangman.py b/hangman.py
+index b6002eed3973fa368f86f9e40bb9e123916d29ab..c789649bf6c51b0e0909c43cd5ed1d6ccb5624c0 100644
+--- a/hangman.py
++++ b/hangman.py
+@@ -238,61 +233,65 @@ def headers_common():
          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
          "referer": "https://pokeheroes.com/gc_hangman?",
          "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
@@ -29,18 +95,23 @@ index bf4a3027c51bc70424d8ba03f631412aab98e2be..154871cccd3fca3b57a7750a2f05bd56
  
  def print_state(raw_word: str | None, soup: BeautifulSoup):
      solved, correct, lives = grab_metrics(soup)
-+    current_streak = solved
+-    current_streak = solved
++    global current_streak
++    try:
++        current_streak = int(solved)
++    except (TypeError, ValueError):
++        current_streak = 0
      if raw_word:
          print(f"Word: {spaced(raw_word)} ")
      else:
          center = soup.find("center")
          approx = normalize_text(center.get_text(" ", strip=True)).upper() if center else "(vacío)"
          print(f"Word: {spaced(approx)} (palabra no encontrada) ")
--    print(f"Solved Hangmen in a row: {solved}")
-+    print(f"Racha actual: {current_streak}")
+     print(f"Racha actual: {current_streak}")
      print(f"Correct Guesses: {correct}")
      print(f"Lives left: {lives}")
-+    Path("results.txt").write_text(str(current_streak), encoding="utf-8")
+-    Path("results.txt").write_text(str(current_streak), encoding="utf-8")
++    RESULTS_PATH.write_text(str(current_streak), encoding="utf-8")
      return solved, correct, lives
  
  def round_finished(raw_word: str | None, lives: str | None) -> bool:
