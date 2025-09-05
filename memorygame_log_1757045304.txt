@@ -1,0 +1,254 @@
+[warmup] 200 https://pokeheroes.com/gc_concentration?d=2
+[response] idx=0 intento 1/4 status=200 body=﻿<span class="succ">0</span><span class="pkdxnr">621</span>
+[Flip A] idx=00 -> id=621
+[response] idx=1 intento 1/4 status=200 body=﻿<span class="pkdxnr">104</span>
+[Flip B] idx=01 -> id=104
+❌ NO MATCH: (0:621) vs (1:104) | resueltas=0/36
+[response] idx=2 intento 1/4 status=200 body=﻿<span class="succ">0</span><span class="pkdxnr">287</span>
+[Flip A] idx=02 -> id=287
+[response] idx=3 intento 1/4 status=200 body=﻿<span class="pkdxnr">52</span>
+[Flip B] idx=03 -> id=052
+❌ NO MATCH: (2:287) vs (3:052) | resueltas=0/36
+[response] idx=4 intento 1/4 status=200 body=﻿<span class="succ">0</span><span class="pkdxnr">678</span>
+[Flip A] idx=04 -> id=678
+[response] idx=5 intento 1/4 status=200 body=﻿<span class="pkdxnr">465</span>
+[Flip B] idx=05 -> id=465
+❌ NO MATCH: (4:678) vs (5:465) | resueltas=0/36
+[response] idx=6 intento 1/4 status=200 body=﻿<span class="succ">0</span><span class="pkdxnr">143</span>
+[Flip A] idx=06 -> id=143
+[response] idx=7 intento 1/4 status=200 body=﻿<span class="pkdxnr">396</span>
+[Flip B] idx=07 -> id=396
+❌ NO MATCH: (6:143) vs (7:396) | resueltas=0/36
+[response] idx=8 intento 1/4 status=200 body=﻿<span class="succ">0</span><span class="pkdxnr">15</span>
+[Flip A] idx=08 -> id=015
+[response] idx=9 intento 1/4 status=200 body=﻿<span class="pkdxnr">134</span>
+[Flip B] idx=09 -> id=134
+❌ NO MATCH: (8:015) vs (9:134) | resueltas=0/36
+[response] idx=10 intento 1/4 status=200 body=﻿<span class="succ">0</span><span class="pkdxnr">765</span>
+[Flip A] idx=10 -> id=765
+[response] idx=11 intento 1/4 status=200 body=﻿<span class="pkdxnr">667</span>
+[Flip B] idx=11 -> id=667
+❌ NO MATCH: (10:765) vs (11:667) | resueltas=0/36
+[response] idx=12 intento 1/4 status=200 body=﻿<span class="succ">0</span><span class="pkdxnr">678</span>
+[Flip A] idx=12 -> id=678
+[response] idx=4 intento 1/12 status=200 body=﻿<span class="pkdxnr">678</span>
+[Flip B] idx=04 -> id=678
+✅ MATCH id=678 | par=(12,4) | resueltas=2/36
+[response] idx=13 intento 1/4 status=200 body=﻿<span class="succ">0</span><span class="pkdxnr">134</span>
+[Flip A] idx=13 -> id=134
+[response] idx=9 intento 1/12 status=200 body=﻿<span class="pkdxnr">134</span>
+[Flip B] idx=09 -> id=134
+✅ MATCH id=134 | par=(13,9) | resueltas=4/36
+[response] idx=14 intento 1/4 status=200 body=﻿<span class="succ">0</span><span class="pkdxnr">667</span>
+[Flip A] idx=14 -> id=667
+[response] idx=11 intento 1/12 status=200 body=﻿<span class="pkdxnr">667</span>
+[Flip B] idx=11 -> id=667
+✅ MATCH id=667 | par=(14,11) | resueltas=6/36
+[response] idx=15 intento 1/4 status=200 body=﻿<span class="succ">0</span><span class="pkdxnr">621</span>
+[Flip A] idx=15 -> id=621
+[response] idx=0 intento 1/12 status=200 body=﻿<span class="pkdxnr">621</span>
+[Flip B] idx=00 -> id=621
+✅ MATCH id=621 | par=(15,0) | resueltas=8/36
+[response] idx=16 intento 1/4 status=200 body=﻿<span class="succ">0</span><span class="pkdxnr">788</span>
+[Flip A] idx=16 -> id=788
+[response] idx=17 intento 1/4 status=200 body=﻿<span class="pkdxnr">143</span>
+[Flip B] idx=17 -> id=143
+❌ NO MATCH: (16:788) vs (17:143) | resueltas=8/36
+[response] idx=6 intento 1/12 status=200 body=﻿<span class="succ">1</span><span class="pkdxnr">143</span>
+[Flip A*] idx=06 -> id=143 (estricto)
+[response] idx=17 intento 1/12 status=200 body=﻿
+[no-id] idx=17 intento 1 cuerpo=﻿
+[retry strict] idx=17 intento 1/12 (cid=None, esperado=143). 23.00s
+[deadline] idx=17 14.0s. mantengo previo
+[Flip B*] idx=17 -> id=143 (estricto)
+✅ MATCH id=143 | par=(6,17) | resueltas=10/36
+[response] idx=18 intento 1/4 status=200 body=﻿<span class="pkdxnr">788</span>
+[Flip A] idx=18 -> id=788
+[response] idx=16 intento 1/12 status=200 body=﻿<span class="succ">1</span><span class="pkdxnr">788</span>
+[Flip B] idx=16 -> id=788
+✅ MATCH id=788 | par=(18,16) | resueltas=12/36
+[response] idx=19 intento 1/4 status=200 body=﻿<span class="pkdxnr">15</span>
+[Flip A] idx=19 -> id=015
+[response] idx=8 intento 1/12 status=200 body=﻿<span class="succ">1</span><span class="pkdxnr">15</span>
+[Flip B] idx=08 -> id=015
+✅ MATCH id=015 | par=(19,8) | resueltas=14/36
+[response] idx=20 intento 1/4 status=200 body=﻿<span class="pkdxnr">465</span>
+[Flip A] idx=20 -> id=465
+[response] idx=5 intento 1/12 status=200 body=﻿<span class="succ">1</span><span class="pkdxnr">465</span>
+[Flip B] idx=05 -> id=465
+✅ MATCH id=465 | par=(20,5) | resueltas=16/36
+[response] idx=21 intento 1/4 status=200 body=﻿<span class="pkdxnr">781</span>
+[Flip A] idx=21 -> id=781
+[response] idx=22 intento 1/4 status=200 body=﻿<span class="succ">0</span><span class="pkdxnr">830</span>
+[Flip B] idx=22 -> id=830
+❌ NO MATCH: (21:781) vs (22:830) | resueltas=16/36
+[response] idx=23 intento 1/4 status=200 body=﻿<span class="pkdxnr">396</span>
+[Flip A] idx=23 -> id=396
+[response] idx=7 intento 1/12 status=200 body=﻿<span class="succ">1</span><span class="pkdxnr">396</span>
+[Flip B] idx=07 -> id=396
+✅ MATCH id=396 | par=(23,7) | resueltas=18/36
+[response] idx=24 intento 1/4 status=200 body=﻿<span class="pkdxnr">104</span>
+[Flip A] idx=24 -> id=104
+[response] idx=1 intento 1/12 status=200 body=﻿<span class="succ">1</span><span class="pkdxnr">104</span>
+[Flip B] idx=01 -> id=104
+✅ MATCH id=104 | par=(24,1) | resueltas=20/36
+[response] idx=25 intento 1/4 status=200 body=﻿<span class="pkdxnr">314</span>
+[Flip A] idx=25 -> id=314
+[response] idx=26 intento 1/4 status=200 body=﻿<span class="succ">0</span><span class="pkdxnr">52</span>
+[Flip B] idx=26 -> id=052
+❌ NO MATCH: (25:314) vs (26:052) | resueltas=20/36
+[response] idx=3 intento 1/12 status=200 body=﻿<span class="pkdxnr">52</span>
+[Flip A*] idx=03 -> id=052 (estricto)
+[response] idx=26 intento 1/12 status=200 body=﻿<span class="succ">1</span><span class="pkdxnr">52</span>
+[Flip B*] idx=26 -> id=052 (estricto)
+✅ MATCH id=052 | par=(3,26) | resueltas=22/36
+[response] idx=27 intento 1/4 status=200 body=﻿<span class="pkdxnr">287</span>
+[Flip A] idx=27 -> id=287
+[response] idx=2 intento 1/12 status=200 body=﻿<span class="succ">1</span><span class="pkdxnr">287</span>
+[Flip B] idx=02 -> id=287
+✅ MATCH id=287 | par=(27,2) | resueltas=24/36
+[response] idx=28 intento 1/4 status=200 body=﻿<span class="pkdxnr">314</span>
+[Flip A] idx=28 -> id=314
+[response] idx=25 intento 1/12 status=200 body=﻿<span class="succ">1</span><span class="pkdxnr">314</span>
+[Flip B] idx=25 -> id=314
+✅ MATCH id=314 | par=(28,25) | resueltas=26/36
+[response] idx=29 intento 1/4 status=200 body=﻿<span class="pkdxnr">830</span>
+[Flip A] idx=29 -> id=830
+[response] idx=22 intento 1/12 status=200 body=﻿<span class="succ">1</span><span class="pkdxnr">830</span>
+[Flip B] idx=22 -> id=830
+✅ MATCH id=830 | par=(29,22) | resueltas=28/36
+[response] idx=30 intento 1/4 status=200 body=﻿<span class="pkdxnr">327</span>
+[Flip A] idx=30 -> id=327
+[response] idx=31 intento 1/4 status=200 body=﻿<span class="succ">0</span><span class="pkdxnr">765</span>
+[Flip B] idx=31 -> id=765
+❌ NO MATCH: (30:327) vs (31:765) | resueltas=28/36
+[response] idx=10 intento 1/12 status=200 body=﻿<span class="pkdxnr">765</span>
+[Flip A*] idx=10 -> id=765 (estricto)
+[response] idx=31 intento 1/12 status=200 body=﻿<span class="succ">1</span><span class="pkdxnr">765</span>
+[Flip B*] idx=31 -> id=765 (estricto)
+✅ MATCH id=765 | par=(10,31) | resueltas=30/36
+[response] idx=32 intento 1/4 status=200 body=﻿<span class="pkdxnr">284</span>
+[Flip A] idx=32 -> id=284
+[response] idx=33 intento 1/4 status=200 body=﻿<span class="succ">0</span><span class="pkdxnr">327</span>
+[Flip B] idx=33 -> id=327
+❌ NO MATCH: (32:284) vs (33:327) | resueltas=30/36
+[response] idx=30 intento 1/12 status=200 body=﻿<span class="pkdxnr">327</span>
+[Flip A*] idx=30 -> id=327 (estricto)
+[response] idx=33 intento 1/12 status=200 body=﻿<span class="succ">1</span><span class="pkdxnr">327</span>
+[Flip B*] idx=33 -> id=327 (estricto)
+✅ MATCH id=327 | par=(30,33) | resueltas=32/36
+[response] idx=34 intento 1/4 status=200 body=﻿<span class="pkdxnr">284</span>
+[Flip A] idx=34 -> id=284
+[response] idx=32 intento 1/12 status=200 body=﻿<span class="succ">1</span><span class="pkdxnr">284</span>
+[Flip B] idx=32 -> id=284
+✅ MATCH id=284 | par=(34,32) | resueltas=34/36
+[response] idx=35 intento 1/4 status=200 body=﻿<span class="pkdxnr">781</span>
+[Flip A] idx=35 -> id=781
+[response] idx=21 intento 1/12 status=200 body=﻿<span class="succ">1</span><span class="pkdxnr">781</span>
+[Flip B] idx=21 -> id=781
+✅ MATCH id=781 | par=(35,21) | resueltas=36/36
+Listo. Pares resueltos: 36/36
+Log guardado en: memorygame_log_1757045304.txt
+[warmup] 200 https://pokeheroes.com/gc_concentration?d=2
+[sleep] Esperando 100s para iniciar una nueva partida…
+[restart] Nueva ejecución…
+[warmup] 200 https://pokeheroes.com/gc_concentration?d=2
+[response] idx=0 intento 1/4 status=200 body=﻿<span class="pkdxnr">621</span>
+[Flip A] idx=00 -> id=621
+[response] idx=1 intento 1/4 status=200 body=﻿
+[no-id] idx=1 intento 1 cuerpo=﻿
+[retry exp] idx=1 intento 1/4 (cid=None). 2.00s
+[response] idx=1 intento 2/4 status=200 body=﻿
+[no-id] idx=1 intento 2 cuerpo=﻿
+[retry exp] idx=1 intento 2/4 (cid=None). 2.70s
+[response] idx=1 intento 3/4 status=200 body=﻿
+[no-id] idx=1 intento 3 cuerpo=﻿
+[retry exp] idx=1 intento 3/4 (cid=None). 3.65s
+[response] idx=1 intento 4/4 status=200 body=﻿
+[no-id] idx=1 intento 4 cuerpo=﻿
+[retry exp] idx=1 intento 4/4 (cid=None). 4.92s
+[skip] idx=01 sin ID estable. Lo intento luego.
+[response] idx=2 intento 1/4 status=200 body=﻿
+[no-id] idx=2 intento 1 cuerpo=﻿
+[retry exp] idx=2 intento 1/4 (cid=None). 2.00s
+[response] idx=2 intento 2/4 status=200 body=﻿
+[no-id] idx=2 intento 2 cuerpo=﻿
+[retry exp] idx=2 intento 2/4 (cid=None). 2.70s
+[response] idx=2 intento 3/4 status=200 body=﻿
+[no-id] idx=2 intento 3 cuerpo=﻿
+[retry exp] idx=2 intento 3/4 (cid=None). 3.65s
+[response] idx=2 intento 4/4 status=200 body=﻿
+[no-id] idx=2 intento 4 cuerpo=﻿
+[retry exp] idx=2 intento 4/4 (cid=None). 4.92s
+[skip] idx=02 sin ID estable. Lo intento luego.
+[response] idx=1 intento 1/4 status=200 body=﻿
+[no-id] idx=1 intento 1 cuerpo=﻿
+[retry exp] idx=1 intento 1/4 (cid=None). 2.00s
+[response] idx=1 intento 2/4 status=200 body=﻿
+[no-id] idx=1 intento 2 cuerpo=﻿
+[retry exp] idx=1 intento 2/4 (cid=None). 2.70s
+[response] idx=1 intento 3/4 status=200 body=﻿
+[no-id] idx=1 intento 3 cuerpo=﻿
+[retry exp] idx=1 intento 3/4 (cid=None). 3.65s
+[response] idx=1 intento 4/4 status=200 body=﻿
+[no-id] idx=1 intento 4 cuerpo=﻿
+[retry exp] idx=1 intento 4/4 (cid=None). 4.92s
+[skip] idx=01 sin ID estable. Lo intento luego.
+[response] idx=2 intento 1/4 status=200 body=﻿
+[no-id] idx=2 intento 1 cuerpo=﻿
+[retry exp] idx=2 intento 1/4 (cid=None). 2.00s
+[response] idx=2 intento 2/4 status=200 body=﻿
+[no-id] idx=2 intento 2 cuerpo=﻿
+[retry exp] idx=2 intento 2/4 (cid=None). 2.70s
+[response] idx=2 intento 3/4 status=200 body=﻿
+[no-id] idx=2 intento 3 cuerpo=﻿
+[retry exp] idx=2 intento 3/4 (cid=None). 3.65s
+[response] idx=2 intento 4/4 status=200 body=﻿
+[no-id] idx=2 intento 4 cuerpo=﻿
+[retry exp] idx=2 intento 4/4 (cid=None). 4.92s
+[skip] idx=02 sin ID estable. Lo intento luego.
+[response] idx=1 intento 1/4 status=200 body=﻿
+[no-id] idx=1 intento 1 cuerpo=﻿
+[retry exp] idx=1 intento 1/4 (cid=None). 2.00s
+[response] idx=1 intento 2/4 status=200 body=﻿
+[no-id] idx=1 intento 2 cuerpo=﻿
+[retry exp] idx=1 intento 2/4 (cid=None). 2.70s
+[response] idx=1 intento 3/4 status=200 body=﻿
+[no-id] idx=1 intento 3 cuerpo=﻿
+[retry exp] idx=1 intento 3/4 (cid=None). 3.65s
+[response] idx=1 intento 4/4 status=200 body=﻿
+[no-id] idx=1 intento 4 cuerpo=﻿
+[retry exp] idx=1 intento 4/4 (cid=None). 4.92s
+[skip] idx=01 sin ID estable. Lo intento luego.
+[response] idx=2 intento 1/4 status=200 body=﻿
+[no-id] idx=2 intento 1 cuerpo=﻿
+[retry exp] idx=2 intento 1/4 (cid=None). 2.00s
+[response] idx=2 intento 2/4 status=200 body=﻿
+[no-id] idx=2 intento 2 cuerpo=﻿
+[retry exp] idx=2 intento 2/4 (cid=None). 2.70s
+[response] idx=2 intento 3/4 status=200 body=﻿
+[no-id] idx=2 intento 3 cuerpo=﻿
+[retry exp] idx=2 intento 3/4 (cid=None). 3.65s
+[response] idx=2 intento 4/4 status=200 body=﻿
+[no-id] idx=2 intento 4 cuerpo=﻿
+[retry exp] idx=2 intento 4/4 (cid=None). 4.92s
+[skip] idx=02 sin ID estable. Lo intento luego.
+[response] idx=1 intento 1/4 status=200 body=﻿
+[no-id] idx=1 intento 1 cuerpo=﻿
+[retry exp] idx=1 intento 1/4 (cid=None). 2.00s
+[response] idx=1 intento 2/4 status=200 body=﻿
+[no-id] idx=1 intento 2 cuerpo=﻿
+[retry exp] idx=1 intento 2/4 (cid=None). 2.70s
+[response] idx=1 intento 3/4 status=200 body=﻿
+[no-id] idx=1 intento 3 cuerpo=﻿
+[retry exp] idx=1 intento 3/4 (cid=None). 3.65s
+[response] idx=1 intento 4/4 status=200 body=﻿
+[no-id] idx=1 intento 4 cuerpo=﻿
+[retry exp] idx=1 intento 4/4 (cid=None). 4.92s
+[skip] idx=01 sin ID estable. Lo intento luego.
+[response] idx=2 intento 1/4 status=200 body=﻿
+[no-id] idx=2 intento 1 cuerpo=﻿
+[retry exp] idx=2 intento 1/4 (cid=None). 2.00s
+[response] idx=2 intento 2/4 status=200 body=﻿
+[no-id] idx=2 intento 2 cuerpo=﻿
+[retry exp] idx=2 intento 2/4 (cid=None). 2.70s
