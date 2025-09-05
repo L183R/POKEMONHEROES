@@ -1,0 +1,50 @@
+[skip] idx=00 sin ID estable. Lo intento luego.
+[Flip A] idx=01 -> id=822
+[Flip B] idx=02 -> id=143
+❌ NO MATCH: (1:822) vs (2:143) | resueltas=0/36
+[Flip A] idx=03 -> id=180
+[Flip B] idx=04 -> id=448
+❌ NO MATCH: (3:180) vs (4:448) | resueltas=0/36
+[skip] idx=05 sin ID estable. Lo intento luego.
+[skip] idx=00 sin ID estable. Lo intento luego.
+[skip] idx=05 sin ID estable. Lo intento luego.
+[skip] idx=00 sin ID estable. Lo intento luego.
+[skip] idx=05 sin ID estable. Lo intento luego.
+[skip] idx=00 sin ID estable. Lo intento luego.
+[skip] idx=05 sin ID estable. Lo intento luego.
+[skip] idx=00 sin ID estable. Lo intento luego.
+[skip] idx=05 sin ID estable. Lo intento luego.
+[skip] idx=00 sin ID estable. Lo intento luego.
+[skip] idx=05 sin ID estable. Lo intento luego.
+[skip] idx=00 sin ID estable. Lo intento luego.
+[skip] idx=05 sin ID estable. Lo intento luego.
+[skip] idx=00 sin ID estable. Lo intento luego.
+[skip] idx=05 sin ID estable. Lo intento luego.
+[skip] idx=00 sin ID estable. Lo intento luego.
+[skip] idx=05 sin ID estable. Lo intento luego.
+[skip] idx=00 sin ID estable. Lo intento luego.
+[skip] idx=05 sin ID estable. Lo intento luego.
+[skip] idx=00 sin ID estable. Lo intento luego.
+[skip] idx=05 sin ID estable. Lo intento luego.
+[skip] idx=00 sin ID estable. Lo intento luego.
+[skip] idx=05 sin ID estable. Lo intento luego.
+[skip] idx=00 sin ID estable. Lo intento luego.
+[skip] idx=05 sin ID estable. Lo intento luego.
+[skip] idx=00 sin ID estable. Lo intento luego.
+[skip] idx=05 sin ID estable. Lo intento luego.
+[skip] idx=00 sin ID estable. Lo intento luego.
+[skip] idx=05 sin ID estable. Lo intento luego.
+[skip] idx=00 sin ID estable. Lo intento luego.
+[skip] idx=05 sin ID estable. Lo intento luego.
+[skip] idx=00 sin ID estable. Lo intento luego.
+[skip] idx=05 sin ID estable. Lo intento luego.
+[skip] idx=00 sin ID estable. Lo intento luego.
+[skip] idx=05 sin ID estable. Lo intento luego.
+[skip] idx=00 sin ID estable. Lo intento luego.
+[skip] idx=05 sin ID estable. Lo intento luego.
+[skip] idx=00 sin ID estable. Lo intento luego.
+[skip] idx=05 sin ID estable. Lo intento luego.
+[skip] idx=00 sin ID estable. Lo intento luego.
+[skip] idx=05 sin ID estable. Lo intento luego.
+[skip] idx=00 sin ID estable. Lo intento luego.
+[skip] idx=05 sin ID estable. Lo intento luego.
