@@ -1,54 +1,147 @@
  (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
-diff --git a/Interacts.py b/Interacts.py
-index 992347af519a964d99b3d7fabb1ec8b08be761e2..24cf9162ba09f3c6dc8dc9256e1883208df0f9c3 100644
---- a/Interacts.py
-+++ b/Interacts.py
-@@ -109,42 +109,44 @@ def main():
-                 list_type = candidate
-                 break
-             else:
-                 print("Lista vacía, probando siguiente…")
+diff --git a/hangman.py b/hangman.py
+index bf4a3027c51bc70424d8ba03f631412aab98e2be..fb19783b962cf30629bfab9e8258ef2b5d7ade3e 100644
+--- a/hangman.py
++++ b/hangman.py
+@@ -15,50 +15,57 @@ from collections import Counter
+ URL = "https://pokeheroes.com/gc_hangman"
+ COOKIE_STRING = "PHPSESSID=pdnh5fl1jvn139c0l0rglmug7s; _gcl_au=1.1.1884119554.1756846145.1072503122.1756846377.1756846377; username=L183R; password=6299ad21b8644aa31efb9e2ed4d660160c5480d44dac3f9a090179086e8db991b39e11d5f4b959a13df5f863aebaba997753ef0392427a3c519b48f425b1f6e8; username=L183R; password=6299ad21b8644aa31efb9e2ed4d660160c5480d44dac3f9a090179086e8db991b39e11d5f4b959a13df5f863aebaba997753ef0392427a3c519b48f425b1f6e8; friendbar_hide=hide"  # ← poné tu PHPSESSID válido
+ WORDLIST_PATH = Path("hangman_words.txt")
  
-         if not pairs:
-             print("No vinieron Pokémon en ninguna lista. Corto.")
-             break
+ # Autorefresco cuando NO se encuentra la palabra
+ AUTO_REFRESH_ON_FALLBACK = True
+ REFRESH_INTERVAL_SEC = 2
+ MAX_REFRESH_TRIES = 60
  
-         print(f"→ {len(pairs)} Pokémon en la lista. Mandando warms en paralelo ({WORKERS} workers, sin delay)…")
+ # Cuando aparece el banner de INSTRUCTIONS, esperar 5 minutos antes de refrescar
+ INSTRUCTION_WAIT_SEC = 300  # 5 minutos
  
-         # Preparamos tareas con inarow asignado por índice (aprox. “secuencia”)
-         jobs = []
-         with ThreadPoolExecutor(max_workers=WORKERS) as ex:
-             for idx, (pkmnid, pkmnsid) in enumerate(pairs, start=1):
-                 # round-robin de sesiones por worker
-                 sess = sessions[(idx - 1) % WORKERS]
-                 inarow = inarow_global
-                 inarow_global += 1
-                 jobs.append(
-                     ex.submit(warm_interact, sess, list_type, pkmnid, pkmnsid, inarow, "")
-                 )
+ # Auto-juego (letra más frecuente entre candidatas)
+ AUTO_GUESS_WHEN_CANDIDATES = True
+ AUTO_GUESS_MAX_PER_ROUND = 26
+ AUTO_GUESS_SLEEP_SEC = 0.6
  
-             ok = 0
-             total = len(jobs)
-+            procesados = 0
-             for fut in as_completed(jobs):
-                 try:
-                     status = fut.result()
-                     if status == 200:
-                         ok += 1
-                 except Exception as e:
-                     status = f"ERROR: {e}"
--                print(f"→ Resultado: {status}")
-+                procesados += 1
-+                print(f"→ Resultado: {status} ({ok}/{procesados}/{total})")
+ # Fallback cuando NO hay candidatas: orden de frecuencia en inglés
+ FALLBACK_GUESS_WHEN_NO_CANDIDATES = True
+ FALLBACK_FREQ_ORDER = "ETAOINSHRDLUCMFYWGPBVKXQJZ"
+ FALLBACK_MAX_PER_ROUND = 26
+ FALLBACK_SLEEP_SEC = 0.5
  
-         interaction_count += ok
-         print(f"✔️ Ciclo {cycle} completo: {ok}/{total} warms HTTP 200 (total: {interaction_count})")
-         # sin delay entre ciclos; si te bloquea, agregá un sleep acá
+ # Timeout de input (auto-ENTER)
+ INPUT_TIMEOUT_SEC = 5
++# Recompensa base (1ra respuesta = 25, 2da = 50, ...)
++COIN_BASE = 25
++
++# Variables de seguimiento
++_prev_solved = None
++_max_solved = 0
++_coins_obtained = 0
+ # ==========================
  
-     print("\nListo. Vapaí.")
+ if os.name == "nt":
+     import msvcrt  # Windows
  
- if __name__ == "__main__":
-     main()
+ def cookies_from_string(s: str) -> dict:
+     d = {}
+     for part in [p.strip() for p in s.split(";") if p.strip()]:
+         if "=" in part and not part.lower().startswith("expires"):
+             k, v = part.split("=", 1)
+             d[k.strip()] = v.strip()
+     return d
+ 
+ def normalize_text(txt: str) -> str:
+     txt = unescape(txt).replace("\xa0", " ")
+     return re.sub(r"[ \t\r\f\v]+", " ", txt)
+ 
+ def load_wordlist(path: Path) -> list[str]:
+     if not path.exists():
+         return []
+     return [line.strip() for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]
+ 
+ def spaced(s: str) -> str:
+     return " ".join(list(s))
+ 
+diff --git a/hangman.py b/hangman.py
+index bf4a3027c51bc70424d8ba03f631412aab98e2be..fb19783b962cf30629bfab9e8258ef2b5d7ade3e 100644
+--- a/hangman.py
++++ b/hangman.py
+@@ -179,52 +186,76 @@ def request_page(sess: requests.Session, cookies: dict, letter: str | None):
+     r = sess.get(URL, params=params, headers=headers_common(), cookies=cookies, timeout=30)
+     r.raise_for_status()
+     return r.text
+ 
+ def refresh_round(sess: requests.Session, cookies: dict):
+     params = {"_": int(time.time() * 1000)}  # cache-buster
+     r = sess.get(URL, params=params, headers=headers_common(), cookies=cookies, timeout=30)
+     r.raise_for_status()
+     return r.text
+ 
+ def is_game_page(soup: BeautifulSoup) -> bool:
+     txt = normalize_text(soup.get_text(" ", strip=True))
+     return bool(soup.select("a.letterGuess")) or ("Hangman" in txt and "Guess the word" in txt)
+ 
+ def print_state(raw_word: str | None, soup: BeautifulSoup):
+     solved, correct, lives = grab_metrics(soup)
+     if raw_word:
+         print(f"Word: {spaced(raw_word)} ")
+     else:
+         center = soup.find("center")
+         approx = normalize_text(center.get_text(" ", strip=True)).upper() if center else "(vacío)"
+         print(f"Word: {spaced(approx)} (palabra no encontrada) ")
+     print(f"Solved Hangmen in a row: {solved}")
+     print(f"Correct Guesses: {correct}")
+     print(f"Lives left: {lives}")
++    _update_stats_on_change(solved)
+     return solved, correct, lives
+ 
++
++def _update_stats_on_change(solved_str: str) -> None:
++    global _prev_solved, _max_solved, _coins_obtained
++    try:
++        solved_int = int(solved_str)
++    except (TypeError, ValueError):
++        return
++    if _prev_solved is None or solved_int != _prev_solved:
++        gained = 0
++        if _prev_solved is None:
++            gained = COIN_BASE * solved_int * (solved_int + 1) // 2
++        elif solved_int > _prev_solved:
++            start = _prev_solved + 1
++            count = solved_int - _prev_solved
++            gained = COIN_BASE * (start + solved_int) * count // 2
++        _coins_obtained += gained
++        _prev_solved = solved_int
++        if solved_int > _max_solved:
++            _max_solved = solved_int
++        print(f"Rounds: {solved_int}")
++        print(f"Max rounds: {_max_solved}")
++        print(f"Coins obtained: {_coins_obtained}")
++
+ def round_finished(raw_word: str | None, lives: str | None) -> bool:
+     if raw_word and "_" not in raw_word:
+         return True
+     try:
+         return int(lives) <= 0
+     except (TypeError, ValueError):
+         return False
+ 
+ def auto_refresh_until_word(sess: requests.Session, cookies: dict, interval=2, max_tries=60):
+     """
+     Autorefresca hasta que aparezca la palabra.
+     Si se detecta el banner de INSTRUCTIONS, espera INSTRUCTION_WAIT_SEC entre intentos.
+     """
+     last_soup = None
+     empty_center_hits = 0
+ 
+     for i in range(1, max_tries + 1):
+         html = refresh_round(sess, cookies)
+         soup = BeautifulSoup(html, "html.parser")
+ 
+         if not is_game_page(soup):
+             Path("last_response.html").write_text(html, encoding="utf-8")
+             print("\n❌ No llegó la página del juego. Guardé last_response.html")
+             return None, soup
+ 
  
 EOF
 )
