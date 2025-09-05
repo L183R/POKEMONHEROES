@@ -9,6 +9,7 @@ from time import monotonic
 import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
+import atexit
 
 # ================== CONFIG ==================
 COOKIES_STRING = ""              # Pegá el header Cookie completo (p.ej. "PHPSESSID=...; otra=...")
@@ -77,6 +78,20 @@ PAGE_HEADERS = {
     "Connection": "keep-alive",
 }
 
+# --- Logging -----------------------------------------------------------------
+LOG_PATH = Path(f"memorygame_log_{int(time.time())}.txt")
+LOG_FILE = LOG_PATH.open("w", encoding="utf-8")
+
+
+def log(msg: str) -> None:
+    """Prints and persists a debug message to the log file."""
+    print(msg)
+    LOG_FILE.write(msg + "\n")
+    LOG_FILE.flush()
+
+
+atexit.register(LOG_FILE.close)
+
 def build_session() -> requests.Session:
     s = requests.Session()
     retry = Retry(
@@ -110,12 +125,19 @@ def load_cookies() -> dict:
     return parse_cookie_string(s)
 
 def ensure_warmup(session: requests.Session, cookies: dict):
-    r = session.get(URL_PAGE, headers=PAGE_HEADERS, cookies=cookies, timeout=(10, 30), allow_redirects=True)
-    print("[warmup]", r.status_code, r.url)
+    r = session.get(
+        URL_PAGE,
+        headers=PAGE_HEADERS,
+        cookies=cookies,
+        timeout=(10, 30),
+        allow_redirects=True,
+    )
+    log(f"[warmup] {r.status_code} {r.url}")
     low = r.text.lower()
     if any(s in low for s in ["login", "log in", "signin", "sign in"]) and "concentration" not in low:
-        Path("warmup_response.html").write_text(r.text, encoding="utf-8")
-        raise SystemExit("Parece que no estás logueado. Guardé warmup_response.html.")
+        log("[warmup-error] Respuesta del servidor:")
+        log(r.text)
+        raise SystemExit("Parece que no estás logueado. Revisá el log.")
 
 # ---- Parsing de ID (desde bytes) ----
 def extract_card_id_from_bytes(content: bytes, prev_known: str | None = None) -> str | None:
@@ -146,7 +168,7 @@ def flip_generic(session, cookies, idx: int, expected: str | None,
     backoff = base_sleep
     for attempt in range(1, max_retries + 1):
         if monotonic() - start > deadline_sec:
-            print(f"[deadline] idx={idx} {deadline_sec:.1f}s. {'mantengo previo' if expected else 'skip'}")
+            log(f"[deadline] idx={idx} {deadline_sec:.1f}s. {'mantengo previo' if expected else 'skip'}")
             return expected  # si teníamos expected, devolvelo; si no, None
 
         try:
@@ -158,26 +180,26 @@ def flip_generic(session, cookies, idx: int, expected: str | None,
                 timeout=(10, 30),
                 allow_redirects=False,
             )
+            body = r.text
+            log(f"[response] idx={idx} intento {attempt}/{max_retries} status={r.status_code} body={body.strip()}")
 
             # Sólo acá se permite warmup: si el servidor redirige (sesión/nonce caído)
             if 300 <= r.status_code < 400:
                 loc = r.headers.get("Location", "")
-                print(f"[redir] idx={idx} {r.status_code} -> {loc}. Warmup…")
+                log(f"[redir] idx={idx} {r.status_code} -> {loc}. Warmup…")
                 ensure_warmup(session, cookies)
                 time.sleep(0.6)
                 continue
 
             cid = extract_card_id_from_bytes(r.content, prev_known=expected)
-
-            # Dump de cuerpo si no hay dígitos para depurar
             if cid is None:
-                Path(f"debug_flip_idx{idx}_attempt{attempt}.bin").write_bytes(r.content)
+                log(f"[no-id] idx={idx} intento {attempt} cuerpo={body.strip()}")
 
             # Modo estricto: si hay expected, sólo acepto ese valor
             if expected is not None:
                 if cid == expected:
                     return cid
-                print(f"[retry strict] idx={idx} intento {attempt}/{max_retries} (cid={cid}, esperado={expected}). {backoff:.2f}s")
+                log(f"[retry strict] idx={idx} intento {attempt}/{max_retries} (cid={cid}, esperado={expected}). {backoff:.2f}s")
                 time.sleep(backoff)
                 backoff *= 1.35
                 continue
@@ -186,7 +208,7 @@ def flip_generic(session, cookies, idx: int, expected: str | None,
             if cid is not None and cid != "000":
                 return cid
 
-            print(f"[retry exp] idx={idx} intento {attempt}/{max_retries} (cid={cid}). {backoff:.2f}s")
+            log(f"[retry exp] idx={idx} intento {attempt}/{max_retries} (cid={cid}). {backoff:.2f}s")
             time.sleep(backoff)
             backoff *= 1.35
 
@@ -194,7 +216,7 @@ def flip_generic(session, cookies, idx: int, expected: str | None,
                 requests.exceptions.ReadTimeout,
                 requests.exceptions.ChunkedEncodingError) as e:
             # NO warmup acá: sólo backoff y reintentar
-            print(f"[net] idx={idx} {type(e).__name__}: {e}. Esperando {max(backoff,0.8):.2f}s…")
+            log(f"[net] idx={idx} {type(e).__name__}: {e}. Esperando {max(backoff,0.8):.2f}s…")
             time.sleep(max(backoff, 0.8))
             backoff *= 1.4
 
@@ -219,158 +241,149 @@ def solve(size: int, cookies: dict, warmup: bool = True) -> None:
     solved = set()                        # índices resueltos
     pending_pairs: list[tuple[int, int, str]] = []  # (i, j, id) pendientes de cerrar
     skipped_until: dict[int, float] = {}  # idx -> timestamp para reintentar
+    def register(idx: int, cid: str):
+        known_id_by_idx[idx] = cid
+        id_to_idxs.setdefault(cid, set()).add(idx)
+        mates = [i for i in id_to_idxs[cid] if i != idx and i not in solved]
+        if mates:
+            j = mates[0]
+            pair = (min(idx, j), max(idx, j), cid)
+            if pair not in pending_pairs:
+                pending_pairs.append(pair)
 
-    log_path = Path(f"concentration_log_{int(time.time())}.txt")
-    with log_path.open("w", encoding="utf-8") as outf:
+    def mark_skipped(idx: int):
+        skipped_until[idx] = monotonic() + COOLDOWN_AFTER_SKIP
 
-        def log(msg: str):
-            print(msg)
-            outf.write(msg + "\n")
-            outf.flush()
+    def is_skipped(idx: int) -> bool:
+        until = skipped_until.get(idx)
+        if until is None:
+            return False
+        if monotonic() >= until:
+            skipped_until.pop(idx, None)
+            return False
+        return True
 
-        def register(idx: int, cid: str):
-            known_id_by_idx[idx] = cid
-            id_to_idxs.setdefault(cid, set()).add(idx)
-            mates = [i for i in id_to_idxs[cid] if i != idx and i not in solved]
-            if mates:
-                j = mates[0]
-                pair = (min(idx, j), max(idx, j), cid)
-                if pair not in pending_pairs:
-                    pending_pairs.append(pair)
-
-        def mark_skipped(idx: int):
-            skipped_until[idx] = monotonic() + COOLDOWN_AFTER_SKIP
-
-        def is_skipped(idx: int) -> bool:
-            until = skipped_until.get(idx)
-            if until is None:
-                return False
-            if monotonic() >= until:
-                skipped_until.pop(idx, None)
-                return False
-            return True
-
-        def find_next_pair():
-            while pending_pairs:
-                i, j, cid = pending_pairs[0]
-                if i in solved or j in solved:
-                    pending_pairs.pop(0)
-                    continue
-                if is_skipped(i) or is_skipped(j):
-                    # buscá otro par disponible
-                    for k in range(1, len(pending_pairs)):
-                        ii, jj, cc = pending_pairs[k]
-                        if ii not in solved and jj not in solved and not is_skipped(ii) and not is_skipped(jj):
-                            pending_pairs.pop(k)
-                            pending_pairs.insert(0, (ii, jj, cc))
-                            return pending_pairs[0]
-                    return None
-                return pending_pairs[0]
-            return None
-
-        def pick_unknown(exclude):
-            for k in range(size):
-                if k in solved or k in exclude or is_skipped(k):
-                    continue
-                if k not in known_id_by_idx:
-                    return k
-            for k in range(size):
-                if k not in solved and k not in exclude and not is_skipped(k):
-                    return k
-            for k in list(skipped_until):
-                if not is_skipped(k) and k not in solved and k not in exclude:
-                    return k
-            return None
-
-        while len(solved) < size:
-            # 1) Cerrar pares primero (modo estricto)
-            pair = find_next_pair()
-            if pair:
-                a, b, cid_goal = pair
-
-                cid_a = flip_strict_pair(s, cookies, a, expected_id=cid_goal)
-                if cid_a != cid_goal:
-                    mark_skipped(a)
-                    log(f"[pair-skip] idx={a:02d} no estabiliza id={cid_goal}. Lo intento luego.")
-                    time.sleep(0.8)
-                    continue
-                register(a, cid_a)
-                log(f"[Flip A*] idx={a:02d} -> id={cid_a} (estricto)")
-
-                time.sleep(SLEEP_AFTER_A_BEFORE_B)
-
-                cid_b = flip_strict_pair(s, cookies, b, expected_id=cid_goal)
-                if cid_b != cid_goal:
-                    mark_skipped(b)
-                    log(f"[pair-skip] idx={b:02d} no estabiliza id={cid_goal}. Lo intento luego.")
-                    time.sleep(0.8)
-                    continue
-                register(b, cid_b)
-                log(f"[Flip B*] idx={b:02d} -> id={cid_b} (estricto)")
-
-                if cid_a == cid_b == cid_goal:
-                    solved.update({a, b})
-                    pending_pairs[:] = [p for p in pending_pairs if not (p[0] in {a, b} or p[1] in {a, b})]
-                    log(f"✅ MATCH id={cid_goal} | par=({a},{b}) | resueltas={len(solved)}/{size}")
-                    time.sleep(PAIR_PAUSE)
-                else:
-                    log(f"⚠️ Par inconsistente: ({a}:{cid_a}) vs ({b}:{cid_b}) esperado={cid_goal}")
-                    time.sleep(MISMATCH_PAUSE)
+    def find_next_pair():
+        while pending_pairs:
+            i, j, cid = pending_pairs[0]
+            if i in solved or j in solved:
+                pending_pairs.pop(0)
                 continue
+            if is_skipped(i) or is_skipped(j):
+                # buscá otro par disponible
+                for k in range(1, len(pending_pairs)):
+                    ii, jj, cc = pending_pairs[k]
+                    if ii not in solved and jj not in solved and not is_skipped(ii) and not is_skipped(jj):
+                        pending_pairs.pop(k)
+                        pending_pairs.insert(0, (ii, jj, cc))
+                        return pending_pairs[0]
+                return None
+            return pending_pairs[0]
+        return None
 
-            # 2) Explorar
-            a = pick_unknown(exclude=set())
-            if a is None:
-                break
+    def pick_unknown(exclude):
+        for k in range(size):
+            if k in solved or k in exclude or is_skipped(k):
+                continue
+            if k not in known_id_by_idx:
+                return k
+        for k in range(size):
+            if k not in solved and k not in exclude and not is_skipped(k):
+                return k
+        for k in list(skipped_until):
+            if not is_skipped(k) and k not in solved and k not in exclude:
+                return k
+        return None
 
-            prev_a = known_id_by_idx.get(a)
-            cid_a = flip_explore(s, cookies, a, prev_known=prev_a)
+    while len(solved) < size:
+        # 1) Cerrar pares primero (modo estricto)
+        pair = find_next_pair()
+        if pair:
+            a, b, cid_goal = pair
 
-            if cid_a is None:
+            cid_a = flip_strict_pair(s, cookies, a, expected_id=cid_goal)
+            if cid_a != cid_goal:
                 mark_skipped(a)
-                log(f"[skip] idx={a:02d} sin ID estable. Lo intento luego.")
+                log(f"[pair-skip] idx={a:02d} no estabiliza id={cid_goal}. Lo intento luego.")
                 time.sleep(0.8)
                 continue
-
             register(a, cid_a)
-            log(f"[Flip A] idx={a:02d} -> id={cid_a}")
-
-            mates = [i for i in id_to_idxs.get(cid_a, set()) if i != a and i not in solved and not is_skipped(i)]
-            if mates:
-                b = mates[0]
-            else:
-                b = pick_unknown(exclude={a})
-                if b is None:
-                    continue
+            log(f"[Flip A*] idx={a:02d} -> id={cid_a} (estricto)")
 
             time.sleep(SLEEP_AFTER_A_BEFORE_B)
 
-            prev_b = known_id_by_idx.get(b)
-            if b in id_to_idxs.get(cid_a, set()):
-                cid_b = flip_strict_pair(s, cookies, b, expected_id=cid_a)
-            else:
-                cid_b = flip_explore(s, cookies, b, prev_known=prev_b)
-
-            if cid_b is None:
+            cid_b = flip_strict_pair(s, cookies, b, expected_id=cid_goal)
+            if cid_b != cid_goal:
                 mark_skipped(b)
-                log(f"[skip] idx={b:02d} sin ID estable. Lo intento luego.")
+                log(f"[pair-skip] idx={b:02d} no estabiliza id={cid_goal}. Lo intento luego.")
                 time.sleep(0.8)
                 continue
-
             register(b, cid_b)
-            log(f"[Flip B] idx={b:02d} -> id={cid_b}")
+            log(f"[Flip B*] idx={b:02d} -> id={cid_b} (estricto)")
 
-            if cid_a == cid_b:
+            if cid_a == cid_b == cid_goal:
                 solved.update({a, b})
                 pending_pairs[:] = [p for p in pending_pairs if not (p[0] in {a, b} or p[1] in {a, b})]
-                log(f"✅ MATCH id={cid_a} | par=({a},{b}) | resueltas={len(solved)}/{size}")
+                log(f"✅ MATCH id={cid_goal} | par=({a},{b}) | resueltas={len(solved)}/{size}")
                 time.sleep(PAIR_PAUSE)
             else:
-                log(f"❌ NO MATCH: ({a}:{cid_a}) vs ({b}:{cid_b}) | resueltas={len(solved)}/{size}")
+                log(f"⚠️ Par inconsistente: ({a}:{cid_a}) vs ({b}:{cid_b}) esperado={cid_goal}")
                 time.sleep(MISMATCH_PAUSE)
+            continue
 
-        log(f"Listo. Pares resueltos: {len(solved)}/{size}")
-        log(f"Log guardado en: {log_path}")
+        # 2) Explorar
+        a = pick_unknown(exclude=set())
+        if a is None:
+            break
+
+        prev_a = known_id_by_idx.get(a)
+        cid_a = flip_explore(s, cookies, a, prev_known=prev_a)
+
+        if cid_a is None:
+            mark_skipped(a)
+            log(f"[skip] idx={a:02d} sin ID estable. Lo intento luego.")
+            time.sleep(0.8)
+            continue
+
+        register(a, cid_a)
+        log(f"[Flip A] idx={a:02d} -> id={cid_a}")
+
+        mates = [i for i in id_to_idxs.get(cid_a, set()) if i != a and i not in solved and not is_skipped(i)]
+        if mates:
+            b = mates[0]
+        else:
+            b = pick_unknown(exclude={a})
+            if b is None:
+                continue
+
+        time.sleep(SLEEP_AFTER_A_BEFORE_B)
+
+        prev_b = known_id_by_idx.get(b)
+        if b in id_to_idxs.get(cid_a, set()):
+            cid_b = flip_strict_pair(s, cookies, b, expected_id=cid_a)
+        else:
+            cid_b = flip_explore(s, cookies, b, prev_known=prev_b)
+
+        if cid_b is None:
+            mark_skipped(b)
+            log(f"[skip] idx={b:02d} sin ID estable. Lo intento luego.")
+            time.sleep(0.8)
+            continue
+
+        register(b, cid_b)
+        log(f"[Flip B] idx={b:02d} -> id={cid_b}")
+
+        if cid_a == cid_b:
+            solved.update({a, b})
+            pending_pairs[:] = [p for p in pending_pairs if not (p[0] in {a, b} or p[1] in {a, b})]
+            log(f"✅ MATCH id={cid_a} | par=({a},{b}) | resueltas={len(solved)}/{size}")
+            time.sleep(PAIR_PAUSE)
+        else:
+            log(f"❌ NO MATCH: ({a}:{cid_a}) vs ({b}:{cid_b}) | resueltas={len(solved)}/{size}")
+            time.sleep(MISMATCH_PAUSE)
+
+    log(f"Listo. Pares resueltos: {len(solved)}/{size}")
+    log(f"Log guardado en: {LOG_PATH}")
 
 if __name__ == "__main__":
     try:
@@ -381,21 +394,22 @@ if __name__ == "__main__":
             try:
                 solve(size=SIZE, cookies=cookies, warmup=True)
             except Exception as e:
-                print(f"[error] {e}")
+                log(f"[error] {e}")
 
             # Warmup post-partida ANTES de esperar 90s
             try:
                 with build_session() as s:
                     ensure_warmup(s, cookies)
             except Exception as e:
-                print(f"[post-warmup] {e}")
+                log(f"[post-warmup] {e}")
 
             # Espera visible de 90s y reinicia
-            print(f"[sleep] Esperando {WAIT_SECONDS}s para iniciar una nueva partida…")
+            log(f"[sleep] Esperando {WAIT_SECONDS}s para iniciar una nueva partida…")
             for i in range(WAIT_SECONDS, 0, -1):
                 print(f"\rReinicio en {i:02d}s", end="", flush=True)
                 time.sleep(1)
-            print("\n[restart] Nueva ejecución…")
+            print()
+            log("[restart] Nueva ejecución…")
 
     except KeyboardInterrupt:
-        print("\n[exit] Cortado por el usuario.")
+        log("\n[exit] Cortado por el usuario.")
