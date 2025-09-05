@@ -131,6 +131,7 @@ def main():
 
             ok = 0
             total = len(jobs)
+            procesados = 0
             for fut in as_completed(jobs):
                 try:
                     status = fut.result()
@@ -138,7 +139,8 @@ def main():
                         ok += 1
                 except Exception as e:
                     status = f"ERROR: {e}"
-                print(f"→ Resultado: {status}")
+                procesados += 1
+                print(f"→ Resultado: {status} ({ok}/{procesados}/{total})")
 
         interaction_count += ok
         print(f"✔️ Ciclo {cycle} completo: {ok}/{total} warms HTTP 200 (total: {interaction_count})")

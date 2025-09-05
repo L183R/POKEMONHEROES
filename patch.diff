@@ -1,66 +1,54 @@
  (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
-diff --git a/hangman.py b/hangman.py
-index c789649bf6c51b0e0909c43cd5ed1d6ccb5624c0..bfa052adc1f20f92dd5dace772e7a411035149cd 100644
---- a/hangman.py
-+++ b/hangman.py
-@@ -53,54 +53,57 @@ _logged_messages: list[str] = []
- current_streak = 0
- max_streak = 0
- total_coins = 0
+diff --git a/Interacts.py b/Interacts.py
+index 992347af519a964d99b3d7fabb1ec8b08be761e2..24cf9162ba09f3c6dc8dc9256e1883208df0f9c3 100644
+--- a/Interacts.py
++++ b/Interacts.py
+@@ -109,42 +109,44 @@ def main():
+                 list_type = candidate
+                 break
+             else:
+                 print("Lista vacía, probando siguiente…")
  
- def log_print(*args, sep=" ", end="\n", **kwargs):
-     msg = sep.join(str(a) for a in args) + end
-     _logged_messages.append(msg.rstrip("\n"))
-     with LOG_PATH.open("a", encoding="utf-8") as f:
-         f.write(msg)
+         if not pairs:
+             print("No vinieron Pokémon en ninguna lista. Corto.")
+             break
  
- builtins.print = log_print
+         print(f"→ {len(pairs)} Pokémon en la lista. Mandando warms en paralelo ({WORKERS} workers, sin delay)…")
  
- def _print_last_message():
-     if _logged_messages:
-         _original_print(_logged_messages[-1])
+         # Preparamos tareas con inarow asignado por índice (aprox. “secuencia”)
+         jobs = []
+         with ThreadPoolExecutor(max_workers=WORKERS) as ex:
+             for idx, (pkmnid, pkmnsid) in enumerate(pairs, start=1):
+                 # round-robin de sesiones por worker
+                 sess = sessions[(idx - 1) % WORKERS]
+                 inarow = inarow_global
+                 inarow_global += 1
+                 jobs.append(
+                     ex.submit(warm_interact, sess, list_type, pkmnid, pkmnsid, inarow, "")
+                 )
  
- atexit.register(_print_last_message)
- # ======================
+             ok = 0
+             total = len(jobs)
++            procesados = 0
+             for fut in as_completed(jobs):
+                 try:
+                     status = fut.result()
+                     if status == 200:
+                         ok += 1
+                 except Exception as e:
+                     status = f"ERROR: {e}"
+-                print(f"→ Resultado: {status}")
++                procesados += 1
++                print(f"→ Resultado: {status} ({ok}/{procesados}/{total})")
  
- def log_round_result(raw_word: str | None) -> None:
-     global current_streak, max_streak, total_coins
-     success = bool(raw_word and "_" not in raw_word)
-     result_text = f"{raw_word or '-'} - {'SUCCESS' if success else 'FAIL'}"
-     log_print(f"RESULT: {result_text}")
-     if success:
-+        current_streak += 1
-         coins = current_streak * 25
-         total_coins += coins
-         if current_streak > max_streak:
-             max_streak = current_streak
-+    else:
-+        current_streak = 0
-     os.system("cls" if os.name == "nt" else "clear")
-     for line in (
-         f"Racha actual: {current_streak}",
-         f"Racha máxima: {max_streak}",
-         f"Total de monedas ganadas: {total_coins}",
-     ):
-         log_print(line)
-         _original_print(line)
+         interaction_count += ok
+         print(f"✔️ Ciclo {cycle} completo: {ok}/{total} warms HTTP 200 (total: {interaction_count})")
+         # sin delay entre ciclos; si te bloquea, agregá un sleep acá
  
- def cookies_from_string(s: str) -> dict:
-     d = {}
-     for part in [p.strip() for p in s.split(";") if p.strip()]:
-         if "=" in part and not part.lower().startswith("expires"):
-             k, v = part.split("=", 1)
-             d[k.strip()] = v.strip()
-     return d
+     print("\nListo. Vapaí.")
  
- def normalize_text(txt: str) -> str:
-     txt = unescape(txt)
-     txt = re.sub(r"\xa0{2,}", " ", txt)
-     txt = txt.replace("\xa0", "")
-     return re.sub(r"[ \t\r\f\v]+", " ", txt).strip()
- 
- 
- def parse_game_word(raw: str) -> str:
+ if __name__ == "__main__":
+     main()
  
 EOF
 )
