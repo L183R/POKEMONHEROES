@@ -18,6 +18,7 @@ URL = "https://pokeheroes.com/gc_hangman"
 COOKIE_STRING = "PHPSESSID=pdnh5fl1jvn139c0l0rglmug7s; _gcl_au=1.1.1884119554.1756846145.1072503122.1756846377.1756846377; username=L183R; password=6299ad21b8644aa31efb9e2ed4d660160c5480d44dac3f9a090179086e8db991b39e11d5f4b959a13df5f863aebaba997753ef0392427a3c519b48f425b1f6e8; username=L183R; password=6299ad21b8644aa31efb9e2ed4d660160c5480d44dac3f9a090179086e8db991b39e11d5f4b959a13df5f863aebaba997753ef0392427a3c519b48f425b1f6e8; friendbar_hide=hide"  # ← poné tu PHPSESSID válido
 WORDLIST_PATH = Path("hangman_words.txt")
 LOG_PATH = Path("log.txt")
+RESULTS_PATH = Path("results.txt")
 
 # Autorefresco cuando NO se encuentra la palabra
 AUTO_REFRESH_ON_FALLBACK = True
@@ -49,6 +50,10 @@ if os.name == "nt":
 _original_print = builtins.print
 _logged_messages: list[str] = []
 
+current_streak = 0
+max_streak = 0
+total_coins = 0
+
 def log_print(*args, sep=" ", end="\n", **kwargs):
     msg = sep.join(str(a) for a in args) + end
     _logged_messages.append(msg.rstrip("\n"))
@@ -65,8 +70,28 @@ atexit.register(_print_last_message)
 # ======================
 
 def log_round_result(raw_word: str | None) -> None:
+    global current_streak, max_streak, total_coins
     success = bool(raw_word and "_" not in raw_word)
-    log_print(f"RESULT: {raw_word or '-'} - {'SUCCESS' if success else 'FAIL'}")
+    result_text = f"{raw_word or '-'} - {'SUCCESS' if success else 'FAIL'}"
+    log_print(f"RESULT: {result_text}")
+    with RESULTS_PATH.open("a", encoding="utf-8") as f:
+        f.write(result_text + "\n")
+    if success:
+        coins = (current_streak + 1) * 25
+        total_coins += coins
+        current_streak += 1
+        if current_streak > max_streak:
+            max_streak = current_streak
+    else:
+        current_streak = 0
+    os.system("cls" if os.name == "nt" else "clear")
+    for line in (
+        f"Racha actual: {current_streak}",
+        f"Racha máxima: {max_streak}",
+        f"Total de monedas ganadas: {total_coins}",
+    ):
+        log_print(line)
+        _original_print(line)
 
 def cookies_from_string(s: str) -> dict:
     d = {}

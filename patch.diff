@@ -1,172 +1,129 @@
  (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
-diff --git a/Interacts.py b/Interacts.py
-index b09281c69d97cc96d940dba565b3c6fd13a315b2..992347af519a964d99b3d7fabb1ec8b08be761e2 100644
---- a/Interacts.py
-+++ b/Interacts.py
-@@ -1,140 +1,150 @@
+diff --git a/hangman.py b/hangman.py
+index a81c704475bb8585b74ef8fd914c1c535a0bbe11..1119303b5b4647e6a1a5e596ec2880723d62b75b 100644
+--- a/hangman.py
++++ b/hangman.py
+@@ -1,94 +1,119 @@
  #!/usr/bin/env python3
  # -*- coding: utf-8 -*-
  
+ import sys
+ import os
  import re
  import time
- from pathlib import Path
- from typing import List, Tuple
- from concurrent.futures import ThreadPoolExecutor, as_completed
- 
  import requests
+ from bs4 import BeautifulSoup
+ from html import unescape
+ from pathlib import Path
+ from collections import Counter
+ import builtins
+ import atexit
  
- # ======== CONFIG ========
- COOKIES_STRING = "PHPSESSID=pdnh5fl1jvn139c0l0rglmug7s; _gcl_au=1.1.1884119554.1756846145.1072503122.1756846377.1756846377; username=L183R; password=6299ad21b8644aa31efb9e2ed4d660160c5480d44dac3f9a090179086e8db991b39e11d5f4b959a13df5f863aebaba997753ef0392427a3c519b48f425b1f6e8; username=L183R; password=6299ad21b8644aa31efb9e2ed4d660160c5480d44dac3f9a090179086e8db991b39e11d5f4b959a13df5f863aebaba997753ef0392427a3c519b48f425b1f6e8"
--LIST_TYPE = "newest"     # "newest", "unreturned", etc.
-+LIST_PRIORITY = ["unreturned", "online", "random"]
- CYCLES = 3334              # pedir 10 listas
- WORKERS = 30             # 10 workers
- SAVE_LISTS = False       # True para guardar cada clicklist HTML
- # ========================
+ # ========= CONFIG =========
+ URL = "https://pokeheroes.com/gc_hangman"
+ COOKIE_STRING = "PHPSESSID=pdnh5fl1jvn139c0l0rglmug7s; _gcl_au=1.1.1884119554.1756846145.1072503122.1756846377.1756846377; username=L183R; password=6299ad21b8644aa31efb9e2ed4d660160c5480d44dac3f9a090179086e8db991b39e11d5f4b959a13df5f863aebaba997753ef0392427a3c519b48f425b1f6e8; username=L183R; password=6299ad21b8644aa31efb9e2ed4d660160c5480d44dac3f9a090179086e8db991b39e11d5f4b959a13df5f863aebaba997753ef0392427a3c519b48f425b1f6e8; friendbar_hide=hide"  # ← poné tu PHPSESSID válido
+ WORDLIST_PATH = Path("hangman_words.txt")
+ LOG_PATH = Path("log.txt")
++RESULTS_PATH = Path("results.txt")
  
- CLICKLIST_URL = "https://pokeheroes.com/includes/ajax/pokemon/load_clicklist"
- INTERACT_URL  = "https://pokeheroes.com/includes/ajax/pokemon/lite_interact.php"
- REFERRER_FMT  = "https://pokeheroes.com/pokemon_lite?cl_type={}"  # newest/unreturned/...
+ # Autorefresco cuando NO se encuentra la palabra
+ AUTO_REFRESH_ON_FALLBACK = True
+ REFRESH_INTERVAL_SEC = 2
+ MAX_REFRESH_TRIES = 60
  
- BASE_HEADERS = {
-     "accept": "text/html, */*; q=0.01",
-     "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
-     "x-requested-with": "XMLHttpRequest",
-     "origin": "https://pokeheroes.com",
-     "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-                   "(KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
- }
+ # Cuando aparece el banner de INSTRUCTIONS, esperar 5 minutos antes de refrescar
+ INSTRUCTION_WAIT_SEC = 300  # 5 minutos
  
- def parse_cookie_string(cookie_str: str) -> requests.cookies.RequestsCookieJar:
-     jar = requests.cookies.RequestsCookieJar()
-     for part in cookie_str.split(";"):
-         part = part.strip()
-         if not part or "=" not in part:
-             continue
-         k, v = part.split("=", 1)
-         jar.set(k.strip(), v.strip(), domain="pokeheroes.com")
-     return jar
+ # Auto-juego (letra más frecuente entre candidatas)
+ AUTO_GUESS_WHEN_CANDIDATES = True
+ AUTO_GUESS_MAX_PER_ROUND = 26
+ AUTO_GUESS_SLEEP_SEC = 0.6
  
- def extract_pairs_from_clicklist(html: str) -> List[Tuple[str, str]]:
-     # pkmn_arr.push(new Array("pkmnid","pkmnsid", ... ));
-     return re.findall(r'pkmn_arr\.push\(new Array\("(\d+)","(\d+)"', html)
+ # Fallback cuando NO hay candidatas: orden de frecuencia en inglés
+ FALLBACK_GUESS_WHEN_NO_CANDIDATES = True
+ FALLBACK_FREQ_ORDER = "ETAOINSHRDLUCMFYWGPBVKXQJZ"
+ FALLBACK_MAX_PER_ROUND = 26
+ FALLBACK_SLEEP_SEC = 0.5
  
--def make_session(cookies: requests.cookies.RequestsCookieJar, list_type: str) -> requests.Session:
-+def make_session(cookies: requests.cookies.RequestsCookieJar) -> requests.Session:
-     s = requests.Session()
-     s.headers.update(BASE_HEADERS)
-     # referer se setea por request, pero dejamos UA y base aquí
-     s.cookies.update(cookies)
-     return s
+ # Timeout de input (auto-ENTER)
+ INPUT_TIMEOUT_SEC = 5
+ # ==========================
  
- def fetch_clicklist(session: requests.Session, list_type: str, save_lists: bool, cycle_idx: int):
-     headers = dict(BASE_HEADERS)
-     headers["referer"] = REFERRER_FMT.format(list_type)
-     payload = {
-         "type": list_type,
-         "inarow": "0",
-         "ret": "clicklist?err=done",
-     }
-     r = session.post(CLICKLIST_URL, data=payload, headers=headers, timeout=20)
-     r.raise_for_status()
-     html = r.text
-     if save_lists:
-         Path(f"clicklist_{cycle_idx}.html").write_text(html, encoding="utf-8")
-     pairs = extract_pairs_from_clicklist(html)
-     return pairs
+ if os.name == "nt":
+     import msvcrt  # Windows
  
- def warm_interact(session: requests.Session, list_type: str, pkmnid: str, pkmnsid: str, inarow: int, berry: str = "") -> int:
-     headers = dict(BASE_HEADERS)
-     headers["referer"] = REFERRER_FMT.format(list_type)
-     payload = {
-         "pkmnid": pkmnid,
-         "pkmnsid": pkmnsid,
-         "method": "warm",
-         "berry": berry,  # "" o "Razz Berry"
-         "timeclick": str(int(time.time() * 1000)),
-         "inarow": str(inarow),
-     }
-     r = session.post(INTERACT_URL, data=payload, headers=headers, timeout=20)
-     return r.status_code  # podés inspeccionar r.text si necesitás
+ # === Logging setup ===
+ _original_print = builtins.print
+ _logged_messages: list[str] = []
  
- def main():
-     if "PHPSESSID=" not in COOKIES_STRING:
-         print("⚠️ Configurá COOKIES_STRING con tu PHPSESSID y demás cookies.")
-         return
++current_streak = 0
++max_streak = 0
++total_coins = 0
++
+ def log_print(*args, sep=" ", end="\n", **kwargs):
+     msg = sep.join(str(a) for a in args) + end
+     _logged_messages.append(msg.rstrip("\n"))
+     with LOG_PATH.open("a", encoding="utf-8") as f:
+         f.write(msg)
  
-     cookiejar = parse_cookie_string(COOKIES_STRING)
+ builtins.print = log_print
  
-     # Pre-creamos sesiones por worker (requests.Session NO es thread-safe)
--    sessions = [make_session(cookiejar, LIST_TYPE) for _ in range(WORKERS)]
-+    sessions = [make_session(cookiejar) for _ in range(WORKERS)]
+ def _print_last_message():
+     if _logged_messages:
+         _original_print(_logged_messages[-1])
  
-     inarow_global = 1
-+    interaction_count = 0
+ atexit.register(_print_last_message)
+ # ======================
  
-     for cycle in range(1, CYCLES + 1):
--        print(f"\n=== Ciclo {cycle}/{CYCLES}: pidiendo clicklist ({LIST_TYPE}) ===")
--        # Usamos una sesión cualquiera para pedir la lista (no importa cuál)
--        try:
--            pairs = fetch_clicklist(sessions[0], LIST_TYPE, SAVE_LISTS, cycle)
--        except requests.RequestException as e:
--            print(f"❌ Error al pedir clicklist: {e}")
--            break
-+        pairs = []
-+        list_type = ""
-+        # intentamos en orden: unreturned -> online -> random
-+        for candidate in LIST_PRIORITY:
-+            print(f"\n=== Ciclo {cycle}/{CYCLES}: pidiendo clicklist ({candidate}) ===")
-+            try:
-+                pairs = fetch_clicklist(sessions[0], candidate, SAVE_LISTS, cycle)
-+            except requests.RequestException as e:
-+                print(f"❌ Error al pedir clicklist: {e}")
-+                pairs = []
-+            if pairs:
-+                list_type = candidate
-+                break
-+            else:
-+                print("Lista vacía, probando siguiente…")
+ def log_round_result(raw_word: str | None) -> None:
++    global current_streak, max_streak, total_coins
+     success = bool(raw_word and "_" not in raw_word)
+-    log_print(f"RESULT: {raw_word or '-'} - {'SUCCESS' if success else 'FAIL'}")
++    result_text = f"{raw_word or '-'} - {'SUCCESS' if success else 'FAIL'}"
++    log_print(f"RESULT: {result_text}")
++    with RESULTS_PATH.open("a", encoding="utf-8") as f:
++        f.write(result_text + "\n")
++    if success:
++        coins = (current_streak + 1) * 25
++        total_coins += coins
++        current_streak += 1
++        if current_streak > max_streak:
++            max_streak = current_streak
++    else:
++        current_streak = 0
++    os.system("cls" if os.name == "nt" else "clear")
++    for line in (
++        f"Racha actual: {current_streak}",
++        f"Racha máxima: {max_streak}",
++        f"Total de monedas ganadas: {total_coins}",
++    ):
++        log_print(line)
++        _original_print(line)
  
-         if not pairs:
--            print("No vinieron Pokémon en la lista. Corto.")
-+            print("No vinieron Pokémon en ninguna lista. Corto.")
-             break
+ def cookies_from_string(s: str) -> dict:
+     d = {}
+     for part in [p.strip() for p in s.split(";") if p.strip()]:
+         if "=" in part and not part.lower().startswith("expires"):
+             k, v = part.split("=", 1)
+             d[k.strip()] = v.strip()
+     return d
  
-         print(f"→ {len(pairs)} Pokémon en la lista. Mandando warms en paralelo ({WORKERS} workers, sin delay)…")
+ def normalize_text(txt: str) -> str:
+     txt = unescape(txt)
+     txt = re.sub(r"\xa0{2,}", " ", txt)
+     txt = txt.replace("\xa0", "")
+     return re.sub(r"[ \t\r\f\v]+", " ", txt).strip()
  
-         # Preparamos tareas con inarow asignado por índice (aprox. “secuencia”)
-         jobs = []
-         with ThreadPoolExecutor(max_workers=WORKERS) as ex:
-             for idx, (pkmnid, pkmnsid) in enumerate(pairs, start=1):
-                 # round-robin de sesiones por worker
-                 sess = sessions[(idx - 1) % WORKERS]
-                 inarow = inarow_global
-                 inarow_global += 1
-                 jobs.append(
--                    ex.submit(warm_interact, sess, LIST_TYPE, pkmnid, pkmnsid, inarow, "")
-+                    ex.submit(warm_interact, sess, list_type, pkmnid, pkmnsid, inarow, "")
-                 )
  
-             ok = 0
-             total = len(jobs)
-             for fut in as_completed(jobs):
-                 try:
-                     status = fut.result()
-                     if status == 200:
-                         ok += 1
-                 except Exception as e:
-                     status = f"ERROR: {e}"
-                 print(f"→ Resultado: {status}")
- 
--        print(f"✔️ Ciclo {cycle} completo: {ok}/{total} warms HTTP 200")
-+        interaction_count += ok
-+        print(f"✔️ Ciclo {cycle} completo: {ok}/{total} warms HTTP 200 (total: {interaction_count})")
-         # sin delay entre ciclos; si te bloquea, agregá un sleep acá
- 
-     print("\nListo. Vapaí.")
- 
- if __name__ == "__main__":
-     main()
+ def parse_game_word(raw: str) -> str:
+     raw = unescape(raw).replace("\xa0", " ").upper()
+     raw = re.sub(r"[^A-Z_ ]+", "", raw)
+     out: list[str] = []
+     i = 0
+     while i < len(raw):
+         if raw[i] == " ":
+             j = i
+             while j < len(raw) and raw[j] == " ":
  
 EOF
 )
