@@ -1,67 +1,88 @@
+"""Simple GUI for launching multiple PowerShell scripts simultaneously.
+
+This utility lets the user select one or more ``.ps1`` files and execute each
+in its own PowerShell console window. The processes are started with
+``subprocess.Popen`` so they run concurrently without blocking the GUI.
+
+The script is intended for Windows environments where PowerShell is available.
+"""
+
+from __future__ import annotations
+
 import os
-import shlex
 import subprocess
-import sys
 import tkinter as tk
-from tkinter import ttk, messagebox
+from tkinter import filedialog, messagebox
 
 
-class ScriptLauncher(tk.Tk):
-    """Simple GUI to run other Python scripts in the background."""
+def _is_windows() -> bool:
+    """Return ``True`` if running on a Windows platform."""
+    return os.name == "nt"
+
+
+class ScriptRunnerGUI(tk.Tk):
+    """Tkinter window that manages the list of scripts to execute."""
 
     def __init__(self) -> None:
         super().__init__()
-        self.title("Ejecutor de scripts")
-        self.geometry("400x300")
+        self.title("PowerShell Script Runner")
+        self.geometry("500x300")
 
-        self.script_var = tk.StringVar()
-        self.args_var = tk.StringVar()
+        self.script_list = tk.Listbox(self, selectmode=tk.MULTIPLE)
+        self.script_list.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
 
-        self._build_widgets()
-        self._load_scripts()
+        btn_frame = tk.Frame(self)
+        btn_frame.pack(pady=5)
 
-    def _build_widgets(self) -> None:
-        frame = ttk.Frame(self, padding=10)
-        frame.pack(fill=tk.BOTH, expand=True)
+        tk.Button(btn_frame, text="Add Script", command=self.add_script).pack(
+            side=tk.LEFT, padx=5
+        )
+        tk.Button(btn_frame, text="Remove Selected", command=self.remove_selected).pack(
+            side=tk.LEFT, padx=5
+        )
+        tk.Button(btn_frame, text="Run Selected", command=self.run_selected).pack(
+            side=tk.LEFT, padx=5
+        )
 
-        ttk.Label(frame, text="Script:").grid(row=0, column=0, sticky=tk.W)
-        self.script_combo = ttk.Combobox(frame, textvariable=self.script_var, state="readonly")
-        self.script_combo.grid(row=0, column=1, sticky=tk.EW)
+    def add_script(self) -> None:
+        """Open a file dialog and add the chosen script to the list."""
+        path = filedialog.askopenfilename(
+            title="Select PowerShell script",
+            filetypes=[("PowerShell Scripts", "*.ps1"), ("All files", "*.*")],
+        )
+        if path:
+            self.script_list.insert(tk.END, path)
 
-        ttk.Label(frame, text="Argumentos:").grid(row=1, column=0, sticky=tk.W, pady=(10, 0))
-        args_entry = ttk.Entry(frame, textvariable=self.args_var)
-        args_entry.grid(row=1, column=1, sticky=tk.EW, pady=(10, 0))
+    def remove_selected(self) -> None:
+        """Remove highlighted entries from the list."""
+        for index in reversed(self.script_list.curselection()):
+            self.script_list.delete(index)
 
-        run_btn = ttk.Button(frame, text="Ejecutar", command=self.run_script)
-        run_btn.grid(row=2, column=0, columnspan=2, pady=10)
-
-        self.log = tk.Text(frame, height=8)
-        self.log.grid(row=3, column=0, columnspan=2, sticky=tk.NSEW)
-
-        frame.columnconfigure(1, weight=1)
-        frame.rowconfigure(3, weight=1)
-
-    def _load_scripts(self) -> None:
-        scripts = [f for f in os.listdir() if f.endswith(".py") and f != os.path.basename(__file__)]
-        self.script_combo["values"] = scripts
-        if scripts:
-            self.script_var.set(scripts[0])
-
-    def run_script(self) -> None:
-        script = self.script_var.get()
-        if not script:
-            messagebox.showerror("Error", "No hay script seleccionado")
+    def run_selected(self) -> None:
+        """Launch each selected script in its own PowerShell console."""
+        if not _is_windows():
+            messagebox.showerror("Unsupported OS", "This tool requires Windows.")
             return
-        args = shlex.split(self.args_var.get())
-        cmd = [sys.executable, script] + args
-        try:
-            proc = subprocess.Popen(cmd)
-            self.log.insert(tk.END, f"Iniciado {script} (PID {proc.pid})\n")
-            self.log.see(tk.END)
-        except Exception as exc:
-            messagebox.showerror("Error al ejecutar", str(exc))
+
+        selections = [self.script_list.get(i) for i in self.script_list.curselection()]
+        if not selections:
+            messagebox.showinfo("No selection", "Select at least one script to run.")
+            return
+
+        for script in selections:
+            if not os.path.exists(script):
+                messagebox.showerror("File not found", f"{script} not found.")
+                continue
+
+            try:
+                subprocess.Popen(
+                    ["powershell", "-NoExit", "-File", script],
+                    creationflags=subprocess.CREATE_NEW_CONSOLE,
+                )
+            except Exception as exc:  # pragma: no cover - GUI error reporting
+                messagebox.showerror("Execution error", f"Could not run {script}\n{exc}")
 
 
 if __name__ == "__main__":
-    app = ScriptLauncher()
+    app = ScriptRunnerGUI()
     app.mainloop()
