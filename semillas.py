@@ -29,12 +29,11 @@ from urllib3.util.retry import Retry
 COOKIES_FILE   = "cookies.txt"   # archivo con cookies (Netscape o "k=v; k2=v2")
 TOOLS_SHED     = "https://pokeheroes.com/toolshed"
 
-MAKER_ID       = 2               # Seed Maker #
-DESIRED_TOTAL  = 10              # Cantidad total a usar por ciclo
-LEVEL_START    = 10               # Nivel inicial
-LEVEL_MIN      = 1               # Nivel mínimo
-PRIORITY_BERRIES = ["Oran", "Pomeg", "Nanab", "Mago", "Pecha", "Chesto", "Cheri"]  # Orden de prueba por nivel
-
+MAKER_ID       = 2               # Setear por GUI
+DESIRED_TOTAL  = 10              # Setear por GUI
+LEVEL_START    = 10              # Setear por GUI
+LEVEL_MIN      = 1               # Setear por GUI
+PRIORITY_BERRIES = ["Oran", "Pomeg", "Nanab", "Mago", "Pecha", "Chesto", "Cheri"]  # Setear por GUI
 CLAIM_URL = "https://pokeheroes.com/includes/ajax/berrygarden/claimSeedMaker.php"
 FILL_URL  = "https://pokeheroes.com/includes/ajax/berrygarden/fillSeedMaker.php"
 

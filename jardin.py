@@ -12,9 +12,9 @@ AJAX = f"{BASE}/includes/ajax/berrygarden"
 # Pegá tu header Cookie COMPLETO (tal cual de DevTools)
 COOKIE_STRING = "PHPSESSID=pdnh5fl1jvn139c0l0rglmug7s; _gcl_au=1.1.1884119554.1756846145.1072503122.1756846377.1756846377; username=L183R; password=6299ad21b8644aa31efb9e2ed4d660160c5480d44dac3f9a090179086e8db991b39e11d5f4b959a13df5f863aebaba997753ef0392427a3c519b48f425b1f6e8; username=L183R; password=6299ad21b8644aa31efb9e2ed4d660160c5480d44dac3f9a090179086e8db991b39e11d5f4b959a13df5f863aebaba997753ef0392427a3c519b48f425b1f6e8; friendbar_hide=hide"
 
-CYCLE_DELAY_SEC = 30  # 5 minutos
-BERRY_ORDER = ["Oran", "Pomeg", "Nanab", "Mago", "Pecha", "Chesto", "Cheri"]
-LEVEL = "1"
+CYCLE_DELAY_SEC = 30  # # Setear por GUI
+BERRY_ORDER = ["Oran", "Pomeg", "Nanab", "Mago", "Pecha", "Chesto", "Cheri"] # Setear por GUI
+LEVEL = "1" # Setear por GUI
 VERBOSE = True  # poné False si no querés ver los BODYs
 
 def parse_cookie_string(s: str):

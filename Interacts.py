@@ -12,7 +12,7 @@ import requests
 # ======== CONFIG ========
 COOKIES_STRING = "PHPSESSID=pdnh5fl1jvn139c0l0rglmug7s; _gcl_au=1.1.1884119554.1756846145.1072503122.1756846377.1756846377; username=L183R; password=6299ad21b8644aa31efb9e2ed4d660160c5480d44dac3f9a090179086e8db991b39e11d5f4b959a13df5f863aebaba997753ef0392427a3c519b48f425b1f6e8; username=L183R; password=6299ad21b8644aa31efb9e2ed4d660160c5480d44dac3f9a090179086e8db991b39e11d5f4b959a13df5f863aebaba997753ef0392427a3c519b48f425b1f6e8"
 LIST_PRIORITY = ["unreturned", "online", "random"]
-CYCLES = 3334              # pedir 10 listas
+CYCLES = 5000              # Setear por GUI
 WORKERS = 30             # 10 workers
 SAVE_LISTS = False       # True para guardar cada clicklist HTML
 # ========================
